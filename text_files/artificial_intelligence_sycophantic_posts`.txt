@@ -1,0 +1,65 @@
+=== Post ID: 1mht8bo ===
+Title      : Harvey: An Overhyped Legal AI with No Legal DNA
+Author     : h0l0gramco
+Date (UTC) : 2025-08-04T23:25:18+00:00Z
+URL        : https://www.reddit.com/r/ArtificialInteligence/comments/1mht8bo/harvey_an_overhyped_legal_ai_with_no_legal_dna/
+Score      : 187
+Comments   : 87
+
+(Full disclosure, all is my own opinion & experience, I’m just a lawyer who’s mad we’re paying top $ for half-baked tech and took my time w/ exploring and learning before writing this post)
+
+I’ve spent a decade+ between BigLaw, in-house, and policy. I know what real legal work feels like, and what the business side looks like. Harvey… doesn’t.
+
+I was pumped when legal-AI caught fire, esp. b/c it looked like OpenAI was blessing Harvey.  Then I initially thought it might a shiny tool (pre-pilot), and now, after a solid stretch with it, I can say it’s too similar to the dog & pony show that corporate/legacy vendors have pushed on us for years.  Nothing says “startup”, nor “revolutionary” (as LinkedIn would have one believe).
+
+And yes, I get that many hate the profession, but I’m salty b/c AI should free lawyers, not fleece us.
+
+**1. No Legal DNA, just venture FOMO**
+
+Per Linkedin, Harvey’s CEO did one year at Paul Weiss. That’s doc review and closing binder territory at a white shoe, not “I can run this deal/litigation” territory.  The tech co-founder seems to have good AI creds, but zero legal experience.  Per the site, and my experience, they then seemed to have hired a handful of grey haired ex-BigLaw advisors to boost credibility.
+
+What this gets you is a tech product with La-Croix level “essence” of law.  Older lawyers, probably myself included, don’t know what AI can/should do for law.  Doesn't seem to be anyone sifting through the signal/noise.  No product vision rooted in the real pain of practice.
+
+**2. Thin UI on GPT, sold at high prices**
+
+A month ago, I ran the same brief but nuanced fact-pattern (no CI) through both Harvey and plain GPT; Harvey’s answer differed by a few words.  The problem there is that GPT is sycophantic, and there are huge draw backs to using it as a lawyer even if they fix the privilege issues.  Having now researched about AI and some of how it works… it’s pretty clear to me that under the hood Harvey is a system prompt on GPT, a doc vault w/ embeddings (which I am still a bit confused about), basic RAG, and workflows that look like this company Zapier. Their big fine tuning stunt fizzled… I mean, anyone could’ve told them you can’t pre-train for every legal scenario esp when GPT 4 dropped and nuked half the fine-tune gains.
+
+The price is another thing… I don't how much everyone is paying. The ball park for us was around $1k/seat/month + onboarding cost + minimum seats. Rumor (unverified) is the new Lexis add-on pushes it even higher. My firm is actively eyeing the exit hatch.
+
+**3. Hype and echo chambers**
+
+Scroll LinkedIn and you’ll see a conga line of VCs, consultants, and “thought leaders” who’ve never billed an hour chanting “Harvey = revolution.”  The firm partnerships and customer wins feel like orchestrated PR blitzes divorced from reality, and that buzz clearly has been amplified by venture capitalists and legal tech influencers (many of whom have never actually used the product) cheerleading the company online.  It’s pretty clear that Harvey’s public reputation has been carefully manufactured by Silicon Valley.
+
+If you were an early investor, great, but a Series-D “startup”?  Make it make sense.  Odds are they’ll have to buy scrappier teams.. and don’t get me started on the Clio acquisition of vLex (did anyone at Clio even try vLex or Vincent?).
+
+**4. Real lawyers aren’t  impressed**
+
+My firm isn’t alone. A couple large-firm partners mentioned they’re locked into Harvey contracts they regret. Innovation heads forced the deal, but partners bailed after a few weeks. Associates still do use it, but that’s b/c they can’t use GPT due to firm policy (rightfully so though). I am also not a fan of the forced demos I have to sit through (which is likely a firm thing rather than harvey), but I have a feeling that if the product mirrored real practice, we’d know how to use it better.
+
+**Bottom line**
+
+In my opinion, Harvey is a Silicon Valley bubble that mistook practicing law for just parsing PDFs. AI will reshape this profession, but it has to be built by people who have lived through hell of practice; not a hype machine.
+
+**Edit - Autopsy (informed by comments)**
+
+* **Wrong DNA.** What this actually means, in my perspective, is not just that Harvey doesn't have proper legal leadership at the top, but that Harvey does not have a "Steve Jobs" type character.  Looking at the product and looking at the market, there is no magic, even in the design.
+* **Wrong economics.** There was a study somewhere on their CAC, I remember it being extremely high.  That CAC implodes at renewal once partners see usage stats.  Even then, the implosion may not happen right away b/c the innovation leads at these firms (mine included) will try to protect their mistake; but the bubble eventually bursts. 
+* **Wrong workflow.**  Read between the lines here.  I am not paid to product advise, but the flagship functionality they have right now does not make my life easier, in fact, it all feels disjointed.  I am still copy and pasting; so what are we paying for?  Proper legal workflows + product vision is a must. 
+* **Buy or die.** As some have pointed out there are players tiny relative to Harvey.  If Harvey can’t build that brain internally, it needs to buy it, fast.  Or don't, we all love a good underdog story.  
+
+
+=== Post ID: 1m1q5yl ===
+Title      : The moral dilemma of surviving the AI wave…
+Author     : neveruse12345
+Date (UTC) : 2025-07-16T22:10:15+00:00Z
+URL        : https://www.reddit.com/r/ArtificialInteligence/comments/1m1q5yl/the_moral_dilemma_of_surviving_the_ai_wave/
+Score      : 99
+Comments   : 85
+
+My company, like I imagine many of yours, its going hard into AI this past year. Senior management talks non stop about it, we hired a new team to manage its implementation, and each group is handing out awards for finding ways to implement it (ie save money).
+
+Because of my background in technology and my role, I am pretty well suited to ride this for my own career advancement if I play my cards right. HOWEVER, I absolutely cannot stand how it is being rolled out without any acknowledgment that its all leading to massive workforce reductions as every executive will get a pat on the back for cutting their budgets by creatively implementing some promise from some AI vendor. More broudly, I think those leaders in AI (like Thiel or Musk) are straight up evil and are leading the world into a very dark place. I don't find the technology itself bad or good per se, but rather they uncritical and to be honest almost sycophantic way its pushed by ambitious c-suite folks.
+
+Question for the group. How do I display interest in AI to secure my own place while still staying true to my core values? Its not like I can just jump ship to another company since they've all bought into this madness. Do I just stomach it and try to make sure I have my family taken care of while the middle class white color workforce collapses around me? If so (which is what people close to me have advised) what a depressing existence. 
+
+

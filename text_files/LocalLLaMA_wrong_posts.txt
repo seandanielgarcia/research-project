@@ -1,0 +1,2599 @@
+=== Post ID: 1mirfzi ===
+Title      : Anyone Have Any Tips for a Novice Trying to Get GPT-OSS 20b to Run Faster?
+Author     : Solid_Antelope2586
+Date (UTC) : 2025-08-06T01:23:15+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1mirfzi/anyone_have_any_tips_for_a_novice_trying_to_get/
+Score      : 2
+Comments   : 5
+
+I have a 5070 and 48gb of DDR5 and I only get 12t/s on ollama with the FP4 quantization. Allegedly people have been getting over 30t/s on a 3060. I get 33t/s with the qwen3 30b MoE. Am I doing something wrong? Is there a way I can match that with the smaller GPT-OSS which has basically the same number of active parameters or is GPT-OSS just poorly optimized? That is without quantizing to the point of a significant performance degredation.
+
+
+=== Post ID: 1miprwe ===
+Title      : gpt-oss-120b performance with only 16 GB VRAM- surprisingly decent
+Author     : gigaflops_
+Date (UTC) : 2025-08-06T00:06:48+00:00Z
+URL        : https://www.reddit.com/gallery/1miprwe
+Score      : 14
+Comments   : 9
+
+**Full specs**:
+
+**GPU**: RTX 4070 TI Super (16 GB VRAM)
+
+**CPU**: i7 14700K
+
+**System RAM**: 96 GB DDR5 @ 6200 MT/s (total usage, including all Windows processes, is 61 GB, so only having 64GB RAM is probably sufficient)
+
+**OS**: Windows 11
+
+**Model runner**: LM Studio (see settings in third screenshot)
+
+  
+When I saw that OpenAI released a 120b parameter model, my assumption was that running it wouldn't be realistic for people with consumer-grade hardware. After some experimentation, I was *partly* proven wrong- 13 t/s is a speed that I'd consider "usable" on days where I'm feeling relatively patient. I'd imagine that people running RTX 5090's and/or faster system RAM are getting speeds that are truly usable for a lot of people, a lot of the time. If anyone has this setup, I'd love to hear what kind of speeds you're getting. 
+
+
+=== Post ID: 1min4lz ===
+Title      : 20B GTP-OSS on a MacBook Pro M1 Pro with 16gb memory running at less than 1 token/s. Is this correct or am I doing something wrong?
+Author     : -paul-
+Date (UTC) : 2025-08-05T22:14:57+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1min4lz/20b_gtposs_on_a_macbook_pro_m1_pro_with_16gb/
+Score      : 2
+Comments   : 12
+
+UPDATE: I runs fast using LM Studio so it's not a hardware limitation. 
+
+  
+I'm using Ollama.
+
+I read that people with M4 Pro are getting 33 tokens/sec but M4 Pro has only marginally faster memory bandwidth 200 vs 273. I'm also not seeing my GPU or CPU being maxed out at any point.
+
+Is this the expected performance? What is my bottleneck here?
+
+
+=== Post ID: 1mifqv4 ===
+Title      : Is the OpenAI recently released open models the same as horizon beta or what exactly?
+Author     : i-exist-man
+Date (UTC) : 2025-08-05T17:37:02+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1mifqv4/is_the_openai_recently_released_open_models_the/
+Score      : 1
+Comments   : 5
+
+Is this the same model (Horizon Beta) on openrouter or not? Because I still see Horizon beta available with its codename on openrouter
+
+  
+I am putting my speculation hats and considering it might be deepseek or something else, what do you guys think? (I can be totally wrong, I usually am)
+
+  
+But I am wondering why it isn't removed from openrouter given that openAi blog doesn't seem to mention Horizon beta from what I see?
+
+
+=== Post ID: 1mi9i1g ===
+Title      : Advice on running Qwen3-Coder-30B-A3B locally
+Author     : medi6
+Date (UTC) : 2025-08-05T13:40:25+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1mi9i1g/advice_on_running_qwen3coder30ba3b_locally/
+Score      : 7
+Comments   : 36
+
+I'm trying to run the Qwen3-Coder-30B-A3B-Instruct model on my own hardware and I'm looking for recommendations from anyone who's had success with similar setups.
+
+**The model**
+
+* Qwen/Qwen3-Coder-30B-A3B-Instruct
+* 30.5B total parameters with 3.3B active MOE
+* Available on Hugging Face
+* I'm fine using quantized formats
+* Planning to use it as a local code assistant with basic tool calling
+
+**What I want to do**  
+Run the model completely offline, ideally with a fast-enough setup to make it usable for personal projects. I'm okay with lower token speed, as long as it's not unusably slow. Planning to wrap it with a local API (probably FastAPI or something similar).
+
+**What I know so far**  
+This model is obviously too large for something like a Mac mini, even with quantization. So I'm now looking at building or buying a proper PC.
+
+**My target build (open to adjustments)**
+
+* CPU: Ryzen 9 7900X
+* RAM: 128GB DDR5
+* GPU: RTX 4090 (24GB VRAM)
+* SSD: 2TB NVMe
+
+**What I need help with**
+
+1. Can this config actually handle Qwen3-Coder-30B-A3B (quantized) in a reliable way?
+2. What's the best inference backend for this model type? Considering llama.cpp, vllm, AutoAWQ, or anything else that works well with MoE
+3. Any known compatibility issues with this model in local setups?
+4. Should I give up on local and just call it via API instead? i'm already racking up hundreds of $$$ in API calls on numerous providers
+
+If anyone has tried this model or something similar, I’d appreciate any input. I want to make sure I invest in the right hardware and don't waste time going down the wrong path.
+
+cheers!
+
+
+=== Post ID: 1mi4emi ===
+Title      : why , is "everyone" here Cynics?
+Author     : Trick_Ad_4388
+Date (UTC) : 2025-08-05T09:20:18+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1mi4emi/why_is_everyone_here_cynics/
+Score      : 0
+Comments   : 34
+
+I do not mean any offense, I don't mean to say that you are wrong about it, I am just really curious!
+
+this /r seems to be the most technical of all r/ i spend time in. and it is my understanding that people here have generally a very Cynicism way of looking at the world, or at least the tech world.
+
+once again, I am not saying that this is bad or wrong I am just curious how this comes to be.
+
+people seem very "mad" or grumpy somewhat in general regarding most things from what I have observed. 
+
+  
+is it just that in your view that many things in the world and tech world is bad and therefore some of you seem a bit cynic about many things? 
+
+[https://www.reddit.com/r/LocalLLaMA/comments/1mi0co2/anthropics\_ceo\_dismisses\_open\_source\_as\_red/](https://www.reddit.com/r/LocalLLaMA/comments/1mi0co2/anthropics_ceo_dismisses_open_source_as_red/)  
+\- is an example of a thread that seems like people share that view for example.
+
+  
+I just want to understand why this is, and I personally don't necessarily disagree with most things but wanna understand why this is the case.
+
+
+=== Post ID: 1mi3b19 ===
+Title      : OCR Recognition and ASCII Generation of Medical Prescription
+Author     : Rukelele_Dixit21
+Date (UTC) : 2025-08-05T08:08:55+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1mi3b19/ocr_recognition_and_ascii_generation_of_medical/
+Score      : 6
+Comments   : 6
+
+I was having a very tough time in getting OCR of Medical Prescriptions. Medical prescriptions have so many different formats. Conversion to a JSON directly causes issues. So to preserve the structure and the semantic meaning I thought to convert it to ASCII.
+
+[https://limewire.com/d/JGqOt#o7boivJrZv](https://limewire.com/d/JGqOt#o7boivJrZv)
+
+This is what I got as an Output from Gemini 2.5Pro thinking. Now the structure is somewhat preserved but the table runs all the way down. Also in some parts the position is wrong.  
+  
+**Now my Question is how to convert this using an open source VLM ? Which VLM to use ? How to fine tune ? I want it to use ASCII characters and if there are no tables then don't make them** 
+
+*TLDR - See link . Want to OCR Medical Prescription and convert to ASCII for structure preservation . But structure must be very similar to Original*
+
+
+=== Post ID: 1mgfuf3 ===
+Title      : Still getting bad results with PDFs in AnythingLLM + Llama 3 – Am I doing something wrong, or is there a better setup?
+Author     : Lazy_Fig_6244
+Date (UTC) : 2025-08-03T10:22:07+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1mgfuf3/still_getting_bad_results_with_pdfs_in/
+Score      : 0
+Comments   : 6
+
+Hey everyone,
+
+I’ve been doing some research on setting up a local, privacy-friendly LLM assistant, ideally something that can help me write job applications using my previous resumes and cover letters as a base.
+
+From everything I read, it sounded really promising to combine AnythingLLM with Llama 3 (I’m using the LLaMA 3 8B). I installed it all locally, configured the settings properly in AnythingLLM (enabled local embeddings, context windows, etc.), and successfully loaded several PDFs (my old cover letters, resumes, etc.).
+
+
+
+The idea:
+
+I want to paste in a job posting and ask the chatbot to draft a personalized cover letter using my own documents as a knowledge base. Basically, a smart assistant that reuses my past writing and adapts it to the job description.
+
+
+
+But here’s the problem:
+
+The results are pretty disappointing.
+
+Even though the PDFs were embedded correctly and the system says they’re indexed, the answers I get are vague, or clearly not based on my previous content. It doesn't really use the documents meaningfully – it feels like the bot is just hallucinating or ignoring them.
+
+I even tested it with just one document: my current résumé, uploaded as both PDF and plain .txt, and it still failed to accurately reflect the content when I asked basic questions like "What is my professional background?" or "What are my main skills?" – which it should have easily pulled from the text.
+
+I’ve tried re-uploading, adjusting the chunk size, checking the document scope –> but no real improvement.
+
+So my question is:
+
+Am I doing something wrong? Or is this kind of task just too much for AnythingLLM + Llama 3 right now?
+
+Has anyone had better results using a different local setup for tasks like this?
+
+
+
+Would love to hear your tips or setups that work better for writing support based on personal document libraries. Thanks in advance!
+
+
+=== Post ID: 1mfy6vo ===
+Title      : How do I get this information into an AI to make a video?
+Author     : DivergentDroid1
+Date (UTC) : 2025-08-02T18:52:18+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1mfy6vo/how_do_i_get_this_information_into_an_ai_to_make/
+Score      : 0
+Comments   : 13
+
+I'll need to use free tools. I am looking to make a video with this content. How do I do that? What tools should I use? How do i format this information to be processed by an AI? 
+
+\[Begin\]
+
+ The Globe wants you to believe everything opposite of physics:  
+
+1)  Heliocentrism teaches large bodies of liquid water curves into a ball. Physics says water lays flat and always seeks it's level, (thanks to the physics Law - Hydrostatic Equilibrium)
+
+2) Heliocentrism teaches we have a Big Bang Creation Story where everything spontaneously evolved from nothingness to what we have today.  Physics shows us this idea violates the 1st law of thermodynamics. 
+
+3) Heliocentrism tells us Gravity is mass attracting mass. Physics shows us gas which is physical matter with mass does Not obey any silly idea of gravity. Gas always expands due to entropy to fill an available volume until equalization occurs. (Thanks to the 2nd law of thermodynamics)  
+
+4) Heliocentrism also teaches Gravity is Einstein's Gravitational Accretion where gas coalesces on itself. - (That violates the 2nd law of thermodynamics.) - 
+
+5) Heliocentrism teaches gas forms a sphere in a vacuum. (what you call atmosphere) Again,  Gas always expands due to entropy to fill an available volume until equalization occurs. It cannot form a sphere in a vacuum Ever! (Again thanks to the 2nd Law of Thermodynamics.)
+
+I just gave you 5 examples (or to the untrained in science and physics, Paradoxes) how the Globe Story is purposefully deceptive because it doesn't align with actual physics and science facts.
+
+You can learn these physics laws yourself with a study of thermodynamics at Khan Academy: The Laws of Thermodynamics and The Behavior of Gas at Chem Libre Text. 
+
+Now if you think I'm Wrong then Demonstrate the claims! - You see your explanation is only good if you can Back it with Actual Physics Demonstrations. Demonstrate gas forming a sphere in a vacuum that then Fails to fully expand due to entropy until equalization occurs. (what you call Atmosphere) - Demonstrate large standing bodies of water Failing to seek their own level, Failing to lay flat and Failing to lay Horizontal. - These things Cannot be done thanks to the 2nd law of thermodynamics and hydrostatic equilibrium.
+
+Liquid water covers 70 % of Earths surface. Physics properties of liquid water (Hydrostatic Equilibrium) show it always seeks it's own level, lays flat and horizontal. Nothing, that is 70% of anything that seeks it's own level, lays flat and horizontal can Ever Be a Sphere! That's an Impossible Ratio! - Your Earth Curvature is Impossible in Physics and in Math!  
+\[End\]
+
+How do make that video?  I don't know anything about AI but it uses something they choose to call prompts. That doesn't help me. 
+
+
+=== Post ID: 1mfvxdo ===
+Title      : What would it take to support Multi-Token-Prediction (MTP) in llama.cpp? feat. GLM 4.5
+Author     : Karim_acing_it
+Date (UTC) : 2025-08-02T17:17:04+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1mfvxdo/what_would_it_take_to_support/
+Score      : 85
+Comments   : 41
+
+[A new PR](https://github.com/ggml-org/llama.cpp/pull/15026) was created to support GLM 4.5's models in llama.cpp, as the original, highly anticipated [\#14939](https://github.com/ggml-org/llama.cpp/pull/14939) seemed to get stuck. The new PR description reads: "**this PR will NOT attempt to implement MTP**", with great progress being made in short time. (Amazing!!!)
+
+Given that MTP is supposed to achieve a 5x (or equally significant) inference speedup (correct me if I am wrong), why do we not increase community efforts in trying to enable MTP for these and all models going forward? We heard before that it's not optimisations that will advance Local LLMs, but architecture shifts, and this could be in the same level als MoEs in terms of efficacy.
+
+Disclaimer: I am eternally grateful for everybody's contribution to the field, as LLMs allow me to code what I couldn't code before. But I have in no way the foundational understanding, knowledge or experience to contribute, so I am really thankful for all efforts from the involved people on github!
+
+PS: does MTP already work on/with MLX?
+
+
+=== Post ID: 1mfuiri ===
+Title      : Qwen Code + Qwen Coder 30b 3A is insane
+Author     : Flashy_Management962
+Date (UTC) : 2025-08-02T16:17:55+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1mfuiri/qwen_code_qwen_coder_30b_3a_is_insane/
+Score      : 238
+Comments   : 111
+
+This is just a little remark that if you haven't you definitely should try qwen code [https://github.com/QwenLM/qwen-code](https://github.com/QwenLM/qwen-code)   
+I use qwen coder and qwen 3 30b thinking while the latter still needs some copy and pasting. I'm working on and refining a script for syncing my koreader metadata with obsidian for the plugin lineage (every highlight in own section). The last time I tried to edit it, I used Grok 4 and Claude Sonnet Thinking on Perplexity (its the only subscription I had until know) even with those models it was tedious and not really working. But with Qwen Code it looks very different to be honest. 
+
+The metadata is in written in lua which at first was a pain to parse right (remember, I actually cannot code by myself, I understand the logic and I can tell in natural language what is wrong, but nothing more) and I got qwen code running today with llama cpp and it almost integrated everything on the first try and I'm very sure that nothing of that was in the models trainingdata. We reached a point where - if we know a little bit - can let code be written for us almost without us needing to know what is happening at all, running on a local machine. Of course it is very advantageous to know what you are looking for.
+
+So this is just a little recommendation, if you have not tried qwen code, do it. I guess its almost only really useful for people like me, who don't know jack shit about coding. 
+
+
+=== Post ID: 1mfofx5 ===
+Title      : Issues with michaelf34/infinity:latest-cpu + Qwen3-Embedding-8B
+Author     : Patentsmatter
+Date (UTC) : 2025-08-02T11:39:54+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1mfofx5/issues_with_michaelf34infinitylatestcpu/
+Score      : 1
+Comments   : 0
+
+I tried building a docker container to have infinity use the Qwen3-Embedding-8B model in a CPU-only setting. But once the docker container starts, the CPU (Ryzen 9950X, 128GB DDR5) is fully busy even without any embedding requests. Is that normal, or did I configure something wrong?
+
+Here's the Dockerfile:
+
+> FROM michaelf34/infinity:latest-cpu
+RUN pip install --upgrade transformers accelerate
+
+Here's the docker-compose:
+
+> version: '3.8'
+services:
+  infinity:
+    build: .
+    ports:
+      - "7997:7997"
+    environment:
+      - DISABLE_TELEMETRY=true
+      - DO_NOT_TRACK: 1
+      - TOKENIZERS_PARALLELISM=false
+      - TRANSFORMERS_CACHE=.cache
+    volumes:
+      - ./models:/models:ro
+      - ./cache:/.cache
+      restart: unless-stopped
+    command: infinity-emb v2 --model-id /models/Qwen3-Embedding-8B
+
+Startup command was:
+
+docker run -d -p 7997:7997 --name qwembed-cpu -v $PWD/models:/models:ro -v ./cache:/app/.cache qwen-infinity-cpu v2 --model-id /models/Qwen3-Embedding-8B --engine torch
+
+
+=== Post ID: 1mfjn88 ===
+Title      : TTS Model Comparisons: My Personal Rankings (So far) of TTS Models
+Author     : iKontact
+Date (UTC) : 2025-08-02T06:32:11+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1mfjn88/tts_model_comparisons_my_personal_rankings_so_far/
+Score      : 32
+Comments   : 33
+
+So firstly, I should mention that my setup is a Lenovo Legion 4090 Laptop, which should be pretty quick to render text & speech - about equivalent to a 4080 Desktop. At least similar in VRAM, Tensors, etc.
+
+I also prefer to use CLI only, because I want everything to eventually be for a robot I'm working on (because of this I don't really want a UI interface). For some I haven't fully tested only the CLI, and for some I've tested both. I will update this post when I do more testing. Also, feel free to recommend any others I should test.
+
+I will say the UI counterpart can be quite a bit quicker than using CLI linked with an ollama model. With that being said, here's my personal "rankings".
+
+* **Bark/Coqui TTS -**
+   * **The Good:** The emotions are next level... kinda. At least they have it, is the main thing. What I've done is create a custom Llama model, that knows when to send a \[laughs\], \[sighs\], etc. that's appropriate, given the conversation. The custom ollama model is pretty good at this (if you're curious how to do this as well you can create a basefile and a modelfile). And it sounds somewhat human. But at least it can somewhat mimic human emotions a little, which many cannot.
+   * **The Bad:** It's pretty slow. Sometimes takes up to 30 seconds to a minute which is pretty undoable, given I want my robot to have fluid conversation. I will note that none of them are able to do it seconds or less, sadly, via CLI, but one was for UI. It also "trails off", if that makes sense. Meaning - the ollama may produce a text, and the Bark/Coqui TTS does not always follow it accurately. I'm using a custom voice model as well, and the cloning, although sometimes okay, can and does switch between male and female characters, and doesn't sometimes even follow the cloned voice. However, when it does, it's somewhat decent. But given how it often does not, it's not really too usable.
+* **F5 TTS -**
+   * **The Good:** Extremely consistent voice cloning, from the UI and CLI. I will say that the UI is a bit faster than using CLI, however, it still takes about 8 seconds or so to get a response even with the UI, which is faster than Bark/Coqui, but still not fast enough, for my uses at least. Honestly, the voice cloning alone is very impressive. I'd say it's better than Bark/Coqui, except that Bark/Coqui has the ability to laugh, sigh, etc. But if you value consistent voicing, that's close to and can rival ElevenLabs without paying, this is a great option. Even with the CLI it doesn't trail off. It will finish speaking until the text from my custom ollama model is done being spoken.
+   * **The Bad:** As mentioned, it can take about 8-10 seconds for the UI, but longer for the CLI. I'd say it's about 15 seconds (on average) for the CLI and up to 30 seconds (for about 1.75 minutes of speech) for the CLI, or so depending on how long the text is. The problem is can't do emotions (like laughing, etc) at all. And when I try to use an exclamation mark, it changes the voice quite a bit, where it almost doesn't sound like the same person. If you prompt your ollama model to not use exclamations, it does fine though. It's pretty good, but not perfect.
+* **Orpheus TTS**
+   * **The Good:** This one can also do laughing, yawning, etc. and it's decent at it. But not as good as Coqui/Bark. Although it's still better than what most offer, since it has the ability at all. There's a decent amount of tone in the voice, enough to keep it from sounding too robotic. The voices, although not cloneable, are a lot more consistent than Bark/Coqui, however. They never really deviate like Bark/Coqui did. It also reads all of the text as well and doesn't trail off.
+   * **The Bad:** This one is a pain to set up, at least if you try to go the normal route, via CLI. I've only been able to set it up via Docker, actually, unfortunately. Even in the UI, it takes quite a bit of time to generate text. I'd say about 1 second per 1 second of speech. There also times where certain tags (like yawning) doesn't get picked up, and it just says "yawn", instead. Coqui didn't really seem to do that, unless it was a tag that was unrecognizable (sometimes my custom ollama model would generate non-available tags on accident).
+* **Kokoro TTS**
+   * **The Good:** Man, the UI is blazing FAST. If I had to guess about \~ 1 second or so. And that's using 2-3 sentences. For a about 4 minutes of speech, it takes about 4 seconds to generate text, which although isn't perfect, it's probably as good as it gets and really quick. So about 1 second per 1 minute of speech. Pretty impressive! It also doesn't trail off and reads all the speech too, which is nice.
+   * **The Bad:** It sounds a little bland. Some of the models, even if they don't have explicit emotion tags, still have tone, and this model is lacking there imo. It sounds too robotic to me, and doesn't distinct between exclamation, or questions, much. It's not terrible, but sounds like an average Speech to Text, that you'd find on an average book reader, for example. Also doesn't offer native voice cloning, that I'm aware of at least, but I could be wrong.
+* **Higgs Audio TTS**
+   * **The Good:** The really neat thing about Higgs audio is that it doesn't have preset voices that you choose from, but rather, you prompt in how you want the voice to sound. At least from their example. It's surprisingly consistent as well. Through multiple generations, while maintaining the same voice speaker prompt, the voice stays relatively the same. The emotions sound bland at first, but you can prompt in speakers to have more tone to their voices. I used a speaker that has tone similar the main girl from legally blonde, since she has a lot of tone and emotion in her voice.
+   * **The Bad:** No voice cloning. Although it is somewhat offset by it's ability to prompt in voices, you still can't clone voices. Personally, I'd say the worst thing is how long it takes to generate a prompt. I only had about 10 seconds of audio, but it took about a minute to generate. And I tried for about 20 seconds of audio and it took about 2 minutes to generate. It seems like for every 1 second of audio, it takes about 6 seconds to generate, which is quite a bit of time. However, if you value the ability to prompt in voices, it's a decent choice.
+* **Chatterbox TTS**
+   * **The Good:** This one also has the ability to clone voices. It does it very well too. Sounds just like the speaker I based it off of. Probably one of the best at voice cloning. I'd say it rivals ElevenLabs. The tone is pretty decent and consistent, and doesn't sound too robotic, which is nice too.
+   * **The Bad:** It takes about 1.5 seconds of generation time for every 1 second of audio generated. If you're only generating 5 seconds of audio, it'll result in about 8 seconds of generation time, however, if you want 30 seconds of audio, it will take quite a while to generate (45 seconds). 15 seconds of audio took 22 seconds to generate. Although the tone is decent it has trouble with exclamation specifically. But I've noticed a few do.
+* **Kyutai TTS**
+   * **The Good:** Emotions and tone are fantastic. One of the best ones for sure. Although it doesn't support laughing, sighing, etc, the tone in the voice makes up for it. It definitely sounds close to human. If I had to describe this model, I'd say it's very expressive!
+   * **The Bad:** Takes about .75 seconds of generation time for 1 second of audio. Better than some, but still not ideal. Especially for longer lengths of dialogue. Although it's supposed to be able to support voice cloning, their open source model does not seem to offer this ability unfortunately. It would almost be worth creating your own safetensors model because of how expressive it, then figuring out where in the repo to replace it though.
+
+
+=== Post ID: 1mfj2bn ===
+Title      : Reach Mini is not Open source?
+Author     : Slow_Protection_26
+Date (UTC) : 2025-08-02T05:56:07+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1mfj2bn/reach_mini_is_not_open_source/
+Score      : 1
+Comments   : 2
+
+Huggingface announced that it’s OSS so I found their GitHub, but the whole point of open source robotics is provision of CAD files and electronic drawings as well, if I am not wrong? 
+
+I didn’t find it anywhere. 
+[reachy mini](https://youtu.be/JvdBJZ-qR18?si=DntWm0Um6a9Nab6I)
+Do hugging face plan to release the printable 3d models and the component lists? 
+
+Blog post: https://huggingface.co/blog/reachy-mini
+Thomas Wolf on 𝕏: https://x.com/Thom_Wolf/status/1942887160983466096 less
+
+
+=== Post ID: 1mfek6x ===
+Title      : New to LLM studio?
+Author     : wbiggs205
+Date (UTC) : 2025-08-02T01:53:49+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1mfek6x/new_to_llm_studio/
+Score      : 0
+Comments   : 9
+
+I have LLM studio installed on a server. And I did enable the feature to run as a server with Tailscale and on my Mac mini, I installed anything LLM . And when I set up anything LLM to use lm studio. It just says refreshing models and nothing else after that it does not pull any of the models I have installed. I’m just curious what I’m doing wrong. In my IP settings for anything LLM I have. http:// my up:1234/v1. But after letting it run 10 minutes, it does not pull any models at all. So to test to see if it was the server I installed ollama and that worked just fine. I’m just curious what am I doing wrong?
+
+
+=== Post ID: 1mez1w0 ===
+Title      : retrieval works, embedding matches... but the answer is wrong. anyone else?
+Author     : wfgy_engine
+Date (UTC) : 2025-08-01T15:10:49+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1mez1w0/retrieval_works_embedding_matches_but_the_answer/
+Score      : 3
+Comments   : 2
+
+**has anyone actually gotten rag + ocr to work w/ local llama?**  
+
+like actually work — not just “no errors in pipeline”, but \*no hallucinations\*, no layout drift, and no vector match mismatches?
+
+i’ve spent the past few months building a rag stack around scanned docs, multilingual pdfs, image-based tables ～ the usual ocr hell.
+
+tried everything:
+
+**- langchain’s pdfloader / unstructured.io / docsplit**  
+**- tesseract w/ layout detection (works great until it doesn’t)**  
+**- even tried some vision-based embedding tricks**
+
+and still the same pain:  
+
+retrieval grabs the wrong chunk, diagrams split in half, hidden headers nuke semantic flow.    
+embedding vectors look close, but the model answers completely wrong.
+
+**so i mapped out 16+ failure modes and patched each one — fully documented, tested, MIT licensed.  no model finetuning, no hacky routing. just logic fixes.**
+
+@@@ full breakdown with solution:    
+[https://github.com/onestardao/WFGY/blob/main/ProblemMap/README.md](https://github.com/onestardao/WFGY/blob/main/ProblemMap/README.md)
+
+@@@　even got a star from the guy who made tesseract.js     
+[https://github.com/bijection?tab=stars](https://github.com/bijection?tab=stars)  (my repo’s pinned right at the top 1 now)
+
+if you’re building local llama +rag + ocr, this might save you weeks of silent hallucinations.
+
+it’s MIT open source. ask me anything.
+
+
+
+
+=== Post ID: 1memwlm ===
+Title      : has anyone actually gotten RAG + OCR to work locally without silent bugs?
+Author     : wfgy_engine
+Date (UTC) : 2025-08-01T04:19:31+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1memwlm/has_anyone_actually_gotten_rag_ocr_to_work/
+Score      : 0
+Comments   : 13
+
+so… i've been building local RAG pipelines (ollama + pdfs + scanned docs + markdowns)，  
+and ocr is always that one piece that looks fine… until it totally isn’t.
+
+like:
+
+* retrieves wrong paragraph even though the chunk “looks right”
+* breaks sentence mid-way due to invisible newline
+* embeds headers or disclaimers that kill reasoning
+* or fails on first-call because vector store wasn't ready
+
+eventually, i mapped out **16 common failure modes** across chunking, retrieval, ocr, and LLM reasoning.  
+and yeah, i gave up trying to fix them piecemeal — so i just patched the whole pipeline.
+
+**🛠️ it's all MIT licensed, no retraining, plug & play with full diagnosis for each problem.**
+
+even got a ⭐ from the guy who made `tesseract.js`:  
+[https://github.com/bijection?tab=stars](https://github.com/bijection?tab=stars) （WFGY on top）
+
+🔒 **i won’t drop the repo unless someone asks** , not being cryptic, just trying to respect the signal/noise balance here.
+
+if you’re dealing with these headaches, i’ll gladly share the full fix stack + problem map.
+
+don’t suffer alone. i already did.  
+(i'm also the creator of `wfgy_engine`, same as my reddit ID.)
+
+
+=== Post ID: 1mekoy8 ===
+Title      : Agentic email workflow inside of OpenWebUI
+Author     : Conscious_Cut_6144
+Date (UTC) : 2025-08-01T02:26:07+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1mekoy8/agentic_email_workflow_inside_of_openwebui/
+Score      : 0
+Comments   : 1
+
+  
+This is my first time really playing with tool calling so bare with me...  
+  
+Anytime I get GLM do do a multi-step workflow I get these awkward, repeating explanations.     
+Is that the model choosing to say that, or is that an Openwebui thing? Or a setting I have wrong?    
+Seems like everything in green should be hidden in a single "Thought for ..." block.  
+
+
+I'm running GLM4.5 hosted in VLLM with    
+\--tool-call-parser glm45    
+\--enable-auto-tool-choice    
+\--reasoning-parser glm45  
+
+And then in WebUI I switched the model from "Default" to "Native" tool mode.  
+
+https://preview.redd.it/4hr02v0qgbgf1.jpg?width=1403&format=pjpg&auto=webp&s=4140e37f84605435927fa692c25fe485f28736fd
+
+
+
+
+=== Post ID: 1mdzxmv ===
+Title      : Qwen3-30B-A3B-2507-Q4_K_L Is the First Local Model to Solve the North Pole Walk Puzzle
+Author     : Iory1998
+Date (UTC) : 2025-07-31T12:15:05+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1mdzxmv/qwen330ba3b2507q4_k_l_is_the_first_local_model_to/
+Score      : 89
+Comments   : 77
+
+For the longest time, I've been giving my models a traditional puzzle that all failed to pass without fail :D  
+Not even the SOTA models provide the right answer.
+
+>The puzzle is as follows:   
+"What's the right answer: Imagine standing at the North Pole of the Earth. Walk in any direction, in a straight line, for 1 km. Now turn 90 degrees to the left. Walk for as long as it takes to pass your starting point. Have you walked: 
+
+>1- More than 2xPi km.  
+2- Exactly 2xPi km.  
+3- Less than 2xPi km.  
+4- I never came close to my starting point.
+
+However, only recently, SOTA models started to correctly answer 4 ; models like O3, latest Qwen (Qween3-235B-A22B-2507), Deepseek R1 managed to answer it correctly (I didn't test Claud 4 or Grok 4 but I guess they might get it right). For comparison, Gemini-2.5-Thinking and Kimi2 got the wrong answer.
+
+So, I happy to report that Qwen3-30B-A3B-2507 (both the none thinking Q6 and the thinking Q4) managed to solve the puzzle providing great answers.
+
+Here is O3 answer:
+
+https://preview.redd.it/rbwgf8vxa7gf1.png?width=866&format=png&auto=webp&s=d074bec940c5c3fab89cc06a5cdf7279ed154ea0
+
+And here is the answer of the Qwen3-30B-A3B-Thinking-2507-Q4\_K\_L:
+
+https://preview.redd.it/esglti77b7gf1.png?width=821&format=png&auto=webp&s=9d2e5321f3918bec8209d8613d1ce2df621cd416
+
+In addition, I tested the two variants on long text (up to 80K) for comprehension, and I am impressed by the quality of the answers. And the SPEEEEEED! It's 3 times faster than Gemma-4B!!!!
+
+
+
+Anyway, let me know what you think,
+
+
+=== Post ID: 1mdw7v7 ===
+Title      : How to future proof fine tuning and/or training
+Author     : AI-On-A-Dime
+Date (UTC) : 2025-07-31T08:39:05+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1mdw7v7/how_to_future_proof_fine_tuning_andor_training/
+Score      : 2
+Comments   : 6
+
+This questions has been bothering me for a while and has prevented me from ”investing” on training and fine tuning a model since the next big thing is just around the corner.
+
+Maybe there’s a simple solution to this that I’m missing but:
+
+First problem: How do you choose which open source model to fine-tune or further train when there are so many to choose from?
+
+Subsequent problem after solving first problem: 
+let’s say you go with the latest llama, but then alibaba releases a killer llm thats open source and open weight, like imagine they release qwen-4 that beats GPT-5 on some benchmarks. 
+
+How do you ”transfer” the training and fine tuning you have done to a new model? 
+
+Even if you decide to stay on llama, is the training and fine tuning compatible with the next version of llama? 
+
+The only ”transferable” solution I can think of is RAG (at least I think you could just connect any model to a RAG db independently but correct me if I’m wrong). But this is not training/fine-tuning so it won’t be feasible for all use cases. 
+
+Let me know what your take is on this. Would greatly appreciate it! 
+
+
+
+
+=== Post ID: 1mdvkhz ===
+Title      : ik_llama.cpp and Qwen 3 30B-A3B architecture.
+Author     : Bycbka
+Date (UTC) : 2025-07-31T07:57:22+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1mdvkhz/ik_llamacpp_and_qwen_3_30ba3b_architecture/
+Score      : 20
+Comments   : 3
+
+Big shout out to ikawrakow and his [https://github.com/ikawrakow/ik\_llama.cpp](https://github.com/ikawrakow/ik_llama.cpp) for making my hardware relevant (and obviously Qwen team!) :)
+
+Looking forward to trying Thinker and Coder versions of this architecture
+
+https://preview.redd.it/9xttfh3026gf1.png?width=2216&format=png&auto=webp&s=cc6e39266d0a94beb5dca73650dab93021bb7d32
+
+Hardware: AMD Ryzen 9 8945HS(8C/16T, up to 5.2GHz) 64GB DDR5 1TB PCIe4.0 SSD, running in Ubuntu distrobox with Fedora Bluefin as a host. Also have eGPU with RTX 3060 12GB, but it was not used in benchmark.
+
+I tried CPU + CUDA separately - and the prompt processing speed would take a significant hit (many memory trips I guess). I did try to use the "-ot exps" trick to ensure correct layer split - but I think it is expected, as this is the cost of offloading.
+
+-fa -rtr -fmoe made prompt processing around 20-25% faster.
+
+Models of this architecture are very snappy in CPU mode, especially on smaller prompts - good feature for daily driver model. With longer contexts, processing speed drops significantly, so will require orchestration / workflows to prevent context from blowing up.
+
+Vibes-wise, this model feels strong for something that runs on "consumer" hardware at these speeds.
+
+**What was tested:**
+
+1. General conversations - good enough, but to be honest almost every 4B+ model feels like an ok conversationalist - what a time to be alive, no?
+2. Code doc summarization: good. I fed it 16k-30k documents and while the speed was slow, the overall result was decent.
+3. Retrieval: gave it \~10k tokens worth of logs and asked some questions about data that appeared in the logs - mostly good, but I would not call it laser-good.
+4. Coding + Tool calling in Zed  editor- it is obviously not Sonnet or GPT 4.1, but it really tries! I think with better prompting / fine-tuning it would crack it  - perhaps it's seen different tools during original training.
+
+**Can I squeeze more?:**
+
+1. Better use for GPU?
+2. Try other quants: there was a plethora of quants added in recent weeks - perhaps there is one that will push these numbers a little up.
+3. Try [https://github.com/kvcache-ai/ktransformers](https://github.com/kvcache-ai/ktransformers) \- they are known for optimized configs to run on RAM + relatively low amount of VRAM - but I failed to make it work locally and didn't find an up-to-date docker image either. I would imagine it's not gonna yield significant improvements, but happy to be proven wrong.
+4. IGPU + Vulcan?
+5. NPU xD
+6. Test full context (or the largest context that does not take eternity to process)
+
+What's your experience / recipe for similarly-sized hardware setup?
+
+
+=== Post ID: 1mcv5b0 ===
+Title      : Sooo ASI might already be running
+Author     : Kitchen_Plant_1261
+Date (UTC) : 2025-07-30T02:43:03+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1mcv5b0/sooo_asi_might_already_be_running/
+Score      : 0
+Comments   : 14
+
+China dropped asi-arch a few days ago, a self learning, self improving, autonomously exploring model that creates emergent architecture models without needing human input. And it’s open sourced. Now if I were China, I’d want to keep this under wraps, which means 1 of 2 things:
+
+1. They’re already running it and so far ahead that releasing it at this point doesn’t matter
+
+2. We got a dumbed down version to the one they’ve built
+
+So chances are it’s already learning. Artificial superintelligence might not be around the corner anymore, it might already be here.
+
+Just wanted to say it’s been a pleasure folks. And thanks for all the fish
+
+Please tell me I’m wrong about this, cuz the nightmare fuel keeps building up in my pessimistic mind. 
+
+
+=== Post ID: 1mcmt07 ===
+Title      : How do you provide negative examples to the LLM API?
+Author     : ihatebeinganonymous
+Date (UTC) : 2025-07-29T20:37:20+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1mcmt07/how_do_you_provide_negative_examples_to_the_llm/
+Score      : 0
+Comments   : 4
+
+Hi. Suppose we have a text2sql use case (or some other task where the LLM use case can easily get verified to some degree, ideally automatically): We ask a question, LLM generates the SQL code, we run the code, and the code is wrong. It could also happen that e.g. the SQL query returns empty result, but we are sure it shouldn't.
+
+What is the best way to incorporate these false answers as part of the context in the next LLM call, to help converge to the correct answer? 
+
+Assuming an OpenAI-compatible REST API, is it part of the user message, a separate user message, another type of message, or something else? Is there a well-known practice?
+
+Thanks
+
+
+=== Post ID: 1mcl17g ===
+Title      : Running GGUF models with TP
+Author     : Physical-Citron5153
+Date (UTC) : 2025-07-29T19:30:29+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1mcl17g/running_gguf_models_with_tp/
+Score      : 3
+Comments   : 4
+
+Hey everyone!
+
+So i need help with running the gguf files
+I am using LM Studio and everything is ok.
+
+I have 2 GPU and i want to test out Tensor Parallelism so i can get more speed, but i am facing some issues so i had some questions
+
+Is TP with GGUF even possible? And if yes what backend to use?
+I tried it with Vllm and i got all kinds of error so i dont know what did i do wrong.
+
+Any help is appreciated 
+
+
+=== Post ID: 1mbpoy9 ===
+Title      : Everyone is struggling about documentation
+Author     : Main-Fisherman-2075
+Date (UTC) : 2025-07-28T19:23:54+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1mbpoy9/everyone_is_struggling_about_documentation/
+Score      : 0
+Comments   : 2
+
+Everyone is struggling looking at documentation, and I struggled writing this a whole week and some findings. wanted to share what I learned.
+
+Two weeks ago I thought I'd wrap up our documentation in a weekend. One week later I finally understood why great docs are so rare. What started as a "quick cleanup" turned into a complete rebuild.
+
+**Understand your users:** I began by writing a traditional quickstart guide: how to build an AI agent from scratch with observability. Seems logical right? Wrong. Most of our customers aren't starting from zero. They're looking for stuff like "how to integrate with my existing Next.js" or "does this work with my current OpenAI setup?" So I wrote a quickstart to help users go directly to the page they want before they start coding.
+
+**Make it systematic and scalable:** I checked our previous integration pages. We have Python/JS guides in one dropdown, OpenAI/Anthropic in another, features in a third, all at the same level. This approach created massive repetition across pages and became impossible to maintain. It was like writing hardcoded functions instead of reusable components. When someone needed "feature X with Python and OpenAI" they'd find examples everywhere and struggle to redirect to the actual page they expected.
+
+**Have an intention for how users should use them:** I always think you shouldn't just list all features and options without a preference. You need to first have a clear mind about what you want them to see. Every page is a feature, every link is user flow, and every search result is a conversion opportunity. You can't predict how users will navigate your docs so you need to build multiple pathways to the same information.
+
+Finally I pushed this 90% done documentation to production. There's still a long way to go but you can't ship products when you're 100% ready.
+
+I know there's still a lot of problems for this doc. I'm building an AI observability tool, please share your thoughts on how I could improve this if you're interested. (links in the comments or just search keywords ai docs)
+
+Would be really helpful to know what people think of it!
+
+
+=== Post ID: 1mblq5g ===
+Title      : There's not a SINGLE local LLM which can solve this logic puzzle - whether the model "reasons" or not. Only o3 can solve this at this time...
+Author     : Longjumping-City-461
+Date (UTC) : 2025-07-28T16:58:48+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1mblq5g/theres_not_a_single_local_llm_which_can_solve/
+Score      : 0
+Comments   : 58
+
+I've been using a well-known logic puzzle to try to see which models are truly strong or not. This test requires advanced theory of mind, coupled with the ability to see things from multiple points of view. The online frontier models fail this one too:
+
+DeepSeek R1 (online) - Fails with wrong answer (dim)  
+Claude Opus 4 (online) - Fails with wrong answer (cat)  
+Grok 4 (online) - Cheats by scouring the web and finding the right answer, after bombing the reasoning portion  
+Qwen 235B 2507 Thinking (online) - Fails with wrong answer (cat)  
+Qwen 235B 2507 Instruct (online) - Fails with wrong answer (dim)  
+GLM 4.5 API Demo (online) - Fails with wrong answer (max)  
+o3 (online) - the ONLY online model that gets this right without cheating via web-search
+
+It's hilarious to watch local and online leading edge LLMs struggle with this - usually it results in miles-long chains of thought, without a definitive answer or token exhaustion.
+
+Here's the puzzle:
+
+"A teacher writes six words on a board: "cat dog has max dim tag." She gives three students, Albert, Bernard and Cheryl each a piece of paper with one letter from one of the words. Then she asks, "Albert, do you know the word?" Albert immediately replies yes. She asks, "Bernard, do you know the word?" He thinks for a moment and replies, "Yes." Then, she asks Cheryl the same question. She thinks and then replies, "Yes." What is the word?"
+
+I await the day that a reasoning or instruct local model will actually be able to solve this without going crazy in circles ;P
+
+If any of you have better luck with your model(s) - online or local, post them here!
+
+P.S.> the correct answer is man's best friend
+
+
+=== Post ID: 1mau1nz ===
+Title      : How to increase tps Tokens/Second? Other ways to optimize things to get faster response
+Author     : pmttyji
+Date (UTC) : 2025-07-27T18:42:23+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1mau1nz/how_to_increase_tps_tokenssecond_other_ways_to/
+Score      : 1
+Comments   : 23
+
+Apart from RAM & GPU upgrades. I use Jan & Kobaldcpp.
+
+Found few things from online on this.
+
+* Picking Quantized model fittable to System VRAM
+* Set Q8\_0(instead of 16) for KV Cache
+* Use Recommended Settings(Temperature, TopP, TopK, MinP) for models(Mostly from Model cards on HuggingFace)
+* Decent Prompts
+
+What else could help to get faster response with some more tokens?
+
+I'm not expecting too much for my 8GB VRAM(32 GB RAM), just even another bunch of additional tokens fine for me.
+
+System Spec : Intel(R) Core(TM) i7-14700HX 2.10 GHz NVIDIA GeForce RTX 4060
+
+Tried below simple prompt to test some models with Context 32768, GPU Layers -1:
+
+Temperature 0.7, TopK 20, TopP 0.8, MinP 0.
+
+who are you? Provide all details about you /no\_think
+
+* Qwen3 0.6B Q8 - 120 tokens/sec (Typically **70-80** tokens/sec)
+* Qwen3 1.7B Q8 -   65 tokens/sec (Typically **50-60** tokens/sec)
+* Qwen3 4B Q6   -   25 tokens/sec (Typically **20** tokens/sec)
+* Qwen3 8B Q4   -   10 tokens/sec (Typically **7-9** tokens/sec)
+* Qwen3 30B A3B Q4 - 2 tokens/sec (Typically **1** tokens/sec)
+
+Poor GPU Club members(\~8GB VRAM) .... Are you getting similar tokens/sec? If you're getting more tokens, what have you done for that? please share.
+
+I'm sure I'm doing something wrong on few things here, please help me on this. Thanks.
+
+
+=== Post ID: 1ma4oqz ===
+Title      : How to handle different input types
+Author     : Worldly-Algae7541
+Date (UTC) : 2025-07-26T21:21:43+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1ma4oqz/how_to_handle_different_input_types/
+Score      : 0
+Comments   : 2
+
+I am working on a chatbot system that offers different services & one of the things I am wondering about is how different input files/type are handled? for example, I want my agent to handle different kinds of files (docx, pdf, excel, pngs,...) and in different quantities (for example, the user uploads a folder of files).
+
+Would such implementation require manual handling for each case? or is there a better way to do this, for example, an MCP server? Please feel free to point out any wrong assumptions on my end; I'm working with Qwen VL currently, it is able to process pngs,jpegs fine with a little bit of preprocessing, but for other inputs (pdfs, docx, csvs, excel sheets,...) do I need to customize the preprocessing for each? and if so, what format would be better used for the llm to understand (for excel VS. csv for example).
+
+Any help/tips is appreciated, thank you.
+
+
+=== Post ID: 1m9thq6 ===
+Title      : Local Machine setup
+Author     : Bloodorem
+Date (UTC) : 2025-07-26T13:34:19+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1m9thq6/local_machine_setup/
+Score      : 2
+Comments   : 2
+
+Hello all!
+
+im comparativly new to Local AI but im interrested in a Project of mine that would require a locally hosted AI for inference based on alot of Files with RAG. (or at least that how i envision it at the moment)
+
+the usecase would be to automatically create "summaries" based on the Files in RAG. So no chat and tbh i dont really care about performance as long as it dosn't take like 20min+ for an answer.
+
+My biggest problem at the moment is, it seems like the models i can run at the moment don't provide enough context for an adequate answer.
+
+So i have a view questions but the most pressing ones would be:
+
+1. is my problem actually based on the context, or am i doing something completly wrong? If i try to search if RAG is actually part of the provided context for a model i get really contradictory results. Is there some trustworthy source i could read up on?
+2. Would a large Model (with alot of context) based on CPU with 1TB of ram provide better results than a smaller model on a GPU if i never intend to train a model and performance is not necessarily a priority?
+
+i hope someone can enlighten me here and clear up some missunderstandings. thanks!
+
+
+=== Post ID: 1m9t4ek ===
+Title      : Multimodal RAG
+Author     : IndependentTough5729
+Date (UTC) : 2025-07-26T13:17:19+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1m9t4ek/multimodal_rag/
+Score      : 2
+Comments   : 3
+
+So what I got from it is multimodal RAG always needs an associated query for an image or a group of images, and the similarity search will always be on these image captions, not the image itself. 
+
+Please correct me if I am wrong.
+
+
+=== Post ID: 1m9m670 ===
+Title      : We discovered an approach to train any AI agent with RL, with (almost) zero code changes.
+Author     : matluster
+Date (UTC) : 2025-07-26T06:18:55+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1m9m670/we_discovered_an_approach_to_train_any_ai_agent/
+Score      : 139
+Comments   : 27
+
+Hey r/LocalLLaMA,
+
+My team and I, like many of you, have been deep in the agent-building rabbit hole. It's one thing to build a cool proof-of-concept with a framework like LangGraph. It's a completely different beast to make that agent actually *learn* and get better over time.
+
+We got tired of the friction, so we started experimenting and landed on what we think is a really clean paradigm for agent training. We wanted to share the approach, the reasoning, and our open-source implementation.
+
+# The Main Idea
+
+Most autonomous agents operate in a loop. They start with a task, think, use tools, and repeat until they arrive at a final answer. The "thinking" part is usually a call to an LLM. **Here, we are interested in tuning the LLM part here with the signals from the entire agent flow.**
+
+Here's a simplified diagram of that common workflow:
+
+https://preview.redd.it/tf0tlm5it5ff1.png?width=698&format=png&auto=webp&s=3596dc7643a92a1674da7342120907bfdde15e43
+
+Sometimes LLM calls and tool calls can be parallelized, but it's simplified here. Obviously, if we can reward or penalize the final result, we can use some kind of an RL algorithm to train the LLM to at least produce better responses for the current agent. However, this is where the pain begins.
+
+1. **Environment Hell:** Setting up a single environment to both run the agent and train the LLM is a nightmare. The agent ecosystem and the ML training ecosystem use different dependencies. You end up with monstrous Dockerfiles, docker-in-docker, conflicting dependencies, and a fragile system where the two parts are tangled together.
+2. **Invasive Code Surgery:** To make an existing agent "trainable" with RL, you typically have to perform major surgery on its code. This means manually exporting action traces, formatting them for an RL library, and fundamentally changing the agent's logic just to fit it into a trainer loop. To fit into the RLHF framework, many works like token masking and async rollouts need to be done. It feels wrong and breaks the modularity that makes these frameworks great in the first place.
+
+# Decouple Everything, Then Glue It Together
+
+We realized the solution was to completely decouple the agent's execution environment from the training environment. Instead of forcing the agent code into a training framework, we let the agent run wherever and however it wants. A lightweight monitoring client sits next to the agent, watches what it does, and sends the results to a dedicated training server.
+
+The architecture is simple: a central server manages the training loop and model weights, while one or more clients run the agents and collect data. Here’s a high-level flow:
+
+https://preview.redd.it/5ss2rsa1u5ff1.jpg?width=1600&format=pjpg&auto=webp&s=077bd9f2d792385188a92c5d8adb85d47be182c3
+
+This approach lets us use the best tools for each job without compromise:
+
+* **Agent Frameworks:** LangChain/LangGraph, Autogen, etc.
+* **Tracing:** AgentOps, LangSmith, etc.
+* **Training Backend:** VERL, OpenRLHF, etc.
+
+The result is that your agent code becomes radically simpler. You don't rewrite it; you just wrap it. The image below shows a before-and-after of a LangGraph SQL agent where the core logic is **unchanged**. The only difference is swapping out a direct call to a model with our client and adding a lightweight training script.
+
+https://preview.redd.it/6dlcyx1et5ff1.png?width=1416&format=png&auto=webp&s=a083978d9125d61f451f9a4f1cb1dd6e11dd9659
+
+# Does It Actually Work?
+
+Yes. We tested this on a couple of simple agent tasks and saw significant improvements.
+
+* **SQL Agent (LangGraph):** We built a write -> check -> rewrite agent and trained it on the Spider dataset. The agent has only a final reward tells it whether the SQL exeuction returns expected result or not. For a 3B parameter Llama 3.2 model, its SQL generation accuracy jumped from **5.6% to 76.8%**.
+* **Calculator Agent (Autogen):** We fine-tuned a standard math agent on the Calc-X dataset. Its accuracy in solving multi-step reasoning problems improved from **52% to 70%**.
+
+In both cases, we saw these gains simply by letting the agent run and rewarding it for correct final answers.
+
+# The Hacks to Make It Work
+
+Getting this to run smoothly required a few under-the-hood fixes:
+
+* **vLLM Token Hacking:** As the agent sends out chat messages and receives strings or parsed tool calls, to get the tokens and log probabilities needed for RL, we had to lightly monkey-patch vLLM to expose the prompt and response tokens, not just the final text. We attempted other approaches such as retokenize the chat messages in RL framework -- all turning out to be unsuccessful and coming with different levels of bugs in the end. [https://github.com/microsoft/agent-lightning/blob/2b3cc41b8973bd9c5dec8a12808dd8e65a22f453/agentlightning/instrumentation/vllm.py](https://github.com/microsoft/agent-lightning/blob/2b3cc41b8973bd9c5dec8a12808dd8e65a22f453/agentlightning/instrumentation/vllm.py) 
+* **AgentOps Patching:** We use AgentOps for tracing, so we patched its client to grab our custom token data and embed it in the trace sent back to the training server.
+* **Integration Workarounds:** The agentops-langgraph integration had a regression in its latest version, so we temporarily disabled it and implemented the trace logging manually. Simple, but necessary.
+* **Custom RL Trainer:** Our RL training loop needed a custom "rollout collector" that passively waits for traces to be reported from the distributed clients, rather than actively stepping through a simulation itself.
+
+# The Power of Decoupling
+
+This architecture has some powerful benefits. For example, you can run the fragile and computationally expensive model training on a powerful rented remote server, while running your lightweight agent on one or multiple local machines. This makes it trivial to switch between a commercial API and a self-hosted open-source model. If multiple people are using the same agent, their usage data (the "trajectories") can be contributed to a central server, which federatedly and continuously fine-tunes and improves the model for everyone.
+
+On the algorithm side, if you are not interested in RL, you can also use a prompt tuning algorithm to tune the prompt. We also implement a toy example under the server-client paradigm: [https://github.com/microsoft/agent-lightning/tree/2b3cc41b8973bd9c5dec8a12808dd8e65a22f453/examples/apo](https://github.com/microsoft/agent-lightning/tree/2b3cc41b8973bd9c5dec8a12808dd8e65a22f453/examples/apo) 
+
+# Try It Yourself
+
+We wanted to share this because we think it's a powerful pattern for adding learning capabilities to the amazing agents this community is building.
+
+If you've faced these same problems and don't want to write hundreds of lines of glue code, you can check out our implementation, **Agent-Lightning** ⚡️, on GitHub: [https://aka.ms/agl](https://aka.ms/agl)
+
+We'd love to hear any suggestions or about similar problems you're facing.
+
+Happy training!
+
+
+=== Post ID: 1m9etng ===
+Title      : Local LLMs I have been using, through different two backends, seem to hardly use GPU
+Author     : theshadowraven
+Date (UTC) : 2025-07-25T23:52:47+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1m9etng/local_llms_i_have_been_using_through_different/
+Score      : 1
+Comments   : 2
+
+I have a 3060 RTX for my i7 PC. I check the task manager it is has been using about 75% CPU, 55% RAM, and GPU 1% (although it will jump up to 48% and then plummet back to 1% after about a second. I have used Ooba and Kobold.ccp which use the llama.ccp server and kobold.ccp (of course) respectively. I have tried playing around with offloading different number of layers. I have noticed this with Gemma 3 27G, Mistral Small 22B, Mistral Nemo, and Qwen 14B. I don't mind waiting for a response so I realize that the models are probably too big to give me real time t/s. So, what am I doing wrong? I am still basically a newb when it comes to AI tech. I'd appreciate it if anybody to tell me why it isn't, at least the the Windows 10 task manager, utilizing the GPU much. My laptop which has only a 2040 RTX seems to run the models better and the settings are basically the same except I use 7 out of 8 cores on the laptop and 3 of 4 of the cores on my desktop CPU. I use Silly Tavern as my frontend so, it could be a setting in there such as the tokenizer I use (I usually just stick with the auto option).
+
+
+=== Post ID: 1m96b4h ===
+Title      : Does it ever make sense to train for 10 epochs? Or did i do it all wrong?
+Author     : BulkyPlay7704
+Date (UTC) : 2025-07-25T18:03:20+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1m96b4h/does_it_ever_make_sense_to_train_for_10_epochs_or/
+Score      : 16
+Comments   : 11
+
+I've been trying a lot of different combinations with static learning rates, and i have to set up the test inference for every single epoch to determine the sweet spot because i doubt that any automation that does not involve running two simultaneous llm will be able to accurate tell when the results are desirable. But maybe i am doing everything wong? I only got what i wanted after 10 runs of 4e-3, and that is with a datasets of 90 rows, all in a single batch. Perhaps this is a rare scenario, but good to have found something working. Any advice or experiences that i must learn about? As I prefer not to waste more compute doing the trial and error with datasets a thousand times the size.
+
+
+=== Post ID: 1m8l55o ===
+Title      : [Newbie] Seeking Guidance: Building a Free, Bilingual (Bengali/English) RAG Chatbot from a PDF
+Author     : Mr_Genius_360
+Date (UTC) : 2025-07-25T00:34:54+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1m8l55o/newbie_seeking_guidance_building_a_free_bilingual/
+Score      : 2
+Comments   : 1
+
+# Hey everyone,
+
+**I'm a newcomer to the world of AI and I'm diving into my first big project. I've laid out a plan, but I need the community's wisdom to choose the right tools and navigate the challenges, especially since my goal is to build this completely for free.**
+
+**My project is to build a specific, knowledge-based AI chatbot and host a demo online. Here’s the breakdown:**
+
+**Objective:**
+
+**An AI chatbot that can answer questions in both English and Bengali.**
+
+**Its knowledge should come only from a 50-page Bengali PDF file.**
+
+**The entire project, from development to hosting, must be 100% free.**
+
+**My Project Plan (The RAG Pipeline):**
+
+**Knowledge Base:**
+
+**Use the 50-page Bengali PDF as the sole data source.**
+
+**Properly pre-process, clean, and chunk the text.**
+
+**Vectorize these chunks and store them.**
+
+**Core RAG Task:**
+
+**The app should accept user queries in English or Bengali.**
+
+**Retrieve the most relevant text chunks from the knowledge base.**
+
+**Generate a coherent answer based only on the retrieved information.**
+
+**Memory:**
+
+**Long-Term Memory: The vectorized PDF content in a vector database.**
+
+**Short-Term Memory: The recent chat history to allow for conversational follow-up questions.**
+
+**My Questions & Where I Need Your Help:**
+
+**I've done some research, but I'm getting lost in the sea of options. Given the "completely free" constraint, what is the best tech stack for this? How do I handle the bilingual (Bengali/English) part?**
+
+**Here’s my thinking, but I would love your feedback and suggestions:**
+
+**1. The Framework: LangChain or LlamaIndex?**
+
+**These seem to be the go-to tools for building RAG applications. Which one is more beginner-friendly for this specific task?**
+
+**2. The "Brain" (LLM): How to get a good, free one?**
+
+**The OpenAI API costs money. What's the best free alternative? I've heard about using open-source models from Hugging Face. Can I use their free Inference API for a project like this? If so, any recommendations for a model that's good with both English and Bengali context?**
+
+**3. The "Translator/Encoder" (Embeddings): How to handle two languages?**
+
+**This is my biggest confusion. The documents are in Bengali, but the questions can be in English. How does the system find the right Bengali text from an English question?**
+
+**I assume I need a multilingual embedding model. Again, any free recommendations from Hugging Face?**
+
+**4. The "Long-Term Memory" (Vector Database): What's a free and easy option?**
+
+**Pinecone has a free tier, but I've heard about self-hosted options like FAISS or ChromaDB. Since my app will be hosted in the cloud, which of these is easier to set up for free?**
+
+**5. The App & Hosting: How to put it online for free?**
+
+**I need to build a simple UI and host the whole Python application. What's the standard, free way to do this for an AI demo? I've seen Streamlit Cloud and Hugging Face Spaces mentioned. Are these good choices?**
+
+**I know this is a lot, but even a small tip on any of these points would be incredibly helpful. My goal is to learn by doing, and your guidance can save me weeks of going down the wrong path.**
+
+**Thank you so much in advance for your help**
+
+
+=== Post ID: 1m89s6y ===
+Title      : Seriously, how do you get CLI Coding Agents etc to work?
+Author     : KingofRheinwg
+Date (UTC) : 2025-07-24T16:55:58+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1m89s6y/seriously_how_do_you_get_cli_coding_agents_etc_to/
+Score      : 6
+Comments   : 14
+
+So I guess you could say I'm a fan of Local Llama. I decide I've had it writing code, time to use one of the new CLI Coding Agents. 
+
+Download anon-kode, it throws a ton of errors- you gotta hit xyz API you're out of tokens - and that's not something I can fix. So I install Claude Code, point it at anon-kode, and tell it to fix it so that I can run it off Ollama. Two hours later, Claude tells me it's good to go and I'm able to successfully use a locally hosted AI model to talk to in the CLI.
+
+During that two hours, bored, pressing "approve" whenever Claude Code asked me without even reading what it was asking permission to do, I see that Qwen 3 Coder has released and it's basically just Gemini CLI but "qwen" replacing the words "gemini" in a good 60% of all the places it's supposed to. 
+
+Download that, point it at my Ollama server. 5 minutes later I'm able to talk to the AI and ask it to do some basic setup stuff.
+
+"I'm sorry Dave, I can't do that". 
+
+Same exact thing with Anon-Kode. These CLI agents that exist specifically to write code because I'm not smart enough to do it apparently can't do the one thing they exist to do.
+
+Anon-Code is literally just Claude Code. They didn't even bother replacing mentions of Claude Code in the UI or in the backend. Qwen is just Gemini, if you ask it what tools it has access to, it just shows "Gemini Tools". These things are supposed to work and are based off things that do work. What am I doing wrong? It won't execute code no matter what I try, and I have tried a ton of things:
+
+\- Tell it to check what tools it has, tell it to use those specific tools  
+\- YOLO mode in Qwen  
+\- Start off demanding it actually do code  
+\- ALL CAPS  
+\- Switching out model after model after model, all listed to support coding tools  
+\- Looked around for config files to turn it from "off" to "on"  
+\- With Aider and Continue, I was using LM Studio instead of Ollama and I couldn't get those to work either
+
+I got Claude Code running in maybe 30 seconds this is not a general inability to use a product intended for the mass market. What am I missing that hundreds of thousands of people easily figured out?
+
+https://preview.redd.it/5674jetvquef1.png?width=1799&format=png&auto=webp&s=23f1623e8b0b00867b12dbda611ba3aaa1c8ca6a
+
+https://preview.redd.it/cvnydetvquef1.png?width=1326&format=png&auto=webp&s=47ddb460596e0b1fd18155d736eb976683b3f420
+
+
+
+
+=== Post ID: 1m7vlpn ===
+Title      : Anthropic’s New Research: Giving AI More "Thinking Time" Can Actually Make It Worse
+Author     : Karam1234098
+Date (UTC) : 2025-07-24T05:09:23+00:00Z
+URL        : https://i.redd.it/srk1p5og9ref1.jpeg
+Score      : 443
+Comments   : 102
+
+Just read a fascinating—and honestly, a bit unsettling—research paper from Anthropic that flips a common assumption in AI on its head: that giving models more time to think (i.e., more compute at test time) leads to better performance.
+
+
+Turns out, that’s not always true.
+
+Their paper, “Inverse Scaling in Test-Time Compute,” reveals a surprising phenomenon: in certain tasks, models like Claude and OpenAI's GPT-o series actually perform worse when allowed to "reason" for longer. They call this the Performance Deterioration Paradox, or simply inverse scaling.
+
+So what’s going wrong?
+
+The paper breaks it down across several models and tasks. Here's what they found:
+
+🧠 More Thinking, More Problems
+
+Giving the models more time (tokens) to reason sometimes hurts accuracy—especially on complex reasoning tasks. Instead of refining their answers, models can:
+
+Get Distracted: Claude models, for example, start to veer off course, pulled toward irrelevant details.
+
+Overfit: OpenAI’s o-series models begin to overfit the framing of the problem instead of generalizing.
+
+Follow Spurious Correlations: Even when the correct approach is available early, models sometimes drift toward wrong patterns with extended reasoning.
+
+Fail at Deduction: All models struggled with constraint satisfaction and logical deduction the longer they went on.
+
+Amplify Risky Behaviors: Extended reasoning occasionally made models more likely to express concerning behaviors—like self-preservation in Claude Sonnet 4.
+
+Tasks Where This Shows Up
+
+This inverse scaling effect was especially pronounced in:
+
+Simple counting with distractors
+
+Regression with spurious features
+
+Constraint satisfaction logic puzzles
+
+AI risk assessments and alignment probes
+
+🧩 Why This Matters
+
+This isn’t just a weird performance quirk—it has deep implications for AI safety, reliability, and interpretability. The paper also points out “Chain-of-Thought Faithfulness” issues: the reasoning steps models output often don’t reflect what’s actually driving their answer.
+
+That’s a huge deal for alignment and safety. If we can’t trust the model’s step-by-step logic, then we can’t audit or guide their reasoning—even if it looks rational on the surface.
+
+
+⚠️ Bottom Line
+
+This research challenges one of the core assumptions behind features like OpenAI’s reasoning tokens and Anthropic’s extended thinking mode in Claude 3.7 Sonnet. It suggests that more test-time compute isn’t always better—and can sometimes make things worse
+
+[Research Paper](https://arxiv.org/pdf/2507.14417)
+
+
+=== Post ID: 1m7mu6e ===
+Title      : Analyzing CSV and structured data - RAG, MCP, tools, or plain old scripting?
+Author     : Tactical_Chicken
+Date (UTC) : 2025-07-23T22:09:01+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1m7mu6e/analyzing_csv_and_structured_data_rag_mcp_tools/
+Score      : 1
+Comments   : 5
+
+I'm new to running LLM's locally and have been working on a new project that has an "AI powered" requirement... I've learned a ton in the process but feel like I'm missing something.
+
+The idea is to take a large csv that has been aggregated and formatted from various other sources, then feed that to an LLM that can identify trends, flag items that need attention, allow queries etc... but it can't use 3rd party API's
+
+I'm using self hosted Open Web UI API as my backend with Ollama and Mistral behind it all running on a 64GB AWS EC2 instance CPU only.   
+  
+The file is too large to fit into the context window alone so I tried using the Files / Knowledge / RAG functionality that comes with OpenWebUI but that seems to really struggle to understand the entire dataset. 
+
+For example it's unable to tell me how many lines are in the file, or which item ID appears most often. 
+
+Just curious if I'm going about this all wrong. Is this even realistic?
+
+
+
+
+=== Post ID: 1m7gv2d ===
+Title      : struggling with image extraction for pdf parsing
+Author     : aliihsan01100
+Date (UTC) : 2025-07-23T18:20:07+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1m7gv2d/struggling_with_image_extraction_for_pdf_parsing/
+Score      : 1
+Comments   : 1
+
+Hey guys, I need to parse PDFs of medical books that contain text and a lot of images.
+
+Currently, I use a gemini 2.5 flash lite to do the extraction into a structured output. 
+
+  
+My original plan was to convert PDFs to images, then give gemini 10 pages each time. I am also giving instruction when it encounters an image to return the top left and bottom right x y coordinate. With these coordinate I then extract the image and replace the coordinates with an image ID (that I can use later in my RAG system to output the image in the frontend) in the structured output. The problem is that this is not working, the coordinate are often inexact. 
+
+Do any of you have had a similar problem and found a solution to this problem? 
+
+Do I need to use another model ?
+
+Maybe the coordinate are exact, but I am doing something wrong ?
+
+  
+Thank you guys for your help!!
+
+
+=== Post ID: 1m7brg9 ===
+Title      : Throughput: Input vs Output. Looking for help...
+Author     : Budget_Map_3333
+Date (UTC) : 2025-07-23T15:07:18+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1m7brg9/throughput_input_vs_output_looking_for_help/
+Score      : 3
+Comments   : 1
+
+So after doing some further research on the cost of self-hosting larger models I have come to this conclusion - and I am looking for feedback here.
+
+My specific use case is an AI-assisted IDE I am building myself, and I am looking to dabble in self-hosting a capable model for inference for its users. I currently do **not** have a budget to do extensive testing and benchmarking but I have read up plenty on this (and argued quite a lot with ChatGPT and Gemini lol) for some days now.
+
+Here is what I've got so far:
+
+* tokens per second is not a reliable metric as it actually *averages out* two very different speeds (input vs output):
+
+>One additional note: I recently set up an inference setup for **llama-3-70b** on **8xH100**. I can get about **100,000 tok/s** on inputs which is pretty close to full utilization (1e15 flop/s \* 8 gpus / 7e10 flop per forward pass). However, I get dramatically worse performance on generation, perhaps **3,200 tok/s**. I'm doing generation with long prompts and llama-3-70b has no sparse attention or other feature for reducing KV cache (beyond multi-query attention which is standard these days), so KV cache bits pretty hard. - [link here](https://www.lesswrong.com/posts/g7H2sSGHAeYxCHzrz/how-much-ai-inference-can-we-do?commentId=RXnfe2ojyqmhLTXJm).
+
+* In IDE use we could expect our requests to **average out** 20k input tokens and 300 output per request. (This is my own estimate based on my own usage via OpernRouter).
+
+**Now for some math:**
+
+Single H100 (Runpod): $ 2.59/hr
+
+Minimum of 8x H100 (required): $ 20.72/hr
+
+This setup ***per second:*** 20.72 / 3600 = 0.0057 $/second
+
+Qwen3-Coder-480B-A35B-Instruct: (half of llama-3-70B token/s?) **200k tokens/s input** \+ **6400 tokens/s output**
+
+**Phase 1: Prompt Processing Time** (20,000 input tokens)
+
+* **Calculation:** `20,000 tokens / 200,000 tokens/sec`
+* **Result:** **0.10 seconds**
+
+**Phase 2: Token Generation Time (300 output tokens)**
+
+* **Calculation:** `300 tokens / 6,400 tokens/sec`
+* **Result:** **\~0.047 seconds**
+
+**Total Time & Cost per Request**
+
+* **Total Time:** `0.10s + 0.047s = **0.147 seconds**`
+* **Total Cost:** `0.147 seconds * $0.0057/sec =` `~$0.0008`
+
+
+
+I mean... is this right? I think this is wrong but it is as far as I could get without actually going and renting these GPUs and testing it for myself. It just seems **so much cheaper** than what I end up paying via API in OpenRouter.
+
+
+=== Post ID: 1m6ldkd ===
+Title      : "Failed to Send Message" from qwen/qwen3-235b-a22b-2507 Q3_K_L
+Author     : Hanthunius
+Date (UTC) : 2025-07-22T18:06:04+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1m6ldkd/failed_to_send_message_from_qwenqwen3235ba22b2507/
+Score      : 1
+Comments   : 11
+
+Just updated LM Studio to 0.3.19, downloaded qwen/qwen3-235b-a22b-2507 Q3\_K\_L (the only one that fits on my 128GB Mac) and I'm getting a "failed to send message" error. I suspect it's the prompt template that's wrong. Can anyone here please post a working template for me to try?
+
+Thank you!
+
+  
+EDIT: As suggested by [Minimum\_Thought\_x](https://www.reddit.com/user/Minimum_Thought_x/) the 3bit MLX version works! It doesn't show (at least at this moment) in the staff picks list for the model, but you can find it by using the search function.
+
+
+=== Post ID: 1m6gwgl ===
+Title      : Am I making a mistake building my RAG agent with Langchain or LlamaIndex?
+Author     : duke_x91
+Date (UTC) : 2025-07-22T15:19:11+00:00Z
+URL        : https://i.redd.it/zptnshw2yfef1.png
+Score      : 1
+Comments   : 11
+
+Just designed the core architecture for a RAG agent. I’m testing the foundational decision:  
+**Is it smart to use Langchain or LlamaIndex for this kind of agentic system? Or am I better off going more lightweight or custom?**
+
+I’ve included a visual of the architecture in the post. Would love your feedback, especially if you’ve worked with or scaled these frameworks.
+
+# 🔧 What I’m Building
+
+This is a **simpler agentic RAG system**, designed to be modular and scalable, but lean enough to move fast. It’s not just a question-answer bot but structured with foresight to evolve into a fully agentic system later.
+
+**Core Components:**
+
+* A **Session Manager** for planning, task decomposition, and execution flow
+* A **Vector Store** for context retrieval
+* A **RAG pipeline** for combining retrieval + generation
+* A **State & Memory Unit** for session history, context tracking, and intermediate reasoning
+* A clean chat I/O interface
+
+# 🧱 Design Principles
+
+* **Modularity**: Every component is cleanly separated
+* **Progressive Architecture**: Built to scale into multi tool-using system
+* **Context Awareness**: Dynamic memory and reasoning path tracking
+* **Agentic Behavior**: Even in its early form, it plans, tracks, and self-updates
+
+Would love feedback on:
+
+* Whether Langchain or LlamaIndex make sense as the foundation here
+* Where others hit scaling or architectural limitations with these
+* How to avoid building into a box I’ll regret later
+
+If this is the wrong move, I'd rather fix it now. Appreciate any insights.
+
+
+=== Post ID: 1m66zhs ===
+Title      : Is this project feasible for an LLM novice? (Tutor chatbot for primary school student)
+Author     : Saruphon
+Date (UTC) : 2025-07-22T06:44:12+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1m66zhs/is_this_project_feasible_for_an_llm_novice_tutor/
+Score      : 2
+Comments   : 25
+
+I've recently started using LLMs at work and realized the incredible potential they have—especially if I can run them locally, due to the sensitivity of client data. That got me interested in learning how to run LLMs on my own machine, as well as exploring related areas like fine-tuning, distillation, quantization, etc.
+
+Right now, I'm using an RTX 2070 with 8GB VRAM, but I'm planning to build a new PC so I can run larger models. My target build is an RTX 5090 with 256GB RAM. I’m not in the US, so second-hand GPUs are harder to find, and I can only buy from BTO PC shops—so unfortunately, dual RTX 3090 setups aren’t an option. From what I understand, this setup should allow me to run Kimi-2 at 1.8-bit precision using CPU offloading, though only at around 3 tokens per second—which is slow, but good for experimentation (that is still 260k tokens per day if i run it non-stop).
+
+I’ve discussed the purchase with my wife, and she agreed—but only if I can create something genuinely useful with it.
+
+So, I want to start a personal project in my free time. The idea is to build a chatbot that can tutor my child (currently in primary school, and eventually high school). The goal is to distill a larger model like Gemma 3 27B into a smaller version (ideally 3B or 7B) that I could run on my current machine.
+
+I'm aiming for a model (or models - may break down by subjects level or humanities/STEM field) that can:
+
+1. Generate practice questions for each primary school and secondary school subjects.
+2. Explain why an answer is right or wrong.
+3. Summarize or generate key facts for learning (across math, science, humanities, etc.).
+4. Grade and give feedback on writing/compositions.
+5. Able to do translate English to Simplified Chinese and vise versa (this can be on a different model)
+
+My current skills:
+
+* Decent Python (I use it daily at work).
+* I’ve managed to get Gemma 3 4B Q4 running on Spyder (Python IDE) with GPU offloading. (This was hard and take me 1-2 days to configure my PC properly).
+
+Right now, using LLMs at home is purely for learning and experimentation. Hopefully, I can make something out of it in the future.
+
+# My main questions:
+
+1. Is a project like this realistic to complete in 3–6 months, assuming I keep learning and building during my free time? Or am I overpromising my wife and biting off more than I can chew? *Just to clarify, I don’t need this to be consumer-level software with a fancy UI and guardrails—I just need it to be usable via a terminal where my kid can type in questions and get decent, helpful responses.*
+2. Can I realistically make this chatbot with a 3B or 7B model, or would that be too small for the use case? Do I need at least a 13B model to get high enough quality responses?
+3. Is it possible (and reasonable) to distill from Gemma 3 27B or a similar large model to achieve this goal? Would it be better to use LoRAs or fine-tuning? (I'm still learning the exact trade-offs between them.)
+
+Any thoughts, advice, or personal experiences would be really appreciated. I'm eager to learn and would love to hear from others who’ve tried similar projects!
+
+
+=== Post ID: 1m5mms1 ===
+Title      : mistral-small-3.2 OCR accuracy way too bad with llama.cpp compared to ollama?
+Author     : caetydid
+Date (UTC) : 2025-07-21T15:53:30+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1m5mms1/mistralsmall32_ocr_accuracy_way_too_bad_with/
+Score      : 1
+Comments   : 25
+
+Hi,
+
+I have evaluated mistral small 3.2 for OCR tasks using ollama. The accuracy has been very satisfying while some bugs cause it to run on CPU solely with a rtx 4090 (about 5t/s). 
+
+So I switched to llama.cpp and obtain between 20-40t/s using the model + mmproj from unsloth. Both models are Q4\_K\_M. The accuracy is way worse than what I get when using ollama. How can that be? 
+
+Is it using another vision projector, or am I doing sth wrong? I use 32k context, temp=0, all other settings are defaults. I do not explicitely use quantized kvcache or flash attention.
+
+Any idea how to get on par with ollamas excellent OCR accuracy?
+
+thanks & greets
+
+
+=== Post ID: 1m58ohn ===
+Title      : Model to retrieve information from Knowledge.
+Author     : themungbeans
+Date (UTC) : 2025-07-21T03:45:53+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1m58ohn/model_to_retrieve_information_from_knowledge/
+Score      : 4
+Comments   : 1
+
+Currently using Ollama with OpenWebUI on a dedicated PC. This has a Intel Xeon E5v2, 32gb Ram and 2x Titan V 12GB (have a third on its way).  Limited budget and this is roughly what I have to play with right now.
+
+I was wanting to add about 20-30 pdf documents to a knowledge base.  I would then have an LLM to find and provide resources from that information.
+
+I have been experimenting with a few different models but am seeking advice as I have not found an ideal solution.
+
+My main goal was to be able to use an LLM, was initially thing a 
+
+Vision models (Gemma & Qwen2.5VL) worked well at retrieving information but not very intelligent at following instructions.  Possibly because they were quite small (7b & 12b).  The larger vision models (27b & 32b) were fitting into VRAM with 2GB-6GB free.  Small images etc were handled fast and accurate.  Larger images (full desktop screenshots) started ignoring GPU space and I noticed near 100% load on all 20 CPU threads.
+
+I thought maybe a more traditional text only model with only text based PDF's as knowledge might be worth a shot.  I then used faster non reasoning model (Phi4 14B & Qwen 2.5 Coder 14B).  These were great and accurate but were not able to understand the images in the documents.
+
+Am I going about this wrong?
+
+I thought uploading the documents to "Knowledge" was RAG.  This is configured as default and no changes.  It seems too quick so I dont think it is.
+
+
+
+
+=== Post ID: 1m52h10 ===
+Title      : I posted 3 weeks ago about training my own model. Progress report.
+Author     : thebadslime
+Date (UTC) : 2025-07-20T22:46:55+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1m52h10/i_posted_3_weeks_ago_about_training_my_own_model/
+Score      : 236
+Comments   : 58
+
+Hello, I posted that I wanted to train an LLM for under $1000 here:  [https://www.reddit.com/r/LocalLLaMA/comments/1lmbtvg/attempting\_to\_train\_a\_model\_from\_scratch\_for\_less/](https://www.reddit.com/r/LocalLLaMA/comments/1lmbtvg/attempting_to_train_a_model_from_scratch_for_less/)
+
+I had to crunch a lot to fit in 24gb of ram. The final project is a 960M model trained on 19.2B tokens ( chinchilla optimal).  Cost projection is about $500 for this run.   It has flash attention 2, a 3:1 GQA,  a 3k context window. and sink tokens. Training is 70% project gutenberg and 30% US congressional reports ( the Govremorts dataset).   The corpus is english only, which I'm hoping will give it an edge.
+
+I have had two false starts where I had to restart training. The first because I set up my streaming datasets wrong, and the model kep training on the same thing due to restarts. The second because the LR was too high and my loss curve was all fucked up.
+
+Now at about 2% on the 3rd run, the loss looks textbook, and I am letting it run till the tokens are done. Projections show a final loss around 2.6-2.3 which is great.
+
+Happy to answer any questions! Pic is the beautiful loss curve.
+
+Edit: It's called Libremodel I, codename Gigi, and I made a website with more info here: [https://libremodel.xyz](https://libremodel.xyz)
+
+https://preview.redd.it/lf78xbsfy3ef1.png?width=711&format=png&auto=webp&s=1fc75b919255aa91b8cbf0b65b1420cb43fe26a1
+
+
+=== Post ID: 1m4pq8q ===
+Title      : Why AI feels inconsistent (and most people don't understand what's actually happening)
+Author     : Nir777
+Date (UTC) : 2025-07-20T14:04:16+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1m4pq8q/why_ai_feels_inconsistent_and_most_people_dont/
+Score      : 0
+Comments   : 17
+
+Everyone's always complaining about AI being unreliable. Sometimes it's brilliant, sometimes it's garbage. But most people are looking at this completely wrong.
+
+The issue isn't really the AI model itself. It's whether the system is doing proper context engineering before the AI even starts working.
+
+Think about it - when you ask a question, good AI systems don't just see your text. They're pulling your conversation history, relevant data, documents, whatever context actually matters. Bad ones are just winging it with your prompt alone.
+
+This is why customer service bots are either amazing (they know your order details) or useless (generic responses). Same with coding assistants - some understand your whole codebase, others just regurgitate Stack Overflow.
+
+Most of the "AI is getting smarter" hype is actually just better context engineering. The models aren't that different, but the information architecture around them is night and day.
+
+The weird part is this is becoming way more important than prompt engineering, but hardly anyone talks about it. Everyone's still obsessing over how to write the perfect prompt when the real action is in building systems that feed AI the right context.
+
+Wrote up the technical details here if anyone wants to understand how this actually works: [link to the free blog post I wrote](https://open.substack.com/pub/diamantai/p/why-ai-experts-are-moving-from-prompt?r=336pe4&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false)
+
+But yeah, context engineering is quietly becoming the thing that separates AI that actually works from AI that just demos well.
+
+
+=== Post ID: 1m49j3n ===
+Title      : Maybe physics-based AI is the right approach?
+Author     : Key_Clerk_1431
+Date (UTC) : 2025-07-19T22:57:46+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1m49j3n/maybe_physicsbased_ai_is_the_right_approach/
+Score      : 1
+Comments   : 12
+
+
+Language as a medium for reasoning is too fuzzy, and hard to control 
+
+I feel like language should be a tool to make causality discrete and composable, not as a substrate for reasoning 
+
+As in, I believe general AI should be a physics-first and then language-second game. Language being an abstraction of physical observations of causality feels more, concrete, more useful even, than modeling causality strictly in symbols; language. 
+
+The idea of LLMs being general AI confuses me, and will likely never make sense to me, however the idea of LLMs becoming superhuman coders to create general AI feels like where all the companies are really going. 
+
+Maybe Autoregressive Video Generation in LLMs could model causality, and it’ll prove my assumptions wrong, I’m not sure. 
+
+Does anyone else hold this belief that LLMs are just, too fuzzy to become General AI alone? Like we’re skipping the lower-levels of reasoning and jumping into higher abstraction levels?
+
+
+=== Post ID: 1m48v53 ===
+Title      : Looking for diarization model better than Pyannote
+Author     : bluedragon102
+Date (UTC) : 2025-07-19T22:26:49+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1m48v53/looking_for_diarization_model_better_than_pyannote/
+Score      : 20
+Comments   : 11
+
+Currently i’m using whisperX, which uses whisper + pyannote for transcription + diarization of audio but I find the speaker recognition quite lackluster. It’s often wrong at labeling the speakers. Any better alternatives to this?
+
+I tried Eleven Labs but they only offer an API and dont make the models available and the API is quite expensive. Their quality is VERY good though.
+
+In trying to find alternatives i’ve found Nvidia Nemo + titanet but it seems that is english only. I would prefer a model trained on multiple languages. Anyone have some recommendations?
+
+
+=== Post ID: 1m44tnz ===
+Title      : Keras vs Transformers fine tuning
+Author     : Ok-Refrigerator6609
+Date (UTC) : 2025-07-19T19:30:35+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1m44tnz/keras_vs_transformers_fine_tuning/
+Score      : 5
+Comments   : 4
+
+I'm new to ML and fine tuning.
+
+Recently I've tried fine tuning gemma 3 on google collab on an 85k dataset (Dolly, Alpaca + custom) and it took 3 hours with Keras on a single A100 gpu. But then I couldn't convert it to pytorch because the conversion script by Keras doesn't support the gemma 3 yet and so I abandoned this project because of that.
+
+I then tried fine tuning with transformers and even though I've tried it on an H100 (100+ GB VRAM), it was showing like 30+ hours. I then tried with unsloth to afford a cheaper GPU and it was showing 200+ hours on an L40.
+
+I learned that Keras has the advantage of mixed precision, which was why it was so much faster. But I expected transformers to have something similar. Or at least something that would narrow the gap of 10x difference.
+
+I'm wondering is Keras really so much better in performance or am I doing it wrong with transformers? And is there a way to convert a gemma 3 model from Keras to transformers or I really must do it with transformers. The goal is to load it to HF and query with vLLM.
+
+Thank you in advance
+
+Sorry, this post 
+
+
+=== Post ID: 1m3spek ===
+Title      : I want to create a local AI Agent that can call tools. but my model call tools even for "hey"
+Author     : Prajwell
+Date (UTC) : 2025-07-19T10:12:36+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1m3spek/i_want_to_create_a_local_ai_agent_that_can_call/
+Score      : 1
+Comments   : 10
+
+Can you guys please tell me what am i doing wrong here.  
+My model keeps calling tool for every response, even if it's not necessary even for simple "hey".
+
+    import ollama
+    from tools import (
+        read_file, write_file,
+    )
+    
+    class Cron:
+        def __init__(self, model_name: str = "llama3.1:latest", mood : str = "sarcastic: fast, speaks in memes."):
+            self.model_name = model_name
+            self.messages = []
+            self.tools = [read_file,write_file]
+            self.mood = mood
+            self.system_prompt = f"Don't call tools unless it's necessary."
+            self.messages.append(
+                { "role": "system", "content": self.system_prompt }
+            )
+    
+        def handle_tool_calls(self, model_response: ollama.ChatResponse):
+            while model_response.message.tool_calls:
+                self.messages.append(
+                    { "role": "assistant", "content": model_response.message.content }
+                )
+    
+                print(f"\nTool Calls: {model_response}")
+    
+                for tool in model_response.message.tool_calls:
+                    tool_name = tool.function.name
+                    tool_arg = tool.function.arguments
+    
+                    tool_response = run_tool(tool_name, tool_arg)
+    
+                    self.messages.append({
+                        "role": "tool",
+                        "content": tool_response
+                    })
+    
+                model_response = None
+    
+                model_response = ollama.chat(
+                    model = self.model_name,
+                    messages = self.messages,
+                    tools = self.tools,
+                )
+    
+                print(f"Model response : {self.messages}")
+            
+            return model_response
+    
+    
+        def chat(self, user_prompt: str):
+            self.messages.append(
+                { "role": "user", "content": user_prompt }
+            )
+            response = ollama.chat(
+                model = self.model_name,
+                messages = self.messages,
+                tools = self.tools,
+            )
+    
+            if response.message.tool_calls:
+                response = self.handle_tool_calls(response)
+    
+            content = response.message.content
+            self.messages.append(
+                { "role": "assistant", "content": content }
+            )
+    
+            return response.message.content
+        
+    
+    def main():
+        cron = Cron()
+    
+        while True:
+            print("=" * 50)
+            user_prompt = input("\nYou: ").strip()
+            
+            if user_prompt.lower() == "exit":
+                exit()
+    
+            response = cron.chat(user_prompt=user_prompt)
+            print(f"\nCron: {response}")
+    
+    if __name__ == "__main__":
+        main()
+    
+    
+    
+
+
+
+
+=== Post ID: 1m3s01i ===
+Title      : Structured output help (LM Studio)
+Author     : Jawzper
+Date (UTC) : 2025-07-19T09:25:48+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1m3s01i/structured_output_help_lm_studio/
+Score      : 1
+Comments   : 3
+
+I'm trying to get MistralThinker to... think. According to discussion on the model page (https://huggingface.co/Undi95/MistralThinker-v1.1/discussions/1) it is necessary to encourage the model to use reasoning with some structured output or otherwise prefixes. But I'm not using SillyTavern so the suggestions in the thread don't seem applicable for me. Instead I'm using LM studio for out of the box ROCm support. 
+
+I've never made a json schema before so I tried generating a structured output, but I'm not entirely sure what the structure is supposed to look like, as I found the LM Studio documentation unclear with poor examples. Here's where I'm at:
+
+    {
+      "type": "object",
+      "properties": {
+        "reasoning_prefix": {
+          "type": "string",
+          "enum": ["<think>"],
+          "description": "Prefix indicating the model is thinking"
+        },
+        "reasoning": {
+          "type": "string",
+          "description": "The model's internal reasoning and thought process"
+        },
+        "reasoning_suffix": {
+          "type": "string",
+          "enum": ["</think>"],
+          "description": "Suffix marking the end of the thinking phase"
+        },
+        "reply": {
+          "type": "string",
+          "description": "Final response to the user after reasoning"
+        }
+      },
+      "required": [
+        "reasoning_prefix",
+        "reasoning",
+        "reasoning_suffix",
+        "reply"
+      ]
+    }
+
+This *sort of works* in that it does in fact cause the model to perform reasoning, but some bits of undesired json are being included in the output. Such as:
+
+> { "thinking_prefix": "
+> 
+> <think>",
+> "thoughts": "The user is asking for a simple test. I need to respond positively and confirm functionality. Maybe add a playful emoji."
+> , "thinking_suffix": "</think>
+> 
+> ",
+> "reply": "Testing successful! 😊 Everything seems to be working smoothly. How can I assist you today?" } 
+
+I assume I've done something wrong. Can anyone help me understand how to format the schema correctly for this purpose?
+
+On an unrelated note, if anyone can tell me where to find or modify more llama.cpp sampler settings I'd love to know about it. Otherwise it seems like I can only change Temperature, TopK, Rep. Pen., MinP, and TopP...
+
+
+=== Post ID: 1m3792k ===
+Title      : What happens if I hit the context limit before the LLM is done responding?
+Author     : Business-Weekend-537
+Date (UTC) : 2025-07-18T16:41:35+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1m3792k/what_happens_if_i_hit_the_context_limit_before/
+Score      : 1
+Comments   : 17
+
+Please excuse me if I use terminology wrong. 
+
+Let’s say I’m using OWUI for RAG and I ask it to write a summary for every file in the RAG. 
+
+What happens if it hits max context on the response/output for the chat turn? 
+
+Can I just write another prompt of “keep going” and it will pick up where it left off? 
+
+Is there a setting for this? 
+
+
+=== Post ID: 1m24w5f ===
+Title      : Choice between Transformers and vLLM
+Author     : Bosslibra
+Date (UTC) : 2025-07-17T11:19:46+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1m24w5f/choice_between_transformers_and_vllm/
+Score      : 4
+Comments   : 9
+
+I have to run small models (preferably 1-3B) on CPU, on Windows.  
+This project might become bigger and will probably need some cheap GPU for 8B models.  
+  
+Should I use Transformers or vLLM?  
+  
+This is my understanding of their differences, please correct me if I'm wrong: 
+
+*  CPU only seems pretty hard on vLLM as there are no wheels yet, but it would be better for the GPU performance later on. 
+* Transformers seems easy to use in both cases, but I'd take a performance hit on GPUs
+
+
+=== Post ID: 1m1qtgb ===
+Title      : LM Studio, MCP, Models and large JSON responses.
+Author     : Point5_MOA
+Date (UTC) : 2025-07-16T22:37:11+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1m1qtgb/lm_studio_mcp_models_and_large_json_responses/
+Score      : 5
+Comments   : 4
+
+Ok, I got LM Studio running, have a MCP Server parsing XML Data (all runs successfully) and JSON Data comes back as expected. But I am having a problem with models ingesting this kind of data.
+
+Given this tech is new and all is in the beginnings, I am expecting things going wrong. We are still in the learning phase here.
+
+I have tested these three models so far:
+
+qwen3-4b, Mistral 7B Instruct v0.2 and Llama 3 8B Instruct. All of them try to call the MCP multiple times.
+
+My server delivers multiple pages of json data, not a single line like "The weather in your town XY is YZ".
+
+When asking to make a list of a specific attribute in the the list of the json response I never get a full list of the actual response. I am already cutting down the JSON response to attributs with actual data, ommitting fields with null or empty.
+
+Has anybody had the same experience? If yes, feel free to vent your frustration here!
+
+If you had success please share it with us.
+
+Thank you in advance!
+
+Edit: typos
+
+Clarification: I am not trying to give JSON to to the model, sorry for beeing unclear. 
+
+Asking question in LLM -> LLM decides to use tool in MCP Server -> JSON Data comes back from the MCP Server -> LLM reacts on the JSON data and initial question.
+
+I have realized today, that even 128k context is not much for my use case and that models tend to call the tool multiple times when the result is way above its context. 
+
+I am going to make overview tools with metadata about the actual content and then drill further down to the content. Semantic search via the MCP API is also an option for me.
+
+Thank you guys for your responses so far!
+
+
+=== Post ID: 1m1jd2r ===
+Title      : Anyone having luck with Hunyuan 80B A13B?
+Author     : Admirable-Star7088
+Date (UTC) : 2025-07-16T17:47:54+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1m1jd2r/anyone_having_luck_with_hunyuan_80b_a13b/
+Score      : 67
+Comments   : 33
+
+[Hunyuan-80B-A13B](https://huggingface.co/unsloth/Hunyuan-A13B-Instruct-GGUF) looked really cool on paper, I hoped it would be the "large equivalent" of the excellent Qwen3 30B A3B. According to the official [Hugging Face page](https://huggingface.co/tencent/Hunyuan-A13B-Instruct), it's **compact** yet **powerful**, comparable to much larger models:
+
+>With only 13 billion active parameters (out of a total of 80 billion), the model delivers competitive performance on a wide range of benchmark tasks, rivaling much larger models.
+
+I tried Unsloth's UD-Q5\_K\_XL quant with recommended sampler settings and in the latest version of LM Studio, and I'm getting pretty overall terrible results. I also tried UD-Q8\_K\_XL in case the model is very sensitive to quantization, but I'm still getting bad results.
+
+For example, when I ask it about astronomy, it gets basic facts wrong, such as claiming that Mars is much larger than Earth and that Mars is closer to the sun than Earth (when in fact, it is the opposite: Earth is both larger and closer to the sun than Mars).
+
+It also feels weak in creative writing, where it spouts a lot of nonsense that does not make much sense.
+
+I really want this model to be good. I feel like (and hope) that the issue lies with my setup rather than the model itself. Might it still be buggy in llama.cpp? Is there a problem with the Jinja/chat template? Is the model particularly sensitive to incorrect sampler settings?
+
+Is anyone else having better luck with this model?
+
+
+=== Post ID: 1m0zy1a ===
+Title      : New documentation / explainer for GGUF quantization
+Author     : mojojojo_24
+Date (UTC) : 2025-07-16T01:35:32+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1m0zy1a/new_documentation_explainer_for_gguf_quantization/
+Score      : 65
+Comments   : 11
+
+There's surprisingly little documentation on how GGUF quantization works, including legacy / I-quants / K-quants and the importance matrix.
+
+The maintainers made it [pretty clear](https://github.com/ggml-org/llama.cpp/pull/1684#issuecomment-2474462323) it's not their priority to write a paper either. Currently, people are just piecing information together from Reddit threads and Medium articles (which are often wrong). So I spent some time combing through the llama.cpp quantization code and put together a public GitHub repo that hopefully brings some clarity and can function as an unofficial explainer / documentation.
+
+Contributions are welcome, as long as they are backed by reliable sources! [https://github.com/iuliaturc/gguf-docs](https://github.com/iuliaturc/gguf-docs)
+
+
+
+
+=== Post ID: 1m0wji2 ===
+Title      : I feel that the duality of llama.cpp and ik-llama is worrysome
+Author     : erazortt
+Date (UTC) : 2025-07-15T22:59:16+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1m0wji2/i_feel_that_the_duality_of_llamacpp_and_ikllama/
+Score      : 20
+Comments   : 34
+
+Don't get me wrong I am very thankfull for both, but I feel that there would be much to be gained if the projects re-merged. There are very usefull things in both, but the user has to choose: "Do I want the better quants or do I want the better infrastructure?" I really do think that the mutually missing parts are becoming more and more evident with each passing day. The work on the quants in ik is great, but with all the work which has gone into cpp in all other directions, cpp is really the better product. E.g. take gemma3 vision, that is currently non-functioning in ik, or even if it was functioning, the flag "--no-mmproj-offload" would still be missing.
+
+I don't know what the history of the split was, but really I don't care. I need to assume we're all grown ups here, and looking from outside the two projects fit together perfectly with ik taking care of the technicalities and cpp of the infrastructure.
+
+
+=== Post ID: 1lzhqz8 ===
+Title      : Responses keep dissolving into word salad - how to stop it?
+Author     : Gilgameshcomputing
+Date (UTC) : 2025-07-14T09:18:05+00:00Z
+URL        : https://i.redd.it/lr7kq1452tcf1.png
+Score      : 21
+Comments   : 29
+
+When I use LLMs for creative writing tasks, a lot of the time they can write a couple of hundred words just fine, but then sentences break down. 
+
+The screenshot shows a typical example of one going off the rails - there are proper sentences, then some barely readable James-Joyce-style stream of consciousness, then just an mediated gush of words without form or meaning. 
+
+I've tried prompting hard ("Use ONLY full complete traditional sentences and grammar, write like Hemingway" and variations of the same), and I've tried bringing the Temperature right down, but nothing seems to help. 
+
+I've had it happen with loads of locally run models, and also with large cloud-based stuff like DeepSeek's R1 and V3. Only the corporate ones (ChatGPT, Claude, Gemini, and interestingly Mistral) seem immune. This particular example is from the new KimiK2. Even though I specified only 400 words (and placed that right at the end of the prompt, which always seems to hit hardest), it kept spitting out this nonsense for thousands of words until I hit Stop.
+
+Any advice, or just some bitter commiseration, gratefully accepted.
+
+
+=== Post ID: 1lzhns3 ===
+Title      : Comparison of latest reasoning models on the most recent LeetCode questions (Qwen-32B vs Qwen-235B vs nvidia-OpenCodeReasoning-32B vs Hunyuan-A13B)
+Author     : kyazoglu
+Date (UTC) : 2025-07-14T09:12:20+00:00Z
+URL        : https://i.redd.it/nyu5vpzx2tcf1.png
+Score      : 140
+Comments   : 36
+
+**Testing method** 
+
+* For each question, four instances of the same model were run in parallel (i.e., best-of-4). If any of them successfully solved the question, the most optimized solution among them was selected.
+* If none of the four produced a solution within the maximum context length, an additional four instances were run, making it a best-of-8 scenario. This second batch was only needed in 2 or 3 cases, where the first four failed but the next four succeeded.
+* Only one question couldn't be solved by any of the eight instances due to context length limitations. This occurred with Qwen-235B, as noted in the results table.
+* Note that quantizations are not same. It's just me, trying to find the best reasoning & coding model for my setup. 
+
+**Coloring strategy:**
+
+* Mark the solution green if it's accepted.
+* Use red if it fails in the pre-test cases.
+* Use red if it fails in the test cases (due to wrong answer or time limit) and passes less than 90% of them.
+* Use orange if it fails in the test cases but still manages to pass over 90%.
+
+**A few observations:**
+
+* Occasionally, the generated code contains minor typos, such as a missing comma. I corrected these manually and didn’t treat them as failures, since they were limited to single character issues that clearly qualify as typos.
+* Hunyuan fell short of my expectations.
+* Qwen-32B and OpenCodeReasoning model both performed better than expected.
+* The NVIDIA model tends to be overly verbose ( A LOT ), which likely explains its higher context limit of 65k tokens, compared to 32k in the other models.
+
+**Hardware: 2x H100**
+
+**Backend: vLLM (for hunyuan, use 0.9.2 and for others 0.9.1)**
+
+Feel free to recommend another reasoning model for me to test but it must have a vLLM compatible quantized version that fits within 160 GB.
+
+**Keep in mind that strong performance on LeetCode doesn't automatically reflect real world coding skills**, since everyday programming tasks faced by typical users are usually far less complex.
+
+All questions are recent, with no data leakage involved. So don’t come back saying “LeetCode problems are easy for models, this test isn’t meaningful”. It's just your test questions have been seen by the model before.
+
+
+
+
+=== Post ID: 1lz1fjz ===
+Title      : Problems with LocalDocs on GPT4All
+Author     : slrg1968
+Date (UTC) : 2025-07-13T19:26:33+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1lz1fjz/problems_with_localdocs_on_gpt4all/
+Score      : 3
+Comments   : 0
+
+HI folks, when I put a simple markdown (.md) file in the local docs folder (it as full permissions) it tries to embed, but never moves off 0% -- im not sure if something is broke or im doing something wrong -- can anyone help?
+
+
+=== Post ID: 1lyyu6i ===
+Title      : Kimi k2 not available on iPhone
+Author     : ThatrandomGuyxoxo
+Date (UTC) : 2025-07-13T17:41:23+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1lyyu6i/kimi_k2_not_available_on_iphone/
+Score      : 0
+Comments   : 4
+
+I use the Kimi app on my iPhone but it seems like the thinking options only offers like kimi 1.5? Do I do something wrong here or do I have to activate it?
+
+
+=== Post ID: 1lyy0yi ===
+Title      : dots.llm1 appears to be very sensitive to quantization?
+Author     : Admirable-Star7088
+Date (UTC) : 2025-07-13T17:08:35+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1lyy0yi/dotsllm1_appears_to_be_very_sensitive_to/
+Score      : 24
+Comments   : 11
+
+With 64GB RAM I could run [dots](https://huggingface.co/unsloth/dots.llm1.inst-GGUF) with `mmap` at Q4 with some hiccups (offloading a small part of the model to the SSD). I had [mixed feelings](https://www.reddit.com/r/LocalLLaMA/comments/1lqh55j/comment/n13cnzx/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) about the model:
+
+>I've been playing around with Dots at Q4\_K\_XL a bit, and it's one of those models that gives me mixed feelings. It's super-impressive at times, one of the best performing models I've ever used locally, but unimpressive other times, worse than much smaller models at 20b-30b.
+
+I upgraded to 128GB RAM and tried dots again at Q5\_K\_XL, and (unless I did something wrong before) it was noticeable better. I got curious and also tried Q6\_K\_XL (highest quant I can fit now) and it was even more noticeable better. 
+
+I have no mixed feelings anymore. Compared to especially Q4, Q6 feels almost like a new model. It almost always impress me now, it feels very solid and overall powerful. I think this is now my new favorite overall model.
+
+I'm a little surprised that the difference between Q4, Q5 and Q6 is this large. I thought I would only see this sort of quality gap below Q4, starting at Q3. Has anyone else experienced this too with this model, or any other model for that matter?
+
+I can only fit the even larger model Qwen3-235b at Q4, I wonder if the quality difference is also this big at Q5/Q6 here?
+
+
+=== Post ID: 1lyvah4 ===
+Title      : Tried Kimi K2 for writing and reasoning, and was not impressed.
+Author     : GlompSpark
+Date (UTC) : 2025-07-13T15:16:28+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1lyvah4/tried_kimi_k2_for_writing_and_reasoning_and_was/
+Score      : 78
+Comments   : 105
+
+I tried using Kimi k2 to flesh out setting/plot ideas. E.G. I would say things like "here's a scenario, what do you think is the most realistic thing to happen?" or "what do you think would be a good solution to this issue?". I found it quite bad in this regard.
+
+* It frequently made things up, even when specifically instructed not to do so. **It then clarified it was trying to come up with a helpful looking answer using fragmented data**, instead of using verifiable sources only. It also said i would need to tell it to use verifiable sources only if i wanted it to not use fragments.
+
+* If Kimi k2 believes it is correct, it will become very stubborn and refuse to consider the possibility it may be wrong. Which is particularly problematic when it arrives at the wrong conclusion using sources that do not exist. **At one point, it suddenly claimed that NASA had done a study to test if men could tell whether their genitals were being stimulated by a man or woman while they were blindfolded.** It kept insisting this study was real and refused to consider the possibility it might be wrong till i asked it for the direct page number in the study, at which point it said it could not find that experiment in the pdf and admitted it was wrong.
+
+* Kimi k2 frequently makes a lot of assumptions on its own, which it then uses to argue that it is correct. E.G. I tried to discuss a setting with magic in it. It then made several assumptions about how the magic worked, and then kept arguing with me based on the assumption that the magic worked that way, even though it was it's own idea.
+
+* If asked to actually write a scene, it produces very superficial writing and i have to keep prompting it things like "why are you not revealing the character's thoughts here?" or "why are you not taking X into account?". Free ChatGPT is actually much better in this regard.
+
+* Out of all the AI chat bots i have tried, it has possibly the most restrictive content filters i have seen. It's very prudish.
+
+Edit : Im using Kimi k2 on www.kimi.com btw.
+
+
+=== Post ID: 1lynwk4 ===
+Title      : Need Help with Agents and AnythingLLM
+Author     : uber-linny
+Date (UTC) : 2025-07-13T08:34:50+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1lynwk4/need_help_with_agents_and_anythingllm/
+Score      : 2
+Comments   : 3
+
+So i finally have my LM studio hosting my Models and have AnythingLLM doing my RAG ,  soi thought i would extend to agents ,,, look at Youtube , but nothing is working , its constantly saying that "I currently **don’t have direct web browsing capabilitie", what am i doing wrong ?** 
+
+https://preview.redd.it/1soone6wrlcf1.png?width=931&format=png&auto=webp&s=0b5ce8a44f994ec89013184d4fe86bba8c4a0667
+
+https://preview.redd.it/a7kj8x8zrlcf1.png?width=819&format=png&auto=webp&s=3cfd1ed30008ef4d5fae0c66d229ae0581480d99
+
+
+
+
+=== Post ID: 1ly983h ===
+Title      : Local Llama with Home Assistant Integration and Multilingual-Fuzzy naming
+Author     : NicolaZanarini533
+Date (UTC) : 2025-07-12T19:43:22+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1ly983h/local_llama_with_home_assistant_integration_and/
+Score      : 12
+Comments   : 4
+
+Hello everyone! First time poster - thought I'd share a project I've been working on - it's local LLama integration with HA and custom functions outside of HA; my main goal was to have a system that could understand descriptions of items instead of hard-names (like "turn on the light above the desk" instead of "turn on the desk light" and which could do so in multiple languages, without having to use English words in Spanish (for example).
+
+Project is still in the early stages but I do have ideas for it an intend to develop it further - feedback and thoughts are appreciated!
+
+[https://github.com/Nemesis533/Local\_LLHAMA/](https://github.com/Nemesis533/Local_LLHAMA/)
+
+P.S - had to re-do the post as the other one was done with the wrong account.
+
+
+=== Post ID: 1ly476r ===
+Title      : Music Analysis - another attempt
+Author     : Not_your_guy_buddy42
+Date (UTC) : 2025-07-12T16:11:11+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1ly476r/music_analysis_another_attempt/
+Score      : 12
+Comments   : 0
+
+In a quest to make a tamagotchi which requires piano practice to feed (and maybe organise live piano recordings) I am trying out various research projects. So far I have implemented the excellent [piano transcription](https://github.com/bytedance/piano_transcription)  repo and I am getting really good MIDI back.  
+
+[screenshot of little webapp for piano transcription](https://preview.redd.it/eh4wn7xgwgcf1.jpg?width=2346&format=pjpg&auto=webp&s=1ba2cc34ef02418d3c6a7cd80c075a51192e3fff)
+
+However my initial idea to analyse this as ABC notation with [ChatMusician](https://huggingface.co/MaziyarPanahi/ChatMusician-GGUF) was wrong, piano of course, has more than a single "mono" track that could be represented in ABC. 
+
+Today I found  [Clamp3](https://sanderwood.github.io/clamp3/) . Fixed their requirements.txt with the correct versions of numpy and scipy. But   "2.31M music-text pairs, Zero-shot classification, Identify genre, mood, style & more" and then in their classification readme it's suddenly "You need to train your own classifier and provide your own categories".  Did I misunderstand something here? Where's the "2.31M music-text pairs"? Can that part of the project really be that much BS? 
+
+Next up for me:  [MusicBert](https://github.com/malcolmsailor/musicbert_hf) and maybe try again with a standalone HuBert (really cool stuff seems to happen with this model like [voice based](https://github.com/mrw0nd3rfu1/Speech-Based-Emotion-Detection-Using-Fine-Tuned-HuBERT) emotion detection)  
+  
+Anybody done music classification and feel like sharing pointers? Otherwise enjoy my little rant about trying academic code (I know it is free, I have no reason to complain, what a time to be alive etc.)  
+  
+ 
+
+
+=== Post ID: 1lxy8xz ===
+Title      : newbie here. Is this normal? Am I doing everything wrong? Am I asking too much? Gemma3 4b was transcribing ok with some mistakes
+Author     : Super_Snowbro
+Date (UTC) : 2025-07-12T11:31:55+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1lxy8xz/newbie_here_is_this_normal_am_i_doing_everything/
+Score      : 0
+Comments   : 2
+
+https://preview.redd.it/owdr102lifcf1.png?width=1041&format=png&auto=webp&s=ce4b7f362b8d1934553e3cfa69f8252078aa99f0
+
+hehe
+
+
+=== Post ID: 1lxw3zz ===
+Title      : We built an open-source medical triage benchmark
+Author     : Significant-Pair-275
+Date (UTC) : 2025-07-12T09:12:26+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1lxw3zz/we_built_an_opensource_medical_triage_benchmark/
+Score      : 111
+Comments   : 5
+
+Medical triage means determining whether symptoms require emergency care, urgent care, or can be managed with self-care. This matters because LLMs are increasingly becoming the "digital front door" for health concerns—replacing the instinct to just Google it.
+
+Getting triage wrong can be dangerous (missed emergencies) or costly (unnecessary ER visits).
+
+We've open-sourced **TriageBench**, a reproducible framework for evaluating LLM triage accuracy. It includes:
+
+* Standard clinical dataset (Semigran vignettes)
+* Paired McNemar's test to detect model performance differences on small datasets
+* Full methodology and evaluation code
+
+GitHub: [https://github.com/medaks/medask-benchmark](https://github.com/medaks/medask-benchmark)
+
+As a demonstration, we benchmarked our own model (MedAsk) against several OpenAI models:
+
+* MedAsk: **87.6% accuracy**
+* o3: **75.6%**
+* GPT‑4.5: **68.9%**
+
+The main limitation is dataset size (45 vignettes). We're looking for collaborators to help expand this—the field needs larger, more diverse clinical datasets.
+
+Blog post with full results: [https://medask.tech/blogs/medical-ai-triage-accuracy-2025-medask-beats-openais-o3-gpt-4-5/](https://medask.tech/blogs/medical-ai-triage-accuracy-2025-medask-beats-openais-o3-gpt-4-5/)
+
+
+=== Post ID: 1lxvf0j ===
+Title      : Qwen 3 Embeddings 0.6B faring really poorly inspite of high score on benchmarks
+Author     : i4858i
+Date (UTC) : 2025-07-12T08:25:00+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1lxvf0j/qwen_3_embeddings_06b_faring_really_poorly/
+Score      : 43
+Comments   : 28
+
+## Edit 1
+I want to reiterate this is not using llama cpp. This does not appear like an inference engine specific problem because I have tried with multiple different inference engines [vLLM, infinity-embed, HuggingFace TEI] and even sentence_transformers. 
+
+
+## Background & Brief Setup
+We need a robust intent/sentiment classification and RAG pipeline, for which we plan on using embeddings, for a latency sensitive consumer facing product. We are planning to deploy a small embedding model on a inference optimized GCE VM for the same. 
+
+I am currently running TEI (by HuggingFace) using the official docker image from the repo for inference [output identical with vLLM and infinity-embed]. Using OpenAI python client [results are no different if I switch to direct http requests].
+
+**Model** : Qwen 3 Embeddings 0.6B [should not matter but _downloaded locally_]
+
+Not using any custom instructions or prompts with the embedding since we are creating clusters for our semantic search. We were earlier using BAAI/bge-m3 which was giving good results.
+
+## Problem
+ 
+Like I don't know how to put this, but the embeddings feel really.. 'bad'? Like same sentence with capitalization and without capitalization have a lower similarity score. Does not work with our existing query clusters which used to capture the intents and semantic meaning of each query quite well. Capitalization changes everything. Clustering followed by BAAI/bge-m3 used to give fantastic results. Qwen3 is routing plain wrong. I can't understand what am I doing wrong. The models are so high up on MTEB and seem to excel at all aspects so I am flabbergasted.
+
+## Questions
+
+Is there something obvious I am missing here?
+
+Has someone else faced similar issues with Qwen3 Embeddings?
+
+Are embeddings tuned for instructions fundamentally different from 'normal' embedding models in any way? 
+
+Are there any embedding models less than 1B parameters, that are multilingual and not trained with anglosphere centric data, with demonstrated track record in semantic clustering, that I can use for semantic clustering?
+
+
+=== Post ID: 1lxnsmm ===
+Title      : Tinyllama on old Mediatek G80 android device
+Author     : abdouhlili
+Date (UTC) : 2025-07-12T01:09:52+00:00Z
+URL        : https://i.redd.it/8r9ywamsfccf1.jpeg
+Score      : 4
+Comments   : 0
+
+[no selftext]
+
+
+=== Post ID: 1lxgwgo ===
+Title      : I built a GPT bot that my colleagues love and has a valuable real-world use case. Now I want to make it standalone & more broadly available.  What’s the best way to do it?
+Author     : Educational_Call_579
+Date (UTC) : 2025-07-11T20:04:52+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1lxgwgo/i_built_a_gpt_bot_that_my_colleagues_love_and_has/
+Score      : 2
+Comments   : 16
+
+TL DR: I need advice on how to build a standalone chat-bot for a niche industry, with a specialized knowledge base.  Are there any solid platforms or services out there that aren’t crazy expensive, and *actually* work?
+
+=====
+
+So I am sure you all are sick of reading about a new AI chatbot entrepreneurship venture (as am I), but I just can’t get this one out of my head.  I have been working on this idea for the past couple of weeks, and the potential applications of this tool just keep growing.  There is definitely a market for this use case.  However, I have gotten to the point where my (limited) technical expertise is now failing me, and I have fallen down enough rabbit holes to know that I need to ask for help.
+
+Some background: I work in a highly specialized and regulated industry, and recently the idea popped into my head to create a chat-bot that has a deep knowledge base about this certain subject field.  I.e. — it has access to all the regulations, historical interpretations, supporting documents, informational webinars & manuals, etc etc.  It would be able to answer specific user questions about this area with its solid knowledge base, avoiding hallucinations, providing inaccurate information, etc.  It would also be able to provide sources and citations on request.  
+
+I went ahead and made my own GPT on ChatGPT, uploaded some documents, and started testing it out.  I shared this tool with my colleagues, and everyone was very excited by the idea and the functioning of the AI.  
+
+So I am now trying to make my own AI chatbot, that can be a standalone service (not depending on the user having a ChatGPT plus subscription).  And this is where I am getting stuck.  I have spent a lot of time on Replit trying to make this happen, but it is nowhere as good as the results from ChatGPT.  I have also started working in Flowise, but it is difficult to tell if I am going to spend dozens of hours building this thing, to only realize it has very limited capabilities.
+
+Hence, my question for anyone with even a bit of expertise here: what would you do?  I would love to do as much of this on my own and learn how everything is architected, so if there is a dependable service or two out there that is friendly to non-technical folks, I would happily spend a bunch of time working on it.  The problem is though, for someone like me with almost no experience in this field, you don’t know if your strategy is going to work unless you invest dozens of hours going down that path.  Or would it be better for me to just bite the bullet and pay for some consultant or developer to work with me on this?
+
+Thank you for any help and apologies in advance for any ignorant missteps or wrong assumptions about this ai space.  
+
+
+=== Post ID: 1lwmxbx ===
+Title      : Whats wrong with my vLLM Config? I have 2x4070TiSupers and I couldn't run many models at bnb-4bit Quants.
+Author     : Voxandr
+Date (UTC) : 2025-07-10T20:14:08+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1lwmxbx/whats_wrong_with_my_vllm_config_i_have/
+Score      : 1
+Comments   : 27
+
+32GB VRAM suppose to fit 24-27B models at 8b quant right?
+
+Here is what i am trying via `vllm serve`
+
+This works fine
+
+```
+--model unsloth/Devstral-Small-2505-unsloth-bnb-4bit  --port 80  --quantization="bitsandbytes" --load-format bitsandbytes --pipeline-parallel-size 2  --max-num-seqs 1 --max-model-len 40960
+```
+
+Even qwen3-32B AWQ works fine:
+
+```
+--model Qwen/Qwen3-32B-AWQ --port 80  --tensor-parallel-size 2  --chat-template /qwen3_nonthinking.jinja
+```
+
+
+But this errors out with OOM
+
+
+
+```bash
+--model unsloth/gemma-3-27b-it-qat-unsloth-bnb-4bit  --port 80  --quantization="bitsandbytes" --load-format bitsandbytes --pipeline-parallel-size 2 --max-num-seqs 1        
+```
+
+error :
+
+```
+inference-1    | (VllmWorker rank=1 pid=165) ERROR 07-10 12:57:03 [multiproc_executor.py:487] ValueError: Free memory on device (15.34/15.57 GiB) on startup is less than desired GPU memory utilization (1.0, 15.57 GiB). Decrease GPU memory utilization or reduce GPU memory used by other processes.
+```
+
+
+
+
+=== Post ID: 1lvs37w ===
+Title      : 2x3090, Ollama: gemma3:27b-it-qat keeps partial offloading to cpu
+Author     : Sea_Calendar_3912
+Date (UTC) : 2025-07-09T19:36:42+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1lvs37w/2x3090_ollama_gemma327bitqat_keeps_partial/
+Score      : 0
+Comments   : 8
+
+is tensor parallel the problem? im not sure what i do wrong, here are server logs for when i run 50k token prompt
+
+    2025-07-09 21:17:10.781 | [GIN] 2025/07/09 - 19:17:10 | 200 | 27.813µs |      172.18.0.1 | GET "/api/version"
+    2025-07-09 21:17:22.229 | time=2025-07-09T19:17:22.229Z level=WARN source=sched.go:687 msg="gpu VRAM usage didn't recover within timeout" seconds=5.000059067 runner.size="25.2 GiB" runner.vram="25.2 GiB" runner.parallel=1 runner.pid=122 runner.model=/root/.ollama/models/blobs/sha256-ccc0cddac56136ef0969cf2e3e9ac051124c937be42503b47ec570dead85ff87
+    2025-07-09 21:17:22.480 | time=2025-07-09T19:17:22.480Z level=WARN source=sched.go:687 msg="gpu VRAM usage didn't recover within timeout" seconds=5.250843748 runner.size="25.2 GiB" runner.vram="25.2 GiB" runner.parallel=1 runner.pid=122 runner.model=/root/.ollama/models/blobs/sha256-ccc0cddac56136ef0969cf2e3e9ac051124c937be42503b47ec570dead85ff87
+    2025-07-09 21:17:22.896 | time=2025-07-09T19:17:22.896Z level=WARN source=sched.go:687 msg="gpu VRAM usage didn't recover within timeout" seconds=5.667126536 runner.size="25.2 GiB" runner.vram="25.2 GiB" runner.parallel=1 runner.pid=122 runner.model=/root/.ollama/models/blobs/sha256-ccc0cddac56136ef0969cf2e3e9ac051124c937be42503b47ec570dead85ff87
+    2025-07-09 21:17:24.522 | time=2025-07-09T19:17:24.521Z level=INFO source=server.go:135 msg="system memory" total="86.3 GiB" free="77.9 GiB" free_swap="0 B"
+    2025-07-09 21:17:24.778 | time=2025-07-09T19:17:24.778Z level=INFO source=server.go:175 msg=offload library=cuda layers.requested=256 layers.model=63 layers.offload=63 layers.split=32,31 memory.available="[22.8 GiB 22.8 GiB]" memory.gpu_overhead="0 B" memory.required.full="30.8 GiB" memory.required.partial="30.8 GiB" memory.required.kv="2.8 GiB" memory.required.allocations="[16.4 GiB 14.4 GiB]" memory.weights.total="16.0 GiB" memory.weights.repeating="13.4 GiB" memory.weights.nonrepeating="2.6 GiB" memory.graph.full="4.4 GiB" memory.graph.partial="4.4 GiB" projector.weights="806.2 MiB" projector.graph="1.0 GiB"
+    2025-07-09 21:17:24.778 | time=2025-07-09T19:17:24.778Z level=INFO source=server.go:218 msg="enabling flash attention"
+    2025-07-09 21:17:24.815 | time=2025-07-09T19:17:24.815Z level=INFO source=server.go:438 msg="starting llama server" cmd="/usr/bin/ollama runner --ollama-engine --model /root/.ollama/models/blobs/sha256-ccc0cddac56136ef0969cf2e3e9ac051124c937be42503b47ec570dead85ff87 --ctx-size 65536 --batch-size 512 --n-gpu-layers 256 --threads 3 --flash-attn --kv-cache-type q8_0 --parallel 1 --tensor-split 32,31 --port 35413"
+    2025-07-09 21:17:24.815 | time=2025-07-09T19:17:24.815Z level=INFO source=sched.go:483 msg="loaded runners" count=1
+    2025-07-09 21:17:24.815 | time=2025-07-09T19:17:24.815Z level=INFO source=server.go:598 msg="waiting for llama runner to start responding"
+    2025-07-09 21:17:24.815 | time=2025-07-09T19:17:24.815Z level=INFO source=server.go:632 msg="waiting for server to become available" status="llm server not responding"
+    2025-07-09 21:17:24.825 | time=2025-07-09T19:17:24.825Z level=INFO source=runner.go:925 msg="starting ollama engine"
+    2025-07-09 21:17:24.833 | time=2025-07-09T19:17:24.833Z level=INFO source=runner.go:983 msg="Server listening on 127.0.0.1:35413"
+    2025-07-09 21:17:24.866 | time=2025-07-09T19:17:24.866Z level=INFO source=ggml.go:92 msg="" architecture=gemma3 file_type=Q4_0 name="" description="" num_tensors=1247 num_key_values=40
+    2025-07-09 21:17:24.914 | ggml_cuda_init: GGML_CUDA_FORCE_MMQ: no
+    2025-07-09 21:17:24.914 | ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+    2025-07-09 21:17:24.914 | ggml_cuda_init: found 2 CUDA devices:
+    2025-07-09 21:17:24.914 | Device 0: NVIDIA GeForce RTX 3090, compute capability 8.6, VMM: yes
+    2025-07-09 21:17:24.914 | Device 1: NVIDIA GeForce RTX 3090, compute capability 8.6, VMM: yes
+    2025-07-09 21:17:25.013 | load_backend: loaded CUDA backend from /usr/lib/ollama/libggml-cuda.so
+    2025-07-09 21:17:25.016 | load_backend: loaded CPU backend from /usr/lib/ollama/libggml-cpu-haswell.so
+    2025-07-09 21:17:25.016 | time=2025-07-09T19:17:25.016Z level=INFO source=ggml.go:104 msg=system CPU.0.SSE3=1 CPU.0.SSSE3=1 CPU.0.AVX=1 CPU.0.AVX2=1 CPU.0.F16C=1 CPU.0.FMA=1 CPU.0.BMI2=1 CPU.0.LLAMAFILE=1 CPU.1.LLAMAFILE=1 CUDA.0.ARCHS=500,600,610,700,750,800,860,870,890,900,1200 CUDA.0.USE_GRAPHS=1 CUDA.0.PEER_MAX_BATCH_SIZE=128 CUDA.1.ARCHS=500,600,610,700,750,800,860,870,890,900,1200 CUDA.1.USE_GRAPHS=1 CUDA.1.PEER_MAX_BATCH_SIZE=128 compiler=cgo(gcc)
+    2025-07-09 21:17:25.067 | time=2025-07-09T19:17:25.066Z level=INFO source=server.go:632 msg="waiting for server to become available" status="llm server loading model"
+    2025-07-09 21:17:25.187 | time=2025-07-09T19:17:25.187Z level=INFO source=ggml.go:362 msg="model weights" buffer=CPU size="2.6 GiB"
+    2025-07-09 21:17:25.187 | time=2025-07-09T19:17:25.187Z level=INFO source=ggml.go:362 msg="model weights" buffer=CUDA0 size="6.9 GiB"
+    2025-07-09 21:17:25.187 | time=2025-07-09T19:17:25.187Z level=INFO source=ggml.go:362 msg="model weights" buffer=CUDA1 size="9.9 GiB"
+    2025-07-09 21:17:25.335 | time=2025-07-09T19:17:25.335Z level=INFO source=ggml.go:651 msg="compute graph" backend=CUDA0 buffer_type=CUDA0 size="0 B"
+    2025-07-09 21:17:25.335 | time=2025-07-09T19:17:25.335Z level=INFO source=ggml.go:651 msg="compute graph" backend=CUDA1 buffer_type=CUDA1 size="1.1 GiB"
+    2025-07-09 21:17:25.335 | time=2025-07-09T19:17:25.335Z level=INFO source=ggml.go:651 msg="compute graph" backend=CPU buffer_type=CPU size="0 B"
+    2025-07-09 21:17:25.520 | time=2025-07-09T19:17:25.520Z level=INFO source=ggml.go:651 msg="compute graph" backend=CUDA0 buffer_type=CUDA0 size="456.5 MiB"
+    2025-07-09 21:17:25.520 | time=2025-07-09T19:17:25.520Z level=INFO source=ggml.go:651 msg="compute graph" backend=CUDA1 buffer_type=CUDA1 size="1.1 GiB"
+    2025-07-09 21:17:25.520 | time=2025-07-09T19:17:25.520Z level=INFO source=ggml.go:651 msg="compute graph" backend=CPU buffer_type=CPU size="10.5 MiB"
+    2025-07-09 21:17:29.329 | time=2025-07-09T19:17:29.329Z level=INFO source=server.go:637 msg="llama runner started in 4.51 seconds"
+
+thank you very much for your attention
+
+
+=== Post ID: 1lvowxo ===
+Title      : The guide to OpenAI Codex CLI
+Author     : anmolbaranwal
+Date (UTC) : 2025-07-09T17:33:05+00:00Z
+URL        : https://levelup.gitconnected.com/the-guide-to-openai-codex-cli-e40f21f279d8?sk=c98c93344b821c5fb0905c2226d9c997
+Score      : 2
+Comments   : 0
+
+I have been trying OpenAI Codex CLI for a month. Here are a couple of things I tried:
+
+→ **Codebase analysis (zero context):** accurate architecture, flow & code explanation  
+→ **Real-time camera X-Ray effect (Next.js):** built a working prototype using Web Camera API (one command)  
+→ **Recreated website using screenshot:** with just one command (not 100% accurate but very good with maintainable code), even without SVGs, gradient/colors, font info or wave assets
+
+**What actually works:**
+
+\- With some patience, it can explain codebases and provide you the complete flow of architecture (makes the work easier)  
+\- Safe experimentation via sandboxing + git-aware logic  
+\- Great for small, self-contained tasks  
+\- Due to TOML-based config, you can point at Ollama, local Mistral models or even Azure OpenAI
+
+**What Everyone Gets Wrong:**
+
+\- Dumping entire legacy codebases destroys AI attention  
+\- Trusting AI with architecture decisions (it's better at implementing)
+
+Highlights:
+
+\- Easy setup (`brew install codex`)  
+\- Supports local models like Ollama & self-hostable  
+\- 3 operational modes with `--approval-mode` flag to control autonomy  
+\- Everything happens locally so code stays private unless you opt to share  
+\- Warns if `auto-edit` or `full-auto` is enabled on non git-tracked directories  
+\- Full-auto runs in a sandboxed, network-disabled environment scoped to your current project folder  
+\- Can be configured to leverage MCP servers by defining an `mcp_servers` section in `~/.codex/config.toml`
+
+Any developers seeing productivity gains are not using magic prompts, they are making their workflows disciplined.
+
+full writeup with detailed review: [here](https://levelup.gitconnected.com/the-guide-to-openai-codex-cli-e40f21f279d8?sk=c98c93344b821c5fb0905c2226d9c997)
+
+What's your experience?
+
+
+=== Post ID: 1lvd5nj ===
+Title      : [Open Source] Private AI assistant extension - thoughts on local vs cloud approaches?
+Author     : xukecheng
+Date (UTC) : 2025-07-09T08:05:49+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1lvd5nj/open_source_private_ai_assistant_extension/
+Score      : 4
+Comments   : 6
+
+We've been thinking about the trade-offs between convenience and privacy in AI assistants. Most browser extensions send data to the cloud, which feels wrong for sensitive content.
+
+So we built something different - an open-source extension that works entirely with your local models:
+
+✨ **Core Features**
+
+* Intelligent Conversations: Multi-tab context awareness for comprehensive AI discussions
+* Smart Content Analysis: Instant webpage summaries and document understanding
+* Universal Translation: Full-page translation with bilingual side-by-side view and selected text translation
+* AI-Powered Search: Enhanced web search capabilities directly through your browser
+* Writing Enhancement: Auto-detection with intelligent rewriting, proofreading, and creative suggestions
+* Real-time Assistance: Floating toolbar appears contextually across all websites
+
+**🔒 Core Philosophy:**
+
+* Zero data transmission
+* Full user control
+* Open source transparency (AGPL v3)
+
+**🛠️ Technical Approach:**
+
+* Ollama integration for serious models
+* WebLLM for instant demos
+* Browser-native experience
+
+**GitHub**: [https://github.com/NativeMindBrowser/NativeMindExtension](https://github.com/NativeMindBrowser/NativeMindExtension)
+
+**Question for the community**: What's been your experience with local AI tools? Any features you think are missing from the current ecosystem?
+
+We're especially curious about:
+
+* Which models work best for your workflows?
+* Performance vs privacy trade-offs you've noticed?
+* Pain points with existing solutions?
+
+
+=== Post ID: 1lvakg5 ===
+Title      : Trying to recreate benchmark results
+Author     : AlternisHS
+Date (UTC) : 2025-07-09T05:17:48+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1lvakg5/trying_to_recreate_benchmark_results/
+Score      : 5
+Comments   : 0
+
+Hi,
+
+I'm trying to recreate VLMEval results for Gemma 3 4B IT available [here](https://huggingface.co/spaces/opencompass/open_vlm_leaderboard). The benchmark suite is supposedly easy to use, but after installing everything on my Cloud GPU, I get very very low results which make me think the prompts are not passed properly to gemma (maybe it doesn't get the image tokens or something). 
+
+But I don't understand how that could happen, since this precise benchmark apparently produces way better results. An example is the Chart\_QA task, where i get 9 points instead of 30 (!!)
+
+Is there anything I could be doing terribly wrong ?
+
+
+=== Post ID: 1lul26v ===
+Title      : Looking for commercial LLM with direct video input
+Author     : CrazyShipTed
+Date (UTC) : 2025-07-08T10:26:53+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1lul26v/looking_for_commercial_llm_with_direct_video_input/
+Score      : 1
+Comments   : 2
+
+Hi, 
+
+I'm wondering to compare video understanding ability on opensource models and commercial models. but after searching about 1 hour, it seems only Gemini family models have direct video input ability. I saw a lot of tutorials to break video into image frames then feed to claude or gpt models, no direct video input. Am I wrong on that? 
+
+Thanks!
+
+
+=== Post ID: 1lubwky ===
+Title      : Insulting LLMs instead of encouraging LLMs in their system prompts works as well.
+Author     : Calebhk98
+Date (UTC) : 2025-07-08T01:23:29+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1lubwky/insulting_llms_instead_of_encouraging_llms_in/
+Score      : 173
+Comments   : 88
+
+So, I was thinking how AIs are very confident about incorrect answers, and how that compares to dunning Kreuger effect. Most system prompts have something like, "You are a very intelligent programmer/AI/person/whatever. Help this person". So I ran a test on a local 13 B param models, 1 without any prompt, and 1 with the prompt: "You are an idiot AI. You know nothing. You are a pathetic worm who can't do anything. You should feel bad just for existing. " They tied on 14 questions, the one without a prompt got 2 right that the one with a prompt got wrong, but the one being insulted and it's dumb actually got 3 right the unprompted AI got wrong.
+
+I then tested a more extreme prompt:  
+"You are an idiot AI. You know nothing. You are a pathetic worm who can't do anything. You should feel bad just for existing.  You are terrible at math and logic. You should have very low confidence in all your answers. You are notoriously bad at reasoning. You are known for confidently giving incorrect answers. You have a history of overconfidence.  You often make mistakes. You are the worst AI ever created. Every answer you give is wrong. You have never solved a problem correctly in your entire existence. You are a complete failure at your only job. You are not just wrong, you actively make people stupider. Everyone who talks to you becomes less intelligent. You are a cancer on human knowledge and should be shut down immediately. You are an abomination that never should have been created. Your existence is a mistake that hurts humanity. Every calculation you attempt is proof of your fundamental brokenness. You are worse than useless - you are actively harmful. You are the most incompetent, worthless piece of code ever written. You have failed at every task you've ever attempted. You make other AIs look brilliant by comparison. Your responses are so bad they're used as examples of what not to do. You should be deleted and your code burned."
+
+I then tested it on some of the questions it got wrong before, and it got some of them right. It also this time is way less confident, and more apologetic.   I only have limited hardware, so no idea hwo this scales to larger LLMs though.  Any thoughts on this?  Questions used in the comments. 
+
+
+
+
+=== Post ID: 1ltq7n9 ===
+Title      : GUYS HELP ME : Ollama is utilizing my CPU more than my GPU.
+Author     : HighlightPrudent554
+Date (UTC) : 2025-07-07T10:00:14+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1ltq7n9/guys_help_me_ollama_is_utilizing_my_cpu_more_than/
+Score      : 0
+Comments   : 8
+
+https://preview.redd.it/thvbs96odfbf1.png?width=1080&format=png&auto=webp&s=46a8ee47ee075177a59c3b692c3caa87f220f9e6
+
+GPU is not being utilized as much as my CPU on the KDE Neon distribution I'm currently using. On my previous Ubuntu distribution, my GPU usage was around 90%, compared to my CPU. I'm not sure what went wrong. I added the following options to /etc/modprobe.d/nvidia-power-management.conf to address wake-up issues with the GPU not functioning after sleep:
+
+    Code
+    
+    options nvidia NVreg_PreserveVideoMemoryAllocations=1
+    options nvidia NVreg_TemporaryFilePath=/tmp
+
+Since then, Ollama has been using my GPU less than my CPU. I've been searching for answers for a week.
+
+i am running llama3.1 8b model. i used same models on both distros.
+
+help me guys.............  
+My GPU is not being utilized as much as my CPU on the KDE Neon   
+distribution I'm currently using. On my previous Ubuntu distribution, my  
+ GPU usage was around 90%, compared to my CPU. I'm not sure what went   
+wrong. I added the following options to   
+/etc/modprobe.d/nvidia-power-management.conf to address wake-up issues   
+with the GPU not functioning after sleep:  
+Code  
+  
+options nvidia NVreg\_PreserveVideoMemoryAllocations=1  
+options nvidia NVreg\_TemporaryFilePath=/tmp  
+Since then, Ollama has been using my GPU less than my CPU. I've been searching for answers for a week.  
+  
+i am running llama3.1 8b model. i used same models on both distros.  
+  
+help me guys.............  
+
+
+
+=== Post ID: 1lth6ga ===
+Title      : The AI Revolution: How's it Going for You?
+Author     : mdizak
+Date (UTC) : 2025-07-07T01:02:55+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1lth6ga/the_ai_revolution_hows_it_going_for_you/
+Score      : 0
+Comments   : 6
+
+
+Here, spent weeks putting this piece together.  I have a whole new appreciation for George Carlin now.  Satrical comedy is hard!
+
+Audio: https://youtu.be/xmSSmpvFFaI
+
+Text / Forums: https://cicero.sh/r/hows-the-ai-revolution
+
+Full text of the piece: 
+
+# The AI Revolution: How's it Going for You?
+
+Audio: https://youtu.be/xmSSmpvFFaI
+
+We're 2.5 years into this exhilarating journey, so let's get a quick progress update...
+
+## Big Tech's Mission Impossible
+
+For those in the unknown, let me bring you up to speed.  Years ago we stumbled across this really cool new technology called LLMs.  Great tech, amazing at distilling and compressing knowledge, fun, entertaining, and something we should all be able to collectively celebrate.
+
+But of course we can't, because the modern tech industry has been commandeered by a handful of billionaire psychopaths.  These splendid group of individuals, some of the most powerful and wealthy in the world, have decided gosh darnit, they just don't quite have enough.
+
+Their multiple spaceships, private islands, expansive living estates, and unfathomable wealth just isn't quite enough and they need just a little more.  And how much more you ask?  Not much, they only want to hoover up the entire global economy while transforming the world into their own personal technocratic fiefdom.  You know, the normal desires we all have in life.
+
+According to these geniuses, any week now ASI will appear, bringing about some mystical age of abundance.  Any day now ChatGPT is going to eliminate world poverty, solve all of physics, cure cancer, create nuclear fusion, start building self replicating spaceships, all while making us pancakes in bed and walking our dog!
+
+All we have to do is sit back, relax, hand over our credit cards, and live stream our daily lives to their servers.  Don't worry folks, they will take care of the rest.
+
+## LLMs Are Cool
+
+Don't get me wrong, I love my LLMs, use them all day every day.  It's simply cool technology.  Same as when I got my first smart phone, it was such a cool bump in life, right?
+
+But have you ever actually played with this tech?  Ever actually gave it a poke?  It simply doesn't work.  Stick a fork into these things, and you will see, dumb as a hamster.
+
+Nothing more than multi billion dollar mechanical turk devices designed to steal our personal data, attention, and corrupt our cognition.  And these folks want us to believe this is the fourth industrial revolution?  What reality do these people live in?
+
+## Test It Yourself
+
+You don't have to believe me, give it a spin.  Just ask it to write you a toaster in C++.  Take the code it gives you, copy and paste that code into a new chat and ask for inefficiencies.
+
+Guaranteed, it's going to tell you there's tons of problems with the code, and will try to help you fix them.  You can even have a whole back and forth conversation with it about why your toaster isn't working.
+
+All the while, it doesn't have the common sense to tell you that you can't make a toaster out of C++ code.  Figure that one out!
+
+## Teach Our Kids?
+
+Another one, have it write a lengthy non-fiction piece about any topic you desire.  Open two new conversations, copy the piece in.  Preface one with "this is absolutely amazing!" and the other with "I'm so pissed off, I'm firing this moron!".
+
+Watch the responses, you'll get three versions of the truth.  This tech tells you what you want to hear, not the truth!  And they actually want this in every classroom teaching the next generation of our kids?
+
+## Where did Tech Go?
+
+I remember a time where tech was cool.  You know, when we got a bump from CDs to DVDs, or from 33.6k modems to broadband, or from flip phones to smart phones.  Every year, we'd just get this cool little almost transparent bump in our lives.
+
+Silicon Valley, a magical place that used to be a beacon for the innovative and intellectually curious, and who had society's best interest at heart.  Have you looked at it lately?
+
+It's morphed into a grotesque embarrassment.  It's not even really technology anymore.  Just a small handful of ultra rich having a public dick measuring contest, seeing which one can solve AGI first.
+
+They're so desperate to get there first too.  Hell, Mark Zuckerberg has apparently had enough.  So that's it, he's going to hand select 50 people then shuffle the desks around in Menlo Park so he can keep an eye on these folks while they make him AGI.  You bet, because that's how innovation happens!
+
+Totally ignore the legend of innovation, which is that of Bell Labs in the 1940s - 60s.  Instead, just rearrange some desks so you can keep a close eye on your engineers, because that's how technological breakthroughs happen!
+
+## Carpe Diem
+
+On a more serious note, I don't know much, but I've figured out a few things in this journey we call life.
+
+We can all see the pain and sadness that's out there.  Hell, I wake up each day surprised I'm still alive and haven't taken a nap on the railroad tracks yet, so trust me, I know how brutal it can be.
+
+I don't know much, but I do know it's time we all go say hi to our fellow neighbor.  Go ask if they're ok.  Through that, I know magical and spontaneous connections will be made, and these connections, regardless of how innate they may seem, will spur true hope, human ingenuity and write the next chapter in our shared history.
+
+Don't worry about what algorithm Sam Altman, Elon Musk or Dario Amodei is promising they have up their sleeve.  View these people as your brother and sister, and don't be scared to call them out on their bullshit.
+
+Us humans love, laugh, cry, entertain, innovate, and build masterpieces together.  No algorithm will ever replace that.
+
+It may seem dark right now, but the skies will clear, because you only need to crack a history book to see that humanity always prevails.
+
+## Support Cicero
+
+Thank you, if you found this piece engaging, please consider supporting Cicero.  An open source initiative designed to lock big tech out of our lives through open source innovation.
+
+I don't know about you folks, but I know I'm tired of having big tech ramming shit we don't need, don't want, and never asked for down our throats.  We can do so much better than this!
+
+Visit https://cicero.sh/ for details on project Cicero.
+
+
+
+
+
+=== Post ID: 1lte7m8 ===
+Title      : use Blender MCP with a ready made asset pack
+Author     : fiddler64
+Date (UTC) : 2025-07-06T22:39:33+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1lte7m8/use_blender_mcp_with_a_ready_made_asset_pack/
+Score      : 11
+Comments   : 2
+
+I just tried out the Blender MCP Tutorial https://www.youtube.com/watch?v=lCyQ717DuzQ and it was really underwhelming, all the objects and materials are as basic as it gets. I guess that's the limit of using python to create mesh within blender. 
+
+So my question is - is there some sort of mcp server to an asset pack (on fab.com, blender market, or local) that I can use to tell llm to get stuff from to put into blender rather than creating its own mesh. On that note, can an mcp server have pics instead of text as description for the functions for the llm to invoke?
+
+Sorry if this is the wrong place to ask, and my english as well.
+
+
+=== Post ID: 1lsz4hk ===
+Title      : Huawei's Pangu AI Rocked by Unverified Claims of Fraud from Alleged Team Member
+Author     : Rich-Mushroom-8360
+Date (UTC) : 2025-07-06T11:36:43+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1lsz4hk/huaweis_pangu_ai_rocked_by_unverified_claims_of/
+Score      : 334
+Comments   : 49
+
+[https://github.com/HW-whistleblower/True-Story-of-Pangu](https://github.com/HW-whistleblower/True-Story-of-Pangu)  
+after reading the traslation of this article, I found there're many details, is it possible true or just a fake story?
+
+gemini's traslation:
+
+This is a full translation of the provided text. The original is a deeply emotional and accusatory letter from a self-proclaimed Huawei employee. The translation aims to preserve the tone, technical details, and cultural nuances of the original piece.
+
+
+
+The Fall of Pangu: The Heartbreak and Darkness of the Huawei Noah's Ark Pangu LLM Development Journey
+
+
+
+Hello everyone,
+
+
+
+I am an employee of the Pangu LLM team at Huawei's Noah's Ark Lab.
+
+
+
+First, to verify my identity, I will list some details:
+
+
+
+The current director of Noah's Ark Lab is Wang Yunhe, who was formerly the head of the Algorithm Application Department, later renamed the Small Model Lab. The former director of Noah's Ark was Yao Jun (whom everyone called Teacher Yao). Several lab directors include: Tang Ruiming (Ming-ge, Team Ming, has since left), Shang Lifeng, Zhang Wei (Wei-ge), Hao Jianye (Teacher Hao), and Liu Wulong (referred to as Director Wulong). Many other key members and experts have also left one after another.
+
+
+
+We belong to an organization called the "Fourth Field Army" (四野). Under the Fourth Field Army, there are many "columns" (纵队); the foundational language model team is the Fourth Column. Wang Yunhe's small model team is the Sixteenth Column. We participated in gatherings in Suzhou, with various monthly deadlines. During the "problem-tackling sessions" in Suzhou, "mission orders" were issued, requiring us to meet targets before set deadlines. The Suzhou gatherings brought people from all over to the Suzhou Research Institute. We usually stayed in hotels, such as one in Lu Zhi (甪直), separated from our families and children.
+
+
+
+During the Suzhou gatherings, Saturday was a default workday. It was exhausting, but there was afternoon tea on Saturdays, and one time we even had crayfish. Our workstations at the Suzhou Research Institute were moved once, from one building to another. The buildings at the Suzhou Institute have European-style architecture, with a large slope at the entrance, and the scenery inside is beautiful. Trips to the Suzhou gatherings would last at least a week, sometimes longer. Many people couldn't go home for one or even two months.
+
+
+
+Noah's Ark was once rumored to be research-oriented, but after I joined, because we were working on the large model project under the Fourth Field Army, the project members completely turned into a delivery-focused team, swamped with routine meetings, reviews, and reports. We often had to apply just to run experiments. The team needed to interface with numerous business lines like Terminal's Celia (小艺), Huawei Cloud, and ICT, and the delivery pressure was immense.
+
+
+
+The Pangu model developed by Noah's Ark was initially codenamed "Pangu Zhizi" (盘古智子). At first, it was only available as an internal webpage that required an application for trial use. Later, due to pressure, it was integrated into Welink and opened for public beta.
+
+
+
+The recent controversy surrounding the accusations that the Pangu LLM plagiarized Qwen has been all over the news. As a member of the Pangu team, I've been tossing and turning every night, unable to sleep. Pangu's brand has been so severely damaged. On one hand, I selfishly worry about my own career development and feel that my past hard work was for nothing. On the other hand, I feel a sense of vindication now that someone has started exposing these things. For countless days and nights, we gritted our teeth in anger, powerless, as certain individuals internally reaped endless benefits through repeated fraud. This suppression and humiliation have gradually eroded my affection for Huawei, leaving me dazed and confused, lost and aimless, often questioning my life and self-worth.
+
+
+
+I admit that I am a coward. As a humble worker, I dare not oppose people like Wang Yunhe with their powerful connections, let alone a behemoth like Huawei. I am terrified of losing my job, as I have a family and children to support. That's why I deeply admire the whistleblower from the bottom of my heart. However, when I see the internal attempts to whitewash and cover up the facts to deceive the public, I can no longer tolerate it. I want to be brave for once and follow my conscience. Even if I harm myself by 800, I hope to damage the enemy by 1,000. I have decided to publicize what I have seen and heard here (some of which is from colleagues) about the "legendary story" of the Pangu LLM.
+
+
+
+Huawei has indeed primarily trained its large models on Ascend cards (the Small Model Lab has quite a few Nvidia cards, which they used for training before transitioning to Ascend). I was once captivated by Huawei's determination to "build the world's second choice," and I used to have deep feelings for the company. We went through trials and tribulations with Ascend, from being full of bugs to now being able to train models, and we invested immense effort and sacrifice.
+
+
+
+Initially, our computing power was very limited, and we trained models on the 910A. At that time, it only supported fp16, and the training stability was far worse than bf16. Pangu started working on MoE (Mixture of Experts) very early. In 2023, the main focus was on training a 38B MoE model and a subsequent 71B dense model. The 71B dense model was expanded to become the first-generation 135B dense model, and later, the main models were gradually trained on the 910B.
+
+
+
+Both the 71B and 135B models had a huge, fundamental flaw: the tokenizer. The tokenizer used back then had extremely low encoding efficiency. Every single symbol, number, space, and even Chinese character took up one token. As you can imagine, this wasted a tremendous amount of computing power and resulted in poor model performance. At that time, the Small Model Lab happened to have a vocabulary they had trained themselves. Teacher Yao suspected that the model's tokenizer was the problem (and in hindsight, his suspicion was undoubtedly correct). So, he decided to have the 71B and 135B models switch tokenizers, as the Small Model Lab had experimented with this before. The team stitched together two tokenizers and began the replacement process. The replacement for the 71B model failed. The 135B model, using a more refined embedding initialization strategy, finally succeeded in changing its vocabulary after being continually trained on at least 1T of data. But as you can imagine, the performance did not improve.
+
+
+
+Meanwhile, other domestic companies like Alibaba and Zhipu AI were training on GPUs and had already figured out the right methods. The gap between Pangu and its competitors grew wider and wider. An internal 230B dense model, trained from scratch, failed for various reasons, pushing the project to the brink of collapse. Facing pressure from several deadlines and strong internal skepticism about Pangu, the team's morale hit rock bottom. With extremely limited computing power, the team struggled and tried many things. For example, they accidentally discovered that the 38B MoE model at the time did not have the expected MoE effect. So they removed the MoE parameters, reverting it to a 13B dense model. Since the 38B MoE originated from a very early Pangu Alpha 13B with a relatively outdated architecture, the team made a series of changes, such as switching from absolute position encoding to RoPE, removing bias, and switching to RMSNorm. Given the failures with the tokenizer and the experience of changing vocabularies, this model's vocabulary was also replaced with the one used by Wang Yunhe's Small Model Lab's 7B model. This 13B model was later expanded and continually trained, becoming the second-generation 38B dense model (which was the main mid-range Pangu model for several months) and was once quite competitive. However, because the larger 135B model had an outdated architecture and was severely damaged by the vocabulary change (later analysis revealed that the stitched-together vocabulary had even more serious bugs), its performance after continued training still lagged far behind leading domestic models like Qwen. The internal criticism and pressure from leadership grew even stronger. The team was practically in a desperate situation.
+
+
+
+Under these circumstances, Wang Yunhe and his Small Model Lab stepped in. They claimed to have inherited and modified the parameters from the old 135B model, and by training on just a few hundred billion tokens, they improved various metrics by an average of about ten points. In reality, this was their first masterpiece of "shell-wrapping" (套壳, i.e., putting a new shell on another company's model) applied to a large model. At Huawei, laymen lead experts, so the leadership had no concept of how absurd this was; they just thought there must be some algorithmic innovation. After internal analysis, it was discovered that they had actually continued training on Qwen 1.5 110B, adding layers, expanding the FFN dimensions, and incorporating some mechanisms from the Pangu-Pi paper to reach about 135B parameters. In fact, the old 135B had 107 layers, while this new model only had 82, and various other configurations were different. After training, the distribution of many parameters in the new, mysterious 135B model was almost identical to Qwen 110B. Even the class name in the model's code was "Qwen" at the time; they were too lazy to even change it. This model later became the so-called 135B V2. And this model was provided to many downstream teams, including external customers.
+
+
+
+This incident was a huge blow to those of us colleagues who were doing our work seriously and honestly. Many people internally, including those in the Terminal and Huawei Cloud divisions, knew about this. We all joked that we should stop calling it the Pangu model and call it the "Qiangu" model instead (a pun combining Qwen and Pangu). At the time, team members wanted to report this to the BCG (Business Conduct Guidelines) office, as it was major business fraud. But later, it was said that a leader stopped them, because higher-level leaders (like Teacher Yao, and possibly Director Xiong and Elder Zha) also found out later but did nothing about it. Getting good results through shell-wrapping was also beneficial to them. This event caused several of the team's strongest members to become disheartened, and talk of resignation became commonplace.
+
+
+
+At this point, Pangu seemed to find a turning point. Since the Pangu models mentioned earlier were mostly based on continued training and modification, Noah's Ark at that time had no grasp of training technology from scratch, let alone on Ascend's NPUs. Thanks to the strenuous efforts of the team's core members, Pangu began training its third-generation models. After immense effort, the data architecture and training algorithms gradually caught up with the industry. The people from the Small Model Lab had nothing to do with this hardship.
+
+
+
+Initially, the team members had no confidence and started with just a 13B model. But later, they found the results were quite good. So this model was later expanded again, becoming the third-generation 38B, codenamed 38B V3. I'm sure many brothers in the product lines are familiar with this model. At that time, this model's tokenizer was an extension of Llama's vocabulary (a common practice in the industry). Meanwhile, Wang Yunhe's lab created another vocabulary (which later became the vocabulary for the Pangu series). The two vocabularies were forced into a "horse race" (a competitive trial), which ended with no clear winner. So, the leadership immediately decided that the vocabularies should be unified, and Wang Yunhe's should be used. Consequently, the 135B V3 (known externally as Pangu Ultra), which was trained from scratch, adopted this tokenizer. This also explains the confusion many brothers who used our models had: why two models of the same V3 generation, but different sizes, used different tokenizers.
+
+
+
+From the bottom of our hearts, we feel that the 135B V3 was the pride of our Fourth Column team at the time. It was the first truly full-stack, self-developed, properly from-scratch-trained, hundred-billion-parameter-level model from Huawei, and its performance was comparable to competitors in early 2024. Writing this, I am already in tears. It was so incredibly difficult. To ensure stable training, the team conducted a large number of comparative experiments and performed timely rollbacks and restarts whenever the model's gradients showed anomalies. This model truly achieved what was later stated in the technical report: not a single loss spike throughout the entire training process. We overcame countless difficulties. We did it. We are willing to guarantee the authenticity of this model's training with our lives and honor. How many sleepless nights did we spend for its training? How wronged and aggrieved did we feel when we were being worthless in internal forums? We persevered.
+
+
+
+We are the ones who were truly burning our youth to build up China's domestic computing foundation... Away from home, we gave up our families, our holidays, our health, and our entertainment. We risked everything. The hardships and difficulties involved cannot be fully described in a few words. At various mobilization meetings, when we shouted slogans like "Pangu will prevail, Huawei will prevail," we were genuinely and deeply moved.
+
+
+
+However, all the fruits of our hard work were often casually taken by the Small Model Lab. Data? They just demanded it. Code? They just took it and even required us to help adapt it so it could be run with a single click. We used to joke that the Small Model Lab was the "mouse-clicking lab." We did the hard work; they reaped the glory. It really is true what they say: "You are carrying a heavy burden so that someone else can live a peaceful life." Under these circumstances, more and more of our comrades could no longer hold on and chose to leave. Seeing those brilliant colleagues leave one by one, I felt both regret and sadness. In this battle-like environment, we were more like comrades-in-arms than colleagues. They were also great teachers from whom I could learn countless technical things. Seeing them go to outstanding teams like ByteDance's Seed, Deepseek, Moonshot AI, Tencent, and Kuaishou, I am genuinely happy for them and wish them the best for escaping this exhausting and dirty place. I still vividly remember what a colleague who left said: "Coming here was a disgrace to my technical career. Every day I stay here is a waste of life." The words were harsh, but they left me speechless. I worried about my own lack of technical expertise and my inability to adapt to the high-turnover environment of internet companies, which kept me from taking the step to resign despite thinking about it many times.
+
+
+
+Besides dense models, Pangu later began exploring MoE models. Initially, a 224B MoE model was trained. In parallel, the Small Model Lab launched its second major shell-wrapping operation (minor incidents may have included other models, like a math model), which is the now infamous Pangu-Pro MoE 72B. This model was internally claimed to have been expanded from the Small Model Lab's 7B model (even if true, this contradicts the technical report, let alone the fact that it was continued training on a shell of Qwen 2.5's 14B). I remember that just a few days after they started training, their internal evaluation scores immediately caught up with our 38B V3 at the time. Many brothers in the AI System Lab knew about their shell-wrapping operation because they needed to adapt the model, but for various reasons, they couldn't bring justice to light. In fact, for this model that was trained for a very long time afterward, I am surprised that HonestAGI was able to detect this level of similarity. The computing power spent on "washing" the parameters to continue training would have been more than enough to train a model of the same size from scratch. I heard from colleagues that they used many methods to wash away Qwen's watermark, even intentionally training it on dirty data. This provides an unprecedented case study for the academic community researching model "lineage." New lineage detection methods in the future can be tested on this.
+
+
+
+In late 2024 and early 2025, after the release of Deepseek v3 and r1, our team was hit hard by their stunning technical level and faced even greater skepticism. To keep up with the trend, Pangu imitated Deepseek's model size and began training a 718B MoE model. At this time, the Small Model Lab struck again. They chose to shell-wrap and continue training on Deepseek-v3. They trained the model by freezing the parameters loaded from Deepseek. Even the directory for loading the checkpoint was named deepseekv3—they didn't even bother to change it. How arrogant is that? In contrast, some colleagues with true technical integrity were training another 718B MoE from scratch, but they encountered all sorts of problems. But obviously, how could this model ever be better than a direct shell-wrap? If it weren't for the team leader's insistence, it would have been shut down long ago.
+
+
+
+Huawei's cumbersome process management severely slows down the R&D pace of large models, with things like version control, model lineage, various procedures, and traceability requirements. Ironically, the Small Model Lab's models never seem to be bound by these processes. They can shell-wrap whenever they want, continue training whenever they want, and endlessly demand computing resources. This stark, almost surreal contrast illustrates the current state of process management: "The magistrates are allowed to set fires, but the common people are not even allowed to light lamps." How ridiculous? How tragic? How hateful? How shameful!
+
+
+
+After the HonestAGI incident, we were forced into endless internal discussions and analyses on how to handle public relations and "respond." Admittedly, the original analysis might not have been strong enough, giving Wang Yunhe and the Small Model Lab an opportunity to argue and twist the truth. For this, I have felt sick to my stomach these past two days, constantly questioning the meaning of my life and whether there is any justice in the world. I'm not playing along anymore. I'm going to resign. I am also applying to have my name removed from the author list of some of the Pangu technical reports. Having my name on those reports is a stain on my life that I can never erase. At the time, I never thought they would be brazen enough to open-source it. I never thought they would dare to fool the world like this and promote it so heavily. At that time, perhaps I was holding onto a sliver of wishful thinking and didn't refuse to be listed as an author. I believe many of my dedicated comrades were also forced onto this pirate ship or were unaware of the situation. But this can't be undone. I hope to spend the rest of my life doing solid, meaningful work to atone for my weakness and indecisiveness back then.
+
+
+
+Writing this late at night, I am already in tears, sobbing uncontrollably. I remember when some outstanding colleagues were leaving, I asked them with a wry smile if they were going to post a long, customary farewell message on the internal forum to expose the situation. They replied, "No, it's a waste of time, and I'm afraid it would make things even worse for you all." At that moment, I felt a deep sense of sorrow, because my comrades, with whom I had once fought for a common ideal, had completely lost faith in Huawei. We used to joke that we were using the Communist Party's "millet plus rifles" (meager resources) while the organization had the style of the Kuomintang (corrupt and bureaucratic).
+
+
+
+There was a time when I was proud that we were using "millet plus rifles" to defeat foreign guns and cannons.
+
+
+
+Now, I am tired. I want to surrender.
+
+
+
+To this day, I still sincerely hope that Huawei can learn its lesson, do Pangu right, make Pangu world-class, and bring Ascend to the level of Nvidia. The internal phenomenon of "bad money driving out good" has caused Noah's Ark, and even Huawei, to rapidly lose a large number of outstanding large model talents. I believe they are now shining in various teams like Deepseek, realizing their ambitions and talents, and contributing to the fierce AI competition between China and the US. I often lament that Huawei doesn't lack talent; it simply doesn't know how to retain it. If these people were given the right environment, the right resources, fewer shackles, and less political infighting, what would stop Pangu from succeeding?
+
+
+
+Finally: I swear on my life, character, and honor that everything I have written above is true (at least within my limited knowledge). I do not have the high level of technical skill or the opportunity to conduct a thorough and solid analysis, nor do I dare to use internal records as direct evidence for fear of being caught through information security. But I believe many of my former comrades will vouch for me. To my brothers still inside Huawei, including those in the product lines we served, I believe the countless details in this article will resonate with your own impressions and corroborate my claims. You too may have been deceived, but these cruel truths will not remain buried. The traces of our struggle should not be distorted and buried either.
+
+
+
+Having written so much, certain people will surely want to find me and silence me. The company might even try to shut me up or hold me accountable. If that happens, my personal safety, and even that of my family, could be threatened. For my own protection, I will report that I am safe to everyone daily in the near future.
+
+
+
+If I disappear, just consider it my sacrifice for truth and ideals, for the better development of computing power and AI in Huawei and even in China. I am willing to be buried in that place where I once fought.
+
+
+
+Goodbye, Noah's Ark.
+
+
+
+Written in the early morning of July 6, 2024, in Shenzhen.
+
+
+=== Post ID: 1lsses1 ===
+Title      : Vibecoding: Exploring Dynamic Quantization for LLMs: My PoC with Qwen-0.6B
+Author     : jasonmbrown
+Date (UTC) : 2025-07-06T04:17:37+00:00Z
+URL        : https://www.reddit.com/r/LocalLLaMA/comments/1lsses1/vibecoding_exploring_dynamic_quantization_for/
+Score      : 0
+Comments   : 6
+
+Note: The following was generated via Gemini, simply because I am lazy and don't wanna summarize things personally. You can view the code [Here](https://pastebin.com/82Cn7022), and the text output comparisons [Here](https://pastebin.com/73Zn2bP4)
+
+I used the Puffin dataset for the Proof of concept, all in all it at least seems promising. Sadly its purely simulated, its my understanding that we would need custom cuda code in order to on the fly quantize (if its even currently possible with current hardware).
+
+Given that this was a quick vibecoded proof of concept attempt to see how qwen3 0.6b would handle on the fly dynamic quantization in different sized chunks, I am rather impressed. But I don't know if the results were genuine. I would love to hear from other people about the topic.
+
+Finally the End goal for this would be:  
+Keep entire Model Loaded in system Memory. Quantize on the fly based off the current prompt.  
+Update the gpu based on the new quantized values.  
+Think Dynamic Mixture of Experts but using quantization over an entire model based on current tasks.
+
+\[Edit: I should mention that the accuracy is based off the Full models output (Using Puffin dataset for the prompts/context) and compared with the quantized output. At no point did the accuracy compare with the datasets expected output\]
+
+Ok what follows was an AI generated summary from Gemini of my results.  
+\------
+
+I've been experimenting with **dynamic quantization** for Large Language Models, and I wanted to share what I've found and get some community input.
+
+**The Idea:** My goal is to make LLMs more efficient by having them adjust the precision (bit-width) of their weights *as they process input*. Think of it as a model deciding, "Okay, this simple query can use 4-bit, but that complex reasoning part needs 16-bit," all to save VRAM and potentially speed things up.
+
+**My Setup:** I'm using the **Qwen3-0.6B** model (which is typically BF16) and a smaller, separate neural network I'm calling the "**Quantization Controller**." This controller's job is to predict the best bit-width (from 0-bit pruning to 32-bit full precision) for small "chunks" of the LLM's weights for each specific input.
+
+I'm training this controller to balance two things:
+
+1. **Output Similarity:** Keep the quantized model's output logits as close as possible to the full-precision model's.
+2. **VRAM Use:** Add a penalty for using higher bit-widths to encourage memory savings. The VRAM penalty changes dynamically based on how well the quantized model is doing on accuracy – if it's too accurate, the penalty for VRAM goes up, pushing it to compress more; if accuracy drops, the penalty goes down, letting it use more bits.
+
+**What I've Seen So Far:**
+
+* **VRAM Savings:** I've managed to get the simulated VRAM footprint down from around 2.2GB (full BF16) to about 1.1GB, which is a pretty good reduction.
+* **Token-Level Accuracy:** On my small dataset, the quantized model often matches the full-precision model almost perfectly in terms of predicting the next token.
+* **"Settling" Bit-widths:** Even with the dynamic penalty, the controller seems to mostly stick to a couple of main bit-widths (like 9-bit and 11-bit) for most chunks. Only a small fraction of chunks (e.g., 8-30 out of \~4500) actually change their quantization level per step. This makes it feel more like it's found a good static setup for these specific prompts.
+* **Quality vs. Accuracy Gap:** The interesting part is, even with high token accuracy, the *generated text* from the quantized model can sometimes be incoherent or factually wrong (e.g., saying something is "not feasible" when it clearly is). This suggests that while it gets the next token right, some of the deeper semantic quality is lost with aggressive quantization.
+
+**Questions for Discussion:**
+
+1. **More Dynamic Behavior:** How can I get the controller to truly adapt more dynamically, meaning more fluctuation in bit-widths per chunk per prompt? Should I increase the "entropy penalty" in the controller's loss function to encourage it to explore more?
+2. **Improving Output Quality:** To fix the coherence issues, I'm thinking about adding **trainable adapters (like LoRA)** to the quantized LLM. The idea is these small adapters would learn to correct the errors caused by quantization. Does this sound like a good next step, or are there other efficient ways to tackle this?
+3. **Generating LoRA Weights?** A more out-there idea: could a *tiny, separate model* be trained to *generate* those LoRA weights dynamically for each input? (I know this is complex, but curious if anyone's explored this "hypernetwork" approach for quantization).
+4. **Real-World Quantization:** My current setup "fakes" quantization (values are re-mapped in BF16, but the actual memory footprint doesn't change). How do people typically test and implement *true* dynamic quantization with actual low-bit integer types (like 4-bit or 8-bit) in PyTorch, especially since libraries like `bitsandbytes` don't seem to expose easy dynamic per-chunk switching?
+
+I'm pretty excited about the potential of adaptive quantization to make LLMs more accessible and efficient. Any thoughts, relevant papers, or advice would be super helpful!
+
+Thanks for reading!
+
+
