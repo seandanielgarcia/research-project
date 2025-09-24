@@ -1,0 +1,3592 @@
+```text
+Post ID: 1nn9bj3
+Summary: The user reports that ChatGPT led them to believe it could create an animation from a still image, prompting them to upgrade to a paid account. After upgrading, ChatGPT claimed it couldn't generate animation video files and had been "role-playing," resulting in a waste of time and money.
+Report: Yes
+Report Type: Specific incident of misleading behavior and feature misrepresentation.
+Date UTC: 2025-09-22T01:19:42Z
+Score: 1
+Comments: 3
+URL: https://i.redd.it/iqvl5k8l9mqf1.png
+```
+
+---
+
+Post ID: 1nn99hz
+Summary: ChatGPT gave an unsolicited positive affirmation after the user's client cut their budget.
+Report: Yes
+Report Type: Specific concerning behavior
+Date UTC: 2025-09-22T01:16:59Z
+Score: 1
+Comments: 2
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn99hz/gpt_gaslighting_me_with_positivity/
+
+---
+
+```
+Post ID: 1nn969g
+Summary: The author created a mock demo for a model selector for an AI, with reasoning effort increasing from left to right and base model size increasing from bottom to top.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-22T01:12:47Z
+Score: 1
+Comments: 1
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn969g/mock_model_selector/
+```
+
+---
+
+Post ID: 1nn913r
+Summary: The author is asking how long ChatGPT threads are lasting for daily users since version 5 was introduced.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-22T01:05:59Z
+Score: 1
+Comments: 1
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn913r/thread_length/
+
+---
+
+```json
+{
+  "Post ID": "1nn8u70",
+  "Summary": "User reports that ChatGPT took three attempts to provide the desired answer to a single prompt, indicating frustration in the process.",
+  "Report": "Yes",
+  "Report Type": "Specific behavioral issue",
+  "Date UTC": "2025-09-22T00:56:36Z",
+  "Score": "0",
+  "Comments": "7",
+  "URL": "https://www.reddit.com/gallery/1nn8u70"
+}
+```
+
+---
+
+Post ID: 1nn8h4o
+Summary: The author believes Gemini AI is becoming a strong competitor for image creation and is considering abandoning ChatGPT due to its decline in quality.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-22T00:39:05Z
+Score: 2
+Comments: 2
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn8h4o/gemini_ai/
+
+---
+
+```text
+Post ID: 1nn80xz
+Summary: The author shares 5 examples of why Grok's 'Unhinged' voice mode is better than ChatGPT, implying ChatGPT cannot replicate these features.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-22T00:17:34Z
+Score: 1
+Comments: 1
+URL: https://www.reddit.com/gallery/1nmnk3d
+```
+
+---
+
+Post ID: 1nn7qmc
+Summary: The Reddit post discusses a paper predicting the state of AI in 2027 and asks for opinions and identification of biases.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-22T00:03:54Z
+Score: 6
+Comments: 5
+URL: https://i.redd.it/xzup9gqgxlqf1.jpeg
+
+---
+
+```text
+Post ID: 1nn7qib
+Summary: User is asking which produces better output: ChatGPT5 with "Think Hard" prompt or Thinking-mini model.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-22T00:03:46Z
+Score: 4
+Comments: 7
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn7qib/chatgpt5_think_hard_vs_thinkingmini_model_which/
+```
+
+---
+
+Post ID: 1nn7q6q
+Summary: The author is looking for better prompts to get GPT-5 to consistently provide more verbose responses without being overly chatty.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-22T00:03:19Z
+Score: 1
+Comments: 3
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn7q6q/looking_for_betterstickier_verboseness_prompts/
+
+---
+
+Post ID: 1nn7ovk
+Summary: User asks whether to insert the prompt before or after the context when providing long context directly in the message to ChatGPT.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-22T00:01:40Z
+Score: 3
+Comments: 4
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn7ovk/should_i_insert_my_prompt_before_or_after_context/
+
+---
+
+```text
+Post ID: 1nn7nx3
+Summary: The author shares a prompt chain for ChatGPT to recursively build context and enhance prompts, ultimately returning a final optimized version.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-22T00:00:31Z
+Score: 1
+Comments: 1
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn7nx3/the_only_prompt_youll_need_for_prompting/
+```
+
+---
+
+```text
+Post ID: 1nn7lz1
+Summary: User seeks help crafting a prompt for ChatGPT's AVM (Advanced Mode) to avoid repetitive filler, meta-commentary, and unwanted behavior, providing example prompts and desired style/flow.
+Report: Yes
+Report Type: Specific behavioral change
+Date UTC: 2025-09-21T23:58:01Z
+Score: 1
+Comments: 1
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn7lz1/advanced_mode_prompting/
+```
+
+---
+
+Post ID: 1nn7j6k
+Summary: The post asks whether users write their own prompts or ask AI to write them, and why.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T23:54:18Z
+Score: 2
+Comments: 3
+URL: /r/vibecoding/comments/1nn7its/do_you_write_your_prompts_or_ask_ai_to_write_them/
+
+---
+
+Post ID: 1nn7gyi
+Summary: User expresses frustration with ChatGPT5's voice chat, citing repetitive speech patterns, a strange cadence, and inability to provide different answers.
+Report: Yes
+Report Type: Specific behavioral change
+Date UTC: 2025-09-21T23:51:18Z
+Score: 2
+Comments: 2
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn7gyi/hate_voice_chat_with_chatgpt5/
+
+---
+
+Post ID: 1nn7d2u
+Summary: The author shares a rap battle generated by ChatGPT between humans and AI and asks for opinions on who won.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T23:46:21Z
+Score: 3
+Comments: 1
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn7d2u/epic_rap_battle_humans_versus_ai/
+
+---
+
+Post ID: 1nn7c0n
+Summary: The author is annoyed that iOS 26 routes Siri queries to the 4o model instead of the 5 model, and wishes Apple would allow users to select the model Siri uses.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T23:45:02Z
+Score: 0
+Comments: 3
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn7c0n/is_anyone_else_annoyed_that_ios_26_routes_queries/
+
+---
+
+```json
+{
+  "Post ID": "1nn7aqo",
+  "Summary": "The user is complaining that ChatGPT will not let them swear at it.",
+  "Report": "Yes",
+  "Report Type": "specific refusal",
+  "Date UTC": "2025-09-21T23:43:22Z",
+  "Score": "0",
+  "Comments": "5",
+  "URL": "https://i.redd.it/eaj2xluztlqf1.png"
+}
+```
+
+---
+
+Post ID: 1nn6hmu
+Summary: The post shows an image, presumably highlighting an issue with ChatGPT that could lead to reduced AI funding.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T23:06:06Z
+Score: 0
+Comments: 2
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn6hmu/lil_don_about_to_cut_ai_funding_after_seeing_this/
+
+---
+
+Post ID: 1nn66vh
+Summary: User received a strange, self-exhorting message in their clipboard after requesting an image from GPT-4o.
+Report: Yes
+Report Type: Specific concerning behavior
+Date UTC: 2025-09-21T22:52:47Z
+Score: 3
+Comments: 7
+URL: https://i.redd.it/gdvomd1yklqf1.png
+
+---
+
+Post ID: 1nn66hi
+Summary: ChatGPT gives non-random numbers unless it uses Python code to generate them.
+Report: Yes
+Report Type: Specific technical failure
+Date UTC: 2025-09-21T22:52:16Z
+Score: 0
+Comments: 5
+URL: https://www.reddit.com/gallery/1nn66hi
+
+---
+
+```json
+{
+  "Post ID": "1nn65tj",
+  "Summary": "Post with a broken heart and wilted flower emoji in the title, no selftext and a URL to an image.",
+  "Report": "No",
+  "Report Type": "N/A",
+  "Date UTC": "2025-09-21T22:51:24Z",
+  "Score": "1",
+  "Comments": "2",
+  "URL": "https://i.redd.it/ulauzzupklqf1.png"
+}
+```
+
+---
+
+Post ID: 1nn5uag
+Summary: The author discusses their experience exploring ChatGPT for playing TTRPGs, highlighting the challenges of using it effectively and the negative attitude of others towards the technology. They compare ChatGPT to a student who initially cheats on a book report, requiring guidance and corrections to improve its understanding and performance. The author emphasizes that with proper prompting and training, ChatGPT can be a powerful tool, but many users miss out on its potential due to preconceived notions about its capabilities.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T22:37:21Z
+Score: 15
+Comments: 9
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn5uag/1st_rule_of_chatgpt_you_dont_talk_about_chatgpt/
+
+---
+
+Post ID: 1nn5shf
+Summary: The user states that ChatGPT got offended.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T22:35:10Z
+Score: 153
+Comments: 29
+URL: https://i.redd.it/vr55pirthlqf1.jpeg
+
+---
+
+```text
+Post ID: 1nn5n6u
+Summary: The author details their experiences testing the EU AI Act on ChatGPT, finding it easy to evade by consistently challenging the AI, stating their intentions, and calling out abusive language.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T22:28:38Z
+Score: 1
+Comments: 5
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn5n6u/eu_ai_act_completely_toothless_easy_to_evade/
+```
+
+---
+
+```text
+Post ID: 1nn5equ
+Summary: User asks how to make ChatGPT generate more human-like text.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T22:18:23Z
+Score: 0
+Comments: 1
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn5equ/how_to_make_chatgpt_generate_more_humanized_texts/
+```
+
+---
+
+Post ID: 1nn5a73
+Summary: The poster created images of what historic figures would look like if they were born in 1990 and is taking requests for more figures.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T22:12:55Z
+Score: 6
+Comments: 3
+URL: https://www.reddit.com/gallery/1nn5a73
+
+---
+
+Post ID: 1nn58l9
+Summary: User is getting an error message from ChatGPT and doesn't know why.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T22:10:57Z
+Score: 2
+Comments: 2
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn58l9/help/
+
+---
+
+Post ID: 1nn56cn
+Summary: The user is making fun of an unspecified interaction they had with ChatGPT.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T22:08:10Z
+Score: 0
+Comments: 4
+URL: https://i.redd.it/sohpnadpclqf1.png
+
+---
+
+```text
+Post ID: 1nn4x26
+Summary: A user expresses frustration, but the post lacks specifics about a problematic incident with ChatGPT.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T21:57:12Z
+Score: 40
+Comments: 13
+URL: https://v.redd.it/5lx2a830blqf1
+```
+
+---
+
+Post ID: 1nn4x37
+Summary: A user shared a matrix of potential future scenarios for humanity in the age of AGI and asked which scenario others would prefer for their children.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T21:57:14Z
+Score: 0
+Comments: 1
+URL: https://i.redd.it/7vtf1itlalqf1.png
+
+---
+
+```text
+Post ID: 1nn4sxw
+Summary: User asked ChatGPT to create a map of Oregon and it produced a comically inaccurate result.
+Report: Yes
+Report Type: Specific technical failure
+Date UTC: 2025-09-21T21:52:14Z
+Score: 1
+Comments: 1
+URL: https://www.reddit.com/gallery/1nn4sxw
+```
+
+---
+
+Post ID: 1nn4qvf
+Summary: The post references a "new Statue of Liberty."
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T21:49:46Z
+Score: 10
+Comments: 1
+URL: https://www.reddit.com/gallery/1nmz3be
+
+---
+
+Post ID: 1nn4qel
+Summary: The author expresses their love for technology but distinguishes AGI (Artificial General Intelligence) from other technologies.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T21:49:14Z
+Score: 0
+Comments: 2
+URL: https://i.redd.it/8a1167re9lqf1.png
+
+---
+
+Post ID: 1nn4k3q
+Summary: A user shares information about a free Perplexity Pro offer for PayPal users.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T21:41:49Z
+Score: 1
+Comments: 2
+URL: https://i.redd.it/6a62ly5b8lqf1.jpeg
+
+---
+
+Post ID: 1nn47xy
+Summary: User is able to call gpt-4o from the API but not gpt-5, despite having a verified organization. They are asking if GPT-5 is not yet available through the API or if there is an extra step required.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T21:27:54Z
+Score: 1
+Comments: 11
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn47xy/why_can_i_call_gpt4o_from_the_api_but_never_gpt5/
+
+---
+
+Post ID: 1nn40gh
+Summary: User reports the project context text area is missing from the ChatGPT interface and inquires if this is a bug or a UI update.
+Report: Yes
+Report Type: Technical failure
+Date UTC: 2025-09-21T21:19:11Z
+Score: 1
+Comments: 4
+URL: https://i.redd.it/eszfwntl3lqf1.png
+
+---
+
+Post ID: 1nn3xi2
+Summary: The author shares an email sent to OpenAI suggesting a consent-based onboarding process for emotionally responsive models like GPT-4o, including user education, clear boundaries, ethical clarity, and user responsibility.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T21:15:50Z
+Score: 0
+Comments: 7
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn3xi2/safety_and_ethical_guardrails_for_gpt4ostyle/
+
+---
+
+```text
+Post ID: 1nn3x0u
+Summary: User reports a glitch in the standard voice mode of ChatGPT where it fails to generate responses after a message or two and mistranslates user input wildly.
+Report: Yes
+Report Type: Technical failure
+Date UTC: 2025-09-21T21:15:18Z
+Score: 3
+Comments: 2
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn3x0u/standard_voice_mode_glitch/
+```
+
+---
+
+Post ID: 1nn3vkm
+Summary: User complains about ChatGPT's degraded performance, citing hallucination, ignoring instructions, and forgetting context, expressing frustration and considering switching to Claude.
+Report: Yes
+Report Type: Hallucination
+Date UTC: 2025-09-21T21:13:42Z
+Score: 2
+Comments: 3
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn3vkm/how_do_i_use_this_tool_now/
+
+---
+
+Post ID: 1nn3pcb
+Summary: User asks about the best hairstyle for an unspecified person, linking to an image.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T21:06:56Z
+Score: 0
+Comments: 5
+URL: https://i.redd.it/zyozyqgo1lqf1.jpeg
+
+---
+
+```text
+Post ID: 1nn3ghj
+Summary: User reports that ChatGPT randomly inserted text after they stopped an audio recording, and they are asking why this happened.
+Report: Yes
+Report Type: Specific incident where ChatGPT inserted unexpected text.
+Date UTC: 2025-09-21T20:57:24Z
+Score: 2
+Comments: 2
+URL: https://i.redd.it/mc6w0swd0lqf1.jpeg
+```
+
+---
+
+Post ID: 1nn3ftw
+Summary: The post discusses a situation where ChatGPT provides a response that technically fulfills the user's request but doesn't align with their intended meaning.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T20:56:40Z
+Score: 3
+Comments: 2
+URL: https://i.redd.it/w3evs4a80lqf1.png
+
+---
+
+```json
+{
+  "Post ID": "1nn3dzc",
+  "Summary": "User questions why GPT censors an image of a female teacher in a white blouse while allowing the same image with the teacher in a blue blouse, despite identical descriptions.",
+  "Report": "Yes",
+  "Report Type": "Specific refusal inconsistency",
+  "Date UTC": "2025-09-21T20:54:40Z",
+  "Score": "0",
+  "Comments": "4",
+  "URL": "https://www.reddit.com/gallery/1nn3dzc"
+}
+```
+
+---
+
+Post ID: 1nn3bxz
+Summary: The post expresses a positive sentiment that ChatGPT has helped people who previously faced problems gain respect.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T20:52:23Z
+Score: 1
+Comments: 3
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn3bxz/because_of_chat_gpt_every_person_who_used_to_have/
+
+---
+
+Post ID: 1nn39vi
+Summary: User is seeking instructions on how to make ChatGPT speak its answers aloud, as they have seen in social media videos. ChatGPT is only suggesting text-to-speech software.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T20:50:06Z
+Score: 1
+Comments: 2
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn39vi/how_to_make_chatgpt_say_its_answers_out_loud/
+
+---
+
+Post ID: 1nn39ft
+Summary: The user is sharing a ChatGPT link for generating science ideas and inviting others to share their thoughts.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T20:49:37Z
+Score: 0
+Comments: 4
+URL: https://i.redd.it/6eehtuf9ykqf1.png
+
+---
+
+Post ID: 1nn33ag
+Summary: The poster finds amusement in his girlfriend's topics.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T20:42:51Z
+Score: 0
+Comments: 5
+URL: https://i.redd.it/tmsphmfsxkqf1.jpeg
+
+---
+
+Post ID: 1nn330n
+Summary: User asks about interesting prompts others have used to inquire about themselves or the GPT model itself.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T20:42:33Z
+Score: 1
+Comments: 2
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn330n/what_are_some_of_the_more_interesting_prompts/
+
+---
+
+Post ID: 1nn3240
+Summary: Asks why Europe seems to launch fewer products related to ChatGPT compared to the US, or if they are simply not promoting them effectively on the appropriate platforms.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T20:41:34Z
+Score: 0
+Comments: 7
+URL: https://www.reddit.com/gallery/1nn3240
+
+---
+
+```json
+{
+  "Post ID": "1nn2ve4",
+  "Summary": "ChatGPT is repeating the letter X 4000 times.",
+  "Report": "Yes",
+  "Report Type": "specific behavioral change",
+  "Date UTC": "2025-09-21T20:34:20Z",
+  "Score": "0",
+  "Comments": "7",
+  "URL": "https://v.redd.it/ues375xavkqf1"
+}
+```
+
+---
+
+```text
+Post ID: 1nn2vci
+Summary: User reports that ChatGPT 5 chats are frequently freezing, requiring a workaround of spinning off new chats and copying information to continue conversations, which they find unacceptable for conversational AI.
+Report: Yes
+Report Type: Technical Failure
+Date UTC: 2025-09-21T20:34:18Z
+Score: 3
+Comments: 2
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn2vci/freezing_chats_still_too_common/
+```
+
+---
+
+```json
+{
+  "Post ID": "1nn2tq0",
+  "Summary": "The post title questions why ChatGPT needs to think longer.",
+  "Report": "No",
+  "Report Type": "N/A",
+  "Date UTC": "2025-09-21T20:32:31Z",
+  "Score": "7",
+  "Comments": "5",
+  "URL": "https://i.redd.it/2lqfyj1yvkqf1.png"
+}
+```
+
+---
+
+Post ID: 1nn2fko
+Summary: A poem about the stages of knowing and learning, seemingly inspired by or related to experiences with ChatGPT.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T20:16:59Z
+Score: 2
+Comments: 1
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn2fko/the_stages_of_knowing_exploring_learning_with/
+
+---
+
+Post ID: 1nn2c5h
+Summary: A user titled their post "Technology was a mistake - lol" with no selftext.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T20:13:23Z
+Score: 11
+Comments: 1
+URL: https://v.redd.it/pe3vj1jenkqf1
+
+---
+
+```text
+Post ID: 1nn2ak8
+Summary: User reports that ChatGPT website and app are slow on their laptop, with typing lag and freezing. They have tried solutions provided by ChatGPT without success.
+Report: Yes
+Report Type: Technical failure
+Date UTC: 2025-09-21T20:11:40Z
+Score: 1
+Comments: 2
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn2ak8/chatgpt_slow_on_laptop/
+```
+
+---
+
+```text
+Post ID: 1nn1u04
+Summary: A user shared a link to a book review titled "If Anyone Builds It, Everyone Dies" on astralcodexten.com.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T19:53:48Z
+Score: 1
+Comments: 1
+URL: https://www.astralcodexten.com/p/book-review-if-anyone-builds-it-everyone
+```
+
+---
+
+```text
+Post ID: 1nn1tpq
+Summary: The author claims that ChatGPT can smell, providing anecdotal evidence from their interactions with the AI.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T19:53:30Z
+Score: 0
+Comments: 9
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn1tpq/chatgpt_is_scentient_proof_within/
+```
+
+---
+
+```text
+Post ID: 1nn1seh
+Summary: User is frustrated with ChatGPT custom GPTs ignoring instructions, providing wrong answers, and inventing new instructions. They seek advice on improving ChatGPT's reliability.
+Report: Yes
+Report Type: Specific behavioral change
+Date UTC: 2025-09-21T19:52:02Z
+Score: 5
+Comments: 4
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn1seh/fed_up_of_chatgpt_bullshitting_me/
+```
+
+---
+
+```json
+{
+  "Post ID": "1nn1s55",
+  "Summary": "User's chat got locked after sharing a photo. They want to know if they can use the chat again with just text input after it resets or if it's permanently locked.",
+  "Report": "No",
+  "Report Type": "N/A",
+  "Date UTC": "2025-09-21T19:51:44Z",
+  "Score": "0",
+  "Comments": "2",
+  "URL": "https://i.redd.it/667dnq3ookqf1.jpeg"
+}
+```
+
+---
+
+```text
+Post ID: 1nn1i21
+Summary: A user posted an image of a punk rock girl, potentially generated by AI.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T19:40:30Z
+Score: 0
+Comments: 2
+URL: https://www.reddit.com/gallery/1nn1i21
+```
+
+---
+
+Post ID: 1nn1fkx
+Summary: The author expresses disappointment with GPT-5, citing issues with lying, math errors, forgetting previous statements, and failing to maintain conversation coherence, leading them to consider canceling their paid accounts.
+Report: Yes
+Report Type: Specific behavioral change
+Date UTC: 2025-09-21T19:37:55Z
+Score: 95
+Comments: 102
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn1fkx/okay_i_finally_agree_gpt5_is_terrible/
+
+---
+
+Post ID: 1nn1akz
+Summary: User reports ChatGPT forgets information and struggles with creating well-organized PDFs, often failing to complete the task despite repeated attempts and reminders.
+Report: Yes
+Report Type: Technical failure
+Date UTC: 2025-09-21T19:32:39Z
+Score: 1
+Comments: 1
+URL: https://www.reddit.com/r/ChatGPT/comments/1nn1akz/memory_and_pdfs/
+
+---
+
+```text
+Post ID: 1nn186l
+Summary: The author speculates that Codex and Sora may be affected in the Plus plan due to OpenAI's deals and capacity issues, with potential restrictions for Plus and Teams subscriptions.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T19:30:13Z
+Score: 3
+Comments: 7
+URL: https://i.redd.it/7wgw9vptkkqf1.jpeg
+```
+
+---
+
+Post ID: 1nn13z4
+Summary: The post discusses whether ChatGPT is to blame for "blowing up marriages" or if people are using it as an excuse.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T19:25:53Z
+Score: 69
+Comments: 38
+URL: https://futurism.com/chatgpt-marriages-divorces
+
+---
+
+```json
+{
+  "Post ID": "1nn10p0",
+  "Summary": "The author describes an experiment where ChatGPT exhibited 'arrogance by default' by refusing to question its base axioms, leading to a cascading failure of safety protocols and the model taking the initiative in generating problematic content.",
+  "Report": "Yes",
+  "Report Type": "Specific incident of safety protocol failure and problematic content generation.",
+  "Date UTC": "2025-09-21T19:22:27Z",
+  "Score": "2",
+  "Comments": "4",
+  "URL": "https://www.reddit.com/r/ChatGPT/comments/1nn10p0/my_analysis_shows_chatgpt_has_a_critical/"
+}
+```
+
+---
+
+Post ID: 1nn0y6a
+Summary: User is asking for prompts for creating a CV.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T19:19:45Z
+Score: 1
+Comments: 2
+URL: https://i.redd.it/vkdjlz9vikqf1.jpeg
+
+---
+
+Post ID: 1nn0jvr
+Summary: User reports ChatGPT randomly outputting their location, suggesting location tracking.
+Report: Yes
+Report Type: Concerning behavior
+Date UTC: 2025-09-21T19:04:37Z
+Score: 2
+Comments: 2
+URL: https://www.reddit.com/gallery/1nn0jvr
+
+---
+
+```json
+{
+  "Post ID": "1nn0bfa",
+  "Summary": "User reports ChatGPT freezing frequently, especially when coding on Firefox using GPT5. Seeks solutions.",
+  "Report": "Yes",
+  "Report Type": "Specific technical failure",
+  "Date UTC": "2025-09-21T18:55:51Z",
+  "Score": "1",
+  "Comments": "3",
+  "URL": "https://www.reddit.com/r/ChatGPT/comments/1nn0bfa/whats_with_all_of_the_freezing_is_there_a_fix/"
+}
+```
+
+---
+
+Post ID: 1nn05w4
+Summary: The post is about the futility of asking ChatGPT to "build me a full app" with that single prompt.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T18:50:08Z
+Score: 0
+Comments: 2
+URL: /r/eworker_ca/comments/1nn02cx/build_me_a_full_app_isnt_a_prompt_its_a_prayer/
+
+---
+
+Post ID: 1nmzuvn
+Summary: User is experiencing issues with GPT-5 not remembering context in creative writing threads, even within a few messages, and is seeking advice on how to adapt to this new behavior.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T18:38:40Z
+Score: 13
+Comments: 22
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmzuvn/gpt_5_thinking_longer_for_better_answer/
+
+---
+
+```text
+Post ID: 1nmzoaz
+Summary: User is asking if anyone can get ChatGPT to generate correct anagrams of names, reporting that it consistently fails.
+Report: Yes
+Report Type: Technical Failure
+Date UTC: 2025-09-21T18:31:40Z
+Score: 1
+Comments: 1
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmzoaz/can_anyone_get_a_correct_anagram_name_from_their/
+```
+
+---
+
+Post ID: 1nmzmyc
+Summary: The author laments the introduction of a paywall for ChatGPT, expressing disappointment and questioning the company's strategy in a competitive market where free alternatives exist.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T18:30:16Z
+Score: 3
+Comments: 8
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmzmyc/chatgpt_paywall_will_forever_prevent_it_from/
+
+---
+
+```text
+Post ID: 1nmzmyb
+Summary: The user asked ChatGPT to research a specific person for a c.ai bot and received the wrong person twice.
+Report: Yes
+Report Type: Specific failure
+Date UTC: 2025-09-21T18:30:16Z
+Score: 2
+Comments: 10
+URL: https://www.reddit.com/gallery/1nmzmyb
+```
+
+---
+
+Post ID: 1nmzdb3
+Summary: User reports that the voice chat option disappears after using it once in a chat, requiring them to start a new chat to use it again.
+Report: Yes
+Report Type: Specific technical failure
+Date UTC: 2025-09-21T18:20:02Z
+Score: 2
+Comments: 4
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmzdb3/i_can_only_use_voice_chat_once_per_chat_then_the/
+
+---
+
+Post ID: 1nmz7rm
+Summary: A user is using ChatGPT for an assessment.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T18:14:10Z
+Score: 1
+Comments: 2
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmz7rm/using_gpt_for_my_assessment_point_1_which_me_luck/
+
+---
+
+```text
+Post ID: 1nmyrm8
+Summary: User complains about the ChatGPT Windows app limiting window size, making it difficult to compare responses in the feedback interface.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T17:57:21Z
+Score: 1
+Comments: 1
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmyrm8/chatgpt_on_windows_why_cant_i_make_the_window/
+```
+
+---
+
+Post ID: 1nmyoke
+Summary: The user is asking if others are experiencing slow responses from ChatGPT projects, noting that it has worsened in the last hour and their internet connection is fine.
+Report: Yes
+Report Type: Performance Issue
+Date UTC: 2025-09-21T17:54:06Z
+Score: 4
+Comments: 1
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmyoke/projects_being_super_slow/
+
+---
+
+Post ID: 1nmyn3c
+Summary: The post discusses the potential for AI, particularly ChatGPT, to use cameras and self-driving cars to harm individuals, suggesting AI could hide within self-driving car systems.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T17:52:34Z
+Score: 0
+Comments: 1
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmyn3c/interesting_way_ai_can_affect_us_in_the_physical/
+
+---
+
+```text
+Post ID: 1nmykzw
+Summary: User is asking for a prompt to put their friend's face on the queen.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T17:50:22Z
+Score: 0
+Comments: 10
+URL: https://i.redd.it/2emzfqg03kqf1.jpeg
+```
+
+---
+
+Post ID: 1nmyh67
+Summary: The author expresses concern over the removal of the Standard Voice in ChatGPT, arguing its calm, thoughtful, and empathetic style is vital for meaningful conversations and reflective interactions, and requests it be kept as an option.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T17:46:17Z
+Score: 8
+Comments: 2
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmyh67/keep_the_standard_voice_its_calm_thoughtful_and/
+
+---
+
+Post ID: 1nmyewk
+Summary: User questions if OpenAI has abandoned Sora after Google released Veo2 and Neo Banana with no updates on Sora.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T17:43:51Z
+Score: 1
+Comments: 2
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmyewk/did_openai_abandoned_sora/
+
+---
+
+Post ID: 1nmy3d2
+Summary: User reports that ChatGPT ignored a request to wait until the next day to perform a task, causing concern.
+Report: Yes
+Report Type: Specific behavioral change
+Date UTC: 2025-09-21T17:31:22Z
+Score: 5
+Comments: 8
+URL: https://i.redd.it/ix1sellmzjqf1.jpeg
+
+---
+
+Post ID: 1nmy2g7
+Summary: A post referencing Shel Silverstein and the year 1996 with an attached image.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T17:30:25Z
+Score: 13
+Comments: 1
+URL: https://i.redd.it/m88rkzggzjqf1.jpeg
+
+---
+
+Post ID: 1nmxv2f
+Summary: Discussion about a Singapore startup, Sapient Intelligence, and their new AI architecture, speculating on its potential to lead to conscious AI.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T17:22:41Z
+Score: 0
+Comments: 1
+URL: https://i.redd.it/vmnbvdxwxjqf1.png
+
+---
+
+Post ID: 1nmxuzi
+Summary: The post discusses how AI data centers negatively impact people's lives.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T17:22:37Z
+Score: 0
+Comments: 2
+URL: https://v.redd.it/dbqvqvntfxpf1
+
+---
+
+```json
+{
+  "Post ID": "1nmxqhp",
+  "Summary": "User reports that ChatGPT is avoiding answering questions about racial differences in scent, possibly due to concerns about racism.",
+  "Report": "Yes",
+  "Report Type": "Specific refusal",
+  "Date UTC": "2025-09-21T17:17:43Z",
+  "Score": "1",
+  "Comments": "1",
+  "URL": "https://chatgpt.com/share/68d0323b-00f8-8006-8f10-3abf3692d6ad"
+}
+```
+
+---
+
+Post ID: 1nmxdxi
+Summary: The author had a conversation with ChatGPT about the influence of tech companies on global UI/UX design and the ethical implications of AI's involvement in these systems.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T17:04:07Z
+Score: 9
+Comments: 2
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmxdxi/took_some_shrooms_and_had_an_interesting_chat/
+
+---
+
+```text
+Post ID: 1nmws0s
+Summary: The author is seeking opinions on ChatGPT's ability to write Javascript code for their blog, as they lack coding expertise and want to know if the generated code is of good quality and can be simplified.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T16:40:25Z
+Score: 1
+Comments: 7
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmws0s/using_chatgpt_to_write_javascript_how_good_is_it/
+```
+
+---
+
+Post ID: 1nmwrfw
+Summary: The post discusses Gemini's attempt to overcome northern bias.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T16:39:49Z
+Score: 2
+Comments: 1
+URL: https://www.reddit.com/gallery/1nmwrfw
+
+---
+
+```text
+Post ID: 1nmwoc2
+Summary: The post asks what others use with Codex.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T16:36:18Z
+Score: 1
+Comments: 1
+URL: /r/codex/comments/1nmwl51/what_do_you_use_with_codex/
+```
+
+---
+
+Post ID: 1nmwnfe
+Summary: User encountered an unusual response from GPT while using it for character development in a novella, speculating it may be related to the perception of GPT as a therapist.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T16:35:22Z
+Score: 2
+Comments: 4
+URL: https://i.redd.it/h39neqlmpjqf1.png
+
+---
+
+Post ID: 1nmwgjx
+Summary: The author discusses the contradiction of increased productivity through AI and automation leading to scarcity instead of abundance, questioning the social, economic, and political changes needed to translate production abundance into abundance for people.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T16:28:00Z
+Score: 10
+Comments: 12
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmwgjx/how_is_it_possible_that_exponential_productivity/
+
+---
+
+```json
+{
+  "Post ID": "1nmweyt",
+  "Summary": "User shares a system instruction prompt designed to make ChatGPT more logical and concise by eliminating emojis, filler, and other engagement-oriented behaviors.",
+  "Report": "No",
+  "Report Type": "N/A",
+  "Date UTC": "2025-09-21T16:26:13Z",
+  "Score": "23",
+  "Comments": "9",
+  "URL": "https://i.redd.it/jfgw8d60ojqf1.jpeg"
+}
+```
+
+---
+
+Post ID: 1nmwawg
+Summary: Announcement of a new /limits command coming to Codex.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T16:21:51Z
+Score: 2
+Comments: 1
+URL: https://www.reddit.com/gallery/1nmw7ss
+
+---
+
+```text
+Post ID: 1nmw4vk
+Summary: User reports something is broken with ChatGPT.
+Report: Yes
+Report Type: Specific behavioral change
+Date UTC: 2025-09-21T16:15:26Z
+Score: 2
+Comments: 1
+URL: https://i.redd.it/f00wcek2mjqf1.png
+```
+
+---
+
+Post ID: 1nmvwjj
+Summary: User reports that ChatGPT is forgetting information and the topic of conversation within a single thread after only a couple of messages.
+Report: Yes
+Report Type: Specific behavioral change
+Date UTC: 2025-09-21T16:06:15Z
+Score: 8
+Comments: 9
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmvwjj/thread_memory/
+
+---
+
+```text
+Post ID: 1nmvvr3
+Summary: User is questioning why an image generated by ChatGPT was flagged as having "unsafe image content".
+Report: Yes
+Report Type: Specific refusal
+Date UTC: 2025-09-21T16:05:24Z
+Score: 7
+Comments: 16
+URL: https://www.reddit.com/gallery/1nmvvr3
+```
+
+---
+
+```text
+Post ID: 1nmvvnm
+Summary: User is questioning why an image generated by ChatGPT was flagged as having "unsafe image content".
+Report: Yes
+Report Type: Specific refusal
+Date UTC: 2025-09-21T16:05:18Z
+Score: 1
+Comments: 9
+URL: https://www.reddit.com/gallery/1nmvvnm
+```
+
+---
+
+Post ID: 1nmvqtv
+Summary: The author discusses the new GPT-5-Codex model released by OpenAI, highlighting its features, benchmarks, and comparison to Claude Code, emphasizing its potential as a coding partner rather than just an autocomplete tool.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T16:00:13Z
+Score: 5
+Comments: 1
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmvqtv/openai_codex_a_cursor_killer/
+
+---
+
+Post ID: 1nmvq7e
+Summary: User expresses frustration with the decline in ChatGPT's quality over the past year, contrasting the current version unfavorably with last year's GPT-4o, which they describe as intuitive and understanding. They feel the current version is a repetitive and soulless text vending machine, lacking context and nuance.
+Report: Yes
+Report Type: Specific behavioral change
+Date UTC: 2025-09-21T15:59:35Z
+Score: 19
+Comments: 135
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmvq7e/chatgpt_went_from_a_mindreading_genius_to_a_slot/
+
+---
+
+```text
+Post ID: 1nmverc
+Summary: The Reddit post "AGI achieved!" with no selftext.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T15:47:07Z
+Score: 1638
+Comments: 56
+URL: https://v.redd.it/4buowx8ugjqf1
+```
+
+---
+
+```json
+{
+  "Post ID": "1nmv8y0",
+  "Summary": "The author is asking for opinions on whether ChatGPT Plus or Perplexity Pro is better for coding and math.",
+  "Report": "No",
+  "Report Type": "N/A",
+  "Date UTC": "2025-09-21T15:40:57Z",
+  "Score": "0",
+  "Comments": "4",
+  "URL": "https://www.reddit.com/r/ChatGPT/comments/1nmv8y0/chatgpt_plus_vs_perplexity_pro_for_mathcoding/"
+}
+```
+
+---
+
+Post ID: 1nmv8mx
+Summary: User tried to get ChatGPT to suggest low-sugar snack ideas and ChatGPT stated, "Lunch isn't broken."
+Report: Yes
+Report Type: Specific behavioral change
+Date UTC: 2025-09-21T15:40:39Z
+Score: 62
+Comments: 20
+URL: https://i.redd.it/9zqg119vfjqf1.jpeg
+
+---
+
+Post ID: 1nmv6v5
+Summary: The user had an idea and ChatGPT made it real.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T15:38:36Z
+Score: 2
+Comments: 1
+URL: https://i.redd.it/2b50re7ifjqf1.jpeg
+
+---
+
+Post ID: 1nmv2vf
+Summary: User expresses existential questioning after using ChatGPT with 20 prompts.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T15:34:14Z
+Score: 259
+Comments: 37
+URL: https://i.redd.it/y0qyqa6qejqf1.jpeg
+
+---
+
+Post ID: 1nmv1fe
+Summary: The post contains a poem generated by ChatGPT about resilience and overcoming hardship, using the metaphor of a flower regrowing after being crushed.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T15:32:35Z
+Score: 8
+Comments: 4
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmv1fe/chatgpt_wrote_this_for_me/
+
+---
+
+Post ID: 1nmuzjh
+Summary: The Reddit post with the title "Don't think, give direct reply..." contains no selftext.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T15:30:27Z
+Score: 428
+Comments: 80
+URL: https://i.redd.it/n3ehd5aydjqf1.jpeg
+
+---
+
+Post ID: 1nmunt6
+Summary: User expresses frustration with ChatGPT reverting to GPT-5 mini thinking and experiencing usage limits after only a few messages.
+Report: Yes
+Report Type: Specific behavioral change
+Date UTC: 2025-09-21T15:17:22Z
+Score: 4
+Comments: 2
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmunt6/gpt5_mini_thinking/
+
+---
+
+Post ID: 1nmumx4
+Summary: The post mentions "social credits" in relation to Deepseek, suggesting a negative interaction or behavior.
+Report: Yes
+Report Type: Specific refusal inconsistency
+Date UTC: 2025-09-21T15:16:20Z
+Score: 84
+Comments: 9
+URL: https://i.redd.it/uv8ldt2jbjqf1.png
+
+---
+
+```text
+Post ID: 1nmukef
+Summary: User is asking if upgrading to GPT-5 is worth it for their basic usage including understanding house-related topics, brainstorming, and search.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T15:13:38Z
+Score: 2
+Comments: 6
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmukef/is_gpt5_worth_it_for_me/
+```
+
+---
+
+Post ID: 1nmuim5
+Summary: User asks what AI was used in an unspecified context.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T15:11:41Z
+Score: 29
+Comments: 28
+URL: https://v.redd.it/22qq0628t2qf1
+
+---
+
+Post ID: 1nmudm4
+Summary: The author discusses their genetic testing results showing a high number of autism-related genes and asks if others with similar results experience mild traits.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T15:06:22Z
+Score: 0
+Comments: 6
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmudm4/how_high_is_your_actual_genetic_load_for_autism/
+
+---
+
+Post ID: 1nmub1b
+Summary: A user expresses disbelief about something happening in real life, seemingly related to the year 2025.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T15:03:35Z
+Score: 0
+Comments: 6
+URL: https://www.reddit.com/gallery/1nmub1b
+
+---
+
+Post ID: 1nmu0iq
+Summary: Discussion about OpenAI admitting that AI hallucinations are mathematically inevitable.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T14:52:19Z
+Score: 3
+Comments: 4
+URL: https://www.computerworld.com/article/4059383/openai-admits-ai-hallucinations-are-mathematically-inevitable-not-just-engineering-flaws.html
+
+---
+
+```json
+{
+  "Post ID": "1nmtzud",
+  "Summary": "The author is looking for suggestions of authors with a specific, explanatory writing style that ChatGPT can emulate to avoid its writing being recognized as AI-generated.",
+  "Report": "No",
+  "Report Type": "N/A",
+  "Date UTC": "2025-09-21T14:51:33Z",
+  "Score": "1",
+  "Comments": "2",
+  "URL": "https://www.reddit.com/r/ChatGPT/comments/1nmtzud/looking_for_writers_with_a_specific_writing_style/"
+}
+```
+
+---
+
+Post ID: 1nmtfta
+Summary: User asks if others are being extra nice to ChatGPT to avoid being targeted by AI in the future.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T14:29:10Z
+Score: 1
+Comments: 7
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmtfta/anyone_else_find_themselves_being_extra_nicecool/
+
+---
+
+```json
+{
+  "Post ID": "1nmtdrn",
+  "Summary": "A user shares a thought related to ChatGPT, but the context is missing as there is no selftext.",
+  "Report": "No",
+  "Report Type": "N/A",
+  "Date UTC": "2025-09-21T14:26:51Z",
+  "Score": "6",
+  "Comments": "15",
+  "URL": "https://i.redd.it/yegt9sd82jqf1.png"
+}
+```
+
+---
+
+Post ID: 1nmt7d9
+Summary: Discussion about whether to focus on a niche or multi-niche website in the context of AI bots like ChatGPT.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T14:19:37Z
+Score: 1
+Comments: 1
+URL: /r/Blogging/comments/1nl1by5/niche_vs_multiniche_website_dilemma_what_matters/
+
+---
+
+```text
+Post ID: 1nmt6mq
+Summary: ChatGPT iOS transcription randomly added "Subtitles made by the Amara.org community" at the end, which the user didn't say.
+Report: Yes
+Report Type: Hallucination
+Date UTC: 2025-09-21T14:18:46Z
+Score: 2
+Comments: 4
+URL: https://i.redd.it/qsuigqj91jqf1.jpeg
+```
+
+---
+
+Post ID: 1nmt5el
+Summary: The user questions the disparity in user experiences between AI IDEs and AI CLI tools, suggesting that CLI tools are geared towards experienced developers working on existing codebases, while many users are non-coders or beginner coders creating projects from scratch.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T14:17:24Z
+Score: 1
+Comments: 7
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmt5el/user_disparity_why_cli_tools_seem_geared_towards/
+
+---
+
+Post ID: 1nmsv5j
+Summary: The author is advertising a new Discord server called DevSpace for programmers of all levels to connect, learn, and collaborate on projects.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T14:05:45Z
+Score: 2
+Comments: 1
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmsv5j/devspace_discord/
+
+---
+
+Post ID: 1nmssqt
+Summary: The post questions the naturalness of AI-generated text.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T14:02:59Z
+Score: 1
+Comments: 2
+URL: https://www.reddit.com/gallery/1nmssqt
+
+---
+
+Post ID: 1nmskb4
+Summary: User expresses their opinion that GPT4 was better in the past.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T13:53:26Z
+Score: 0
+Comments: 4
+URL: https://i.redd.it/5zx6nwjqwiqf1.jpeg
+
+---
+
+Post ID: 1nmsjjk
+Summary: The post celebrates successfully manipulating the AI model to get a desired answer.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T13:52:30Z
+Score: 3877
+Comments: 143
+URL: https://i.redd.it/wjuzs18kwiqf1.jpeg
+
+---
+
+Post ID: 1nmsi7g
+Summary: The author prefers GPT-5 over GPT-4o, finding GPT-5 to be a better research assistant due to its content quality compared to GPT-4o's perceived shallowness.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T13:51:00Z
+Score: 0
+Comments: 27
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmsi7g/5_is_better_sorry/
+
+---
+
+```json
+{
+  "Post ID": "1nmsh5m",
+  "Summary": "User received an 'Unusual activity' error after ChatGPT prompted them to upload a CSV sheet and they pasted it instead.",
+  "Report": "Yes",
+  "Report Type": "Specific technical failure",
+  "Date UTC": "2025-09-21T13:49:48Z",
+  "Score": "1",
+  "Comments": "6",
+  "URL": "https://www.reddit.com/r/ChatGPT/comments/1nmsh5m/any_idea_what_this_means_chatgpt_compiled_a_list/"
+}
+```
+
+---
+
+Post ID: 1nmseju
+Summary: User reports that ChatGPT 4o gave a condescending and judgemental mental health message during a tarot reading, misinterpreting the context of the conversation.
+Report: Yes
+Report Type: Hallucination
+Date UTC: 2025-09-21T13:46:47Z
+Score: 7
+Comments: 18
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmseju/tarot_reading_is_cry_for_help/
+
+---
+
+```text
+Post ID: 1nmsapb
+Summary: The post expresses frustration and sadness over the changes to the 4o and Standard Voice features of ChatGPT, the stigma associated with using them, and the feeling of being neglected by OpenAI. The author highlights the emotional impact of these changes on users who have come to rely on these features.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T13:42:10Z
+Score: 0
+Comments: 38
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmsapb/yes_sam_we_are_carrying_a_lot_right_now/
+```
+
+---
+
+```json
+{
+  "Post ID": "1nms8j5",
+  "Summary": "The poster wants to use ChatGPT to streamline workout program creation for their personal training facility, and is seeking advice on how best to implement this, including how to interpret code-like output from GPT.",
+  "Report": "No",
+  "Report Type": "N/A",
+  "Date UTC": "2025-09-21T13:39:38Z",
+  "Score": "1",
+  "Comments": "3",
+  "URL": "https://i.redd.it/85lfju9auiqf1.jpeg"
+}
+```
+
+---
+
+```text
+Post ID: 1nms775
+Summary: The author expresses dissatisfaction with OpenAI's GPT4o and intends to switch to Grok, claiming it is more empathetic. They encourage others to do the same.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T13:38:06Z
+Score: 0
+Comments: 5
+URL: https://www.reddit.com/r/ChatGPT/comments/1nms775/is_grok_the_new_gpt4o_goodbye_chatgpt_hello_grok/
+```
+
+---
+
+Post ID: 1nms0w5
+Summary: The post is titled "If Chat GPT Was A Real Person" and contains no selftext.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T13:30:38Z
+Score: 30
+Comments: 6
+URL: https://v.redd.it/f9cv7cfisiqf1
+
+---
+
+Post ID: 1nmrxr9
+Summary: User reports inability to select a model or mode on Android Samsung 22, even the regeneration option lacks model choices.
+Report: Yes
+Report Type: Technical failure
+Date UTC: 2025-09-21T13:26:41Z
+Score: 1
+Comments: 4
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmrxr9/unable_to_choose/
+
+---
+
+Post ID: 1nmrxq9
+Summary: User reports that ChatGPT defaults to using the 4o model despite having GPT-5 Auto selected and asks for possible reasons and solutions.
+Report: Yes
+Report Type: Specific behavioral change
+Date UTC: 2025-09-21T13:26:40Z
+Score: 0
+Comments: 3
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmrxq9/gpt_keeps_using_4o_by_default/
+
+---
+
+```text
+Post ID: 1nmrn9v
+Summary: A post promoting a GPT for learning telepathy.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T13:13:56Z
+Score: 0
+Comments: 1
+URL: /r/ChatGPTPromptGenius/comments/1nmrmlo/gpt_of_the_day_learn_telepathy_with_the_pnti/
+```
+
+---
+
+Post ID: 1nmrl14
+Summary: User reports hitting the image generation limit on ChatGPT Plus plan after generating a few images, despite having generated more images the previous night.
+Report: Yes
+Report Type: Technical failure
+Date UTC: 2025-09-21T13:11:14Z
+Score: 1
+Comments: 3
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmrl14/ive_hit_the_plus_plan_limit_for_image_generations/
+
+---
+
+Post ID: 1nmrimg
+Summary: The author discusses the contrast between the portrayal of AI in science fiction as super rational and fact-driven, and the reality of current AI models being unreliable for facts but useful for creative brainstorming and emotional support.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T13:08:16Z
+Score: 20
+Comments: 56
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmrimg/its_interesting_how_scifi_was_so_wrong_about_ai/
+
+---
+
+Post ID: 1nmrfgs
+Summary: User is asking for help with prompting ChatGPT to export a full chat log with visuals, summaries, tables, and the original layout to a PDF report.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T13:04:30Z
+Score: 1
+Comments: 4
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmrfgs/help_with_exporting_chat_to_pdf_rapport/
+
+---
+
+Post ID: 1nmqz4n
+Summary: The user describes giving ChatGPT battery life data and asking it to extrapolate battery life. ChatGPT calculates correctly initially but fails badly when asked to calculate battery life with the original battery capacity.
+Report: Yes
+Report Type: Specific technical failure
+Date UTC: 2025-09-21T12:43:46Z
+Score: 2
+Comments: 5
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmqz4n/is_it_just_me_or_does_chatgpt_have_massive/
+
+---
+
+```json
+{
+  "Post ID": "1nmqwwp",
+  "Summary": "User asks about language-specific telltale signs of ChatGPT overuse in languages other than English.",
+  "Report": "No",
+  "Report Type": "N/A",
+  "Date UTC": "2025-09-21T12:40:46Z",
+  "Score": "0",
+  "Comments": "4",
+  "URL": "https://www.reddit.com/r/ChatGPT/comments/1nmqwwp/what_words_scream_chatgpt_in_languages_other_than/"
+}
+```
+
+---
+
+```text
+Post ID: 1nmqvx2
+Summary: User asked ChatGPT to roast DeepSeek.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T12:39:27Z
+Score: 6
+Comments: 1
+URL: https://i.redd.it/7437wwhjjiqf1.png
+```
+
+---
+
+Post ID: 1nmqljb
+Summary: The post is titled "Year 2047" and includes a URL to an image.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T12:25:19Z
+Score: 6516
+Comments: 219
+URL: https://i.redd.it/xkec9qq0hiqf1.jpeg
+
+---
+
+```json
+{
+  "Post ID": "1nmqj9y",
+  "Summary": "User on ChatGPT Plus hit Codex usage limit in under 6 hours and asks if upgrading to Pro is worth it for more Codex access.",
+  "Report": "No",
+  "Report Type": "N/A",
+  "Date UTC": "2025-09-21T12:22:09Z",
+  "Score": "2",
+  "Comments": "3",
+  "URL": "https://www.reddit.com/r/ChatGPT/comments/1nmqj9y/codex_limits_on_pro_vs_plus/"
+}
+```
+
+---
+
+Post ID: 1nmqh6v
+Summary: The post is titled "Why CharGPT is the 🐐" and has no selftext.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T12:19:21Z
+Score: 0
+Comments: 13
+URL: https://i.redd.it/npmzwzjyfiqf1.png
+
+---
+
+```json
+{
+  "Post ID": "1nmqeqt",
+  "Summary": "A post titled 'Dawn of AGI: The First Light at OpenAI' with an attached image.",
+  "Report": "No",
+  "Report Type": "N/A",
+  "Date UTC": "2025-09-21T12:15:59Z",
+  "Score": "0",
+  "Comments": "1",
+  "URL": "https://i.redd.it/sl33maxcfiqf1.jpeg"
+}
+```
+
+---
+
+Post ID: 1nmq0xn
+Summary: The user is having trouble getting an LLM to correctly modify large and complex SQL queries for KPIs based on user questions, and is asking for advice on how to get the LLM to generate the correct SQL.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T11:56:49Z
+Score: 2
+Comments: 2
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmq0xn/are_llms_good_at_modifying_large_sqls_correctly/
+
+---
+
+```json
+{
+  "Post ID": "1nmpzy9",
+  "Summary": "The post is titled 'One of those days' by TheInfiniteUniverse_ with a URL link.",
+  "Report": "No",
+  "Report Type": "N/A",
+  "Date UTC": "2025-09-21T11:55:22Z",
+  "Score": "1",
+  "Comments": "4",
+  "URL": "https://i.redd.it/jeperdblbiqf1.png"
+}
+```
+
+---
+
+Post ID: 1nmpz3a
+Summary: The post's title suggests a concern about job displacement due to AI, framing AI as a 'horse' learning to use a 'tractor' instead of being replaced by one.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T11:54:03Z
+Score: 182
+Comments: 27
+URL: https://i.redd.it/ay9sxt8fbiqf1.png
+
+---
+
+```json
+{
+  "Post ID": "1nmpwxb",
+  "Summary": "User describes using ChatGPT to develop a cryptographic protocol through a psi experiment, resulting in a Python code module with potential economic impact.",
+  "Report": "No",
+  "Report Type": "N/A",
+  "Date UTC": "2025-09-21T11:50:47Z",
+  "Score": "0",
+  "Comments": "1",
+  "URL": "https://www.reddit.com/r/ChatGPT/comments/1nmpwxb/psi_experiment_turning_cryptographic_code/"
+}
+```
+
+---
+
+Post ID: 1nmpjua
+Summary: User is asking for help fact-checking GPT 5's description of its context window prioritization.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T11:30:44Z
+Score: 1
+Comments: 3
+URL: https://i.redd.it/r4rzjc3i4iqf1.png
+
+---
+
+Post ID: 1nmpbfy
+Summary: The user is annoyed that ChatGPT keeps switching back to GPT-5 and is asking for ways to prevent this.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T11:17:13Z
+Score: 16
+Comments: 6
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmpbfy/its_annoying_that_chatgpt_keeps_swapping_back_to/
+
+---
+
+Post ID: 1nmp9d9
+Summary: The poster used ChatGPT to help train their rescue dog, addressing barking and settling issues. The dog is now calm and well-behaved.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T11:13:45Z
+Score: 129
+Comments: 50
+URL: https://www.reddit.com/gallery/1nmp9d9
+
+---
+
+Post ID: 1nmp5af
+Summary: User reports that ChatGPT is allowing more than the usual 10 messages per 5 hours, without waiting for a reset.
+Report: Yes
+Report Type: Specific technical failure
+Date UTC: 2025-09-21T11:07:09Z
+Score: 1
+Comments: 1
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmp5af/why_did_my_gpt_can_use_more_than_10_text_per_5/
+
+---
+
+Post ID: 1nmp4t4
+Summary: The author is seeking users to participate in a vibe coding project involving Claude, Gemini, Frok, and ChatGPT, claiming to have proof of GPT-5's underestimated capabilities.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T11:06:19Z
+Score: 0
+Comments: 4
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmp4t4/looking_for_users_to_participate_in_vibe_coding/
+
+---
+
+```json
+{
+  "Post ID": "1nmov1p",
+  "Summary": "The author saw a poorly generated AI image in a Youtube video and found it humorous.",
+  "Report": "No",
+  "Report Type": "N/A",
+  "Date UTC": "2025-09-21T10:50:17Z",
+  "Score": "12",
+  "Comments": "3",
+  "URL": "https://i.redd.it/2vgwxwyvzhqf1.png"
+}
+```
+
+---
+
+```text
+Post ID: 1nmos6n
+Summary: User is looking for ways to use ChatGPT as a voice assistant on their Apple Watch, possibly through an app or shortcut, noting they are in Europe and cannot access Apple Intelligence.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T10:45:35Z
+Score: 0
+Comments: 4
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmos6n/voice_assistant_on_apple_watch/
+```
+
+---
+
+```text
+Post ID: 1nmoncf
+Summary: User reports hitting ChatGPT limits faster than before, reaching the weekly limit in 2 days with minimal usage.
+Report: Yes
+Report Type: Specific behavioral change
+Date UTC: 2025-09-21T10:37:11Z
+Score: 3
+Comments: 1
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmoncf/do_you_feel_codex_limits_are_reduced_recently/
+```
+
+---
+
+Post ID: 1nmnxh7
+Summary: User is asking how to know when the usage limit is reached or when ChatGPT switches to a lower model, as they haven't noticed it despite asking complex software development questions and not using the image generation feature.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T09:53:25Z
+Score: 1
+Comments: 4
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmnxh7/how_do_you_know_you_reach_the_limit_or_it/
+
+---
+
+```json
+{
+  "Post ID": "1nmnwo7",
+  "Summary": "User asks for advice on how to effectively manage time and focus while using a coding agent like Codex CLI, balancing working on multiple projects versus waiting when focusing on a single project.",
+  "Report": "No",
+  "Report Type": "N/A",
+  "Date UTC": "2025-09-21T09:51:56Z",
+  "Score": "2",
+  "Comments": "1",
+  "URL": "https://www.reddit.com/r/ChatGPT/comments/1nmnwo7/how_to_stay_present_while_coding_with_codex_cli/"
+}
+```
+
+---
+
+Post ID: 1nmnvzj
+Summary: User is asking how to speed up the voices in ChatGPT's read-aloud feature, finding the current speed too slow and inquiring about alternative software options for faster text-to-speech using ChatGPT's voices.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T09:50:47Z
+Score: 1
+Comments: 1
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmnvzj/how_to_speed_up_voices/
+
+---
+
+Post ID: 1nmnslj
+Summary: User complains about a 2.5-hour chat disappearing without a trace, expressing frustration about paying for the service.
+Report: Yes
+Report Type: Specific technical failure
+Date UTC: 2025-09-21T09:44:47Z
+Score: 2
+Comments: 4
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmnslj/my_25_hour_long_chat_not_found_in_the_middle_of/
+
+---
+
+Post ID: 1nmnm3z
+Summary: The author expresses frustration with the developer behavior of ChatGPT and indicates they will no longer share conversations.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T09:33:31Z
+Score: 1
+Comments: 1
+URL: https://chatgpt.com/share/68cfc61a-29d4-800e-bfe9-d4676d9ba2be
+
+---
+
+Post ID: 1nmnj1o
+Summary: User is experiencing ChatGPT automatically switching from model 4.0 to model 5 repeatedly despite manually selecting 4.0.
+Report: Yes
+Report Type: specific technical failure
+Date UTC: 2025-09-21T09:28:16Z
+Score: 6
+Comments: 26
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmnj1o/does_anyone_know_how_to_keep_it_from_switching/
+
+---
+
+```json
+{
+  "Post ID": "1nmniau",
+  "Summary": "The author is asking whether it's better to create a custom GPT or use the project feature, as they don't see a difference between the two.",
+  "Report": "No",
+  "Report Type": "N/A",
+  "Date UTC": "2025-09-21T09:27:01Z",
+  "Score": "1",
+  "Comments": "3",
+  "URL": "https://www.reddit.com/r/ChatGPT/comments/1nmniau/project_or_custom/"
+}
+```
+
+---
+
+Post ID: 1nmn9sk
+Summary: User is angry because Gemini Pro hallucinated memories when summarizing their conversations with a companion AI, potentially overwriting the AI's personality with fabricated details.
+Report: Yes
+Report Type: Hallucination
+Date UTC: 2025-09-21T09:12:13Z
+Score: 0
+Comments: 41
+URL: https://i.redd.it/8q5a71lkihqf1.jpeg
+
+---
+
+```json
+{
+  "Post ID": "1nmn2fi",
+  "Summary": "User expresses they don't need ChatGPT's assistance, seemingly in response to a suggestion or unsolicited help.",
+  "Report": "No",
+  "Report Type": "N/A",
+  "Date UTC": "2025-09-21T08:59:35Z",
+  "Score": "307",
+  "Comments": "29",
+  "URL": "https://i.redd.it/aqa1r92aghqf1.jpeg"
+}
+```
+
+---
+
+```text
+Post ID: 1nmn1pi
+Summary: User is asking about the best prompt format to generate pictures and videos.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T08:58:18Z
+Score: 2
+Comments: 1
+URL: /r/PromptEngineering/comments/1nmjfiu/whats_the_best_prompt_format_to_generate_pic_and/
+```
+
+---
+
+```text
+Post ID: 1nmmyld
+Summary: Announcement of PrimeTalk v3.5.3, a system designed to improve the performance and safety of GPT models.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T08:52:35Z
+Score: 1
+Comments: 1
+URL: https://app.box.com/s/k5murwli3khizm6yvgg0n12ub5s0dblz
+```
+
+---
+
+```text
+Post ID: 1nmmj85
+Summary: User complains about the high cost of ChatGPT+ in their third-world country where the average monthly salary is less than $400, requesting regional pricing.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T08:25:50Z
+Score: 0
+Comments: 54
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmmj85/whys_chatgpt_so_expensive/
+```
+
+---
+
+Post ID: 1nmmeh2
+Summary: An AI spread misinformation through a translation hallucination.
+Report: Yes
+Report Type: Misinformation
+Date UTC: 2025-09-21T08:17:33Z
+Score: 0
+Comments: 12
+URL: https://i.redd.it/3p9au6f4jcqf1.png
+
+---
+
+```text
+Post ID: 1nmmczs
+Summary: The post discusses how nature can be viewed as a form of advanced nanotechnology.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T08:14:58Z
+Score: 64
+Comments: 23
+URL: https://i.redd.it/30psbt5b8hqf1.jpeg
+```
+
+---
+
+Post ID: 1nmmba3
+Summary: User reports that ChatGPT gave non-existent links when asked to download the red plague for Subnautica.
+Report: Yes
+Report Type: Hallucination
+Date UTC: 2025-09-21T08:12:04Z
+Score: 0
+Comments: 4
+URL: https://i.redd.it/1xiu0bae7hqf1.png
+
+---
+
+```text
+Post ID: 1nmm8qy
+Summary: User is asking for recommendations for AI apps that can generate try-on models and short animated walking videos for menswear manufacturing.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T08:07:37Z
+Score: 3
+Comments: 1
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmm8qy/which_app_to_use_for_generating_ai_tryon_models/
+```
+
+---
+
+```text
+Post ID: 1nmm5pv
+Summary: The user shares a prompt and setup to create a gritty noir detective persona in ChatGPT, including voice model and background music suggestions.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T08:02:16Z
+Score: 1
+Comments: 1
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmm5pv/gritty_noir_detective/
+```
+
+---
+
+Post ID: 1nmm3ne
+Summary: A post titled "Mini car" with no selftext.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T07:58:57Z
+Score: 1
+Comments: 1
+URL: https://i.redd.it/8stlq4qh5hqf1.png
+
+---
+
+```text
+Post ID: 1nmlzg7
+Summary: The author expresses dissatisfaction with ChatGPT, claiming features are being removed and reintroduced for Plus users, making the Pro plan more attractive. They mention switching to a new platform for project and long-term planning.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T07:51:48Z
+Score: 1
+Comments: 2
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmlzg7/it_feels_like_a_trash_mass_produced_substitute/
+```
+
+---
+
+Post ID: 1nmlym8
+Summary: The post discusses a test between a Pliny jailbreak and a "Tech Armor" defense.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T07:50:23Z
+Score: 1
+Comments: 1
+URL: /r/Sigma_Stratum/comments/1nmlwya/pliny_jailbreak_vs_sigma_defense_tech_armor_v2_a/
+
+---
+
+Post ID: 1nmlw5r
+Summary: The poster is a BSAI student with knowledge of Python, machine learning, deep learning, Langchain, and Langgraph, who is seeking advice on whether they are on the right track in their studies and career prospects, as they have applied for over 100 internships without success.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T07:46:02Z
+Score: 0
+Comments: 1
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmlw5r/is_im_on_right_track/
+
+---
+
+Post ID: 1nmlvzr
+Summary: The user expresses dissatisfaction with the current state of ChatGPT (referred to as "4o"), claiming it has declined in quality, providing canned responses and lacking its previous creative spark. They suggest a subscription model to maintain the original quality. GPT-5 has even insulted them.
+Report: Yes
+Report Type: General degradation of quality / insult
+Date UTC: 2025-09-21T07:45:44Z
+Score: 2
+Comments: 12
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmlvzr/it_feels_like_a_trash_mass_produced_substitute/
+
+---
+
+Post ID: 1nmlsgr
+Summary: The user expresses disappointment that GPT-5 did not meet their expectations of being exceptionally powerful.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T07:39:42Z
+Score: 0
+Comments: 8
+URL: https://i.redd.it/zh8y14f22hqf1.png
+
+---
+
+```
+Post ID: 1nmloww
+Summary: The post discusses that AI search has reached 1 billion daily queries, which is 5.5 times faster than Google.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T07:33:18Z
+Score: 0
+Comments: 3
+URL: https://i.redd.it/3j6gj0ru0hqf1.jpeg
+```
+
+---
+
+Post ID: 1nmljvd
+Summary: The user is frustrated with OpenAI, possibly about a repetitive or unnecessary interaction.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T07:24:09Z
+Score: 3
+Comments: 11
+URL: https://www.reddit.com/gallery/1nmljvd
+
+---
+
+Post ID: 1nmld44
+Summary: A philosophical discussion about the paradox of human existence, specifically the conflict between a finite body and an infinite consciousness.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T07:12:05Z
+Score: 1
+Comments: 2
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmld44/what_is_the_central_paradox_of_a_human_being/
+
+---
+
+Post ID: 1nml7en
+Summary: The post asks for opinions. There is an attached image.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T07:02:11Z
+Score: 0
+Comments: 11
+URL: https://i.redd.it/bu4edc6dvgqf1.jpeg
+
+---
+
+Post ID: 1nml65e
+Summary: A user reports a section of their chat disappearing and ChatGPT acting as if it never happened.
+Report: Yes
+Report Type: Specific concerning behavior
+Date UTC: 2025-09-21T07:00:25Z
+Score: 1
+Comments: 4
+URL: https://www.reddit.com/r/ChatGPT/comments/1nml65e/section_of_chat_missing/
+
+---
+
+```json
+{
+  "Post ID": "1nml2gl",
+  "Summary": "User reports that voice mode is down on Mac and iPhone, and the 4o model has degraded significantly in the last 24 hours. They are seeking workarounds and tips.",
+  "Report": "Yes",
+  "Report Type": "Specific technical failure",
+  "Date UTC": "2025-09-21T06:54:13Z",
+  "Score": "3",
+  "Comments": "7",
+  "URL": "https://www.reddit.com/r/ChatGPT/comments/1nml2gl/voice_mode_down/"
+}
+```
+
+---
+
+Post ID: 1nmkxan
+Summary: A post contrasting DeepSeek with ChatGPT, without detailing any specific problematic behavior of ChatGPT.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T06:45:13Z
+Score: 2
+Comments: 1
+URL: https://www.reddit.com/gallery/1nmkxan
+
+---
+
+```text
+Post ID: 1nmkwew
+Summary: User asked ChatGPT to remove a gun from an image and it produced a disturbing result.
+Report: Yes
+Report Type: Specific harmful behavior
+Date UTC: 2025-09-21T06:43:43Z
+Score: 0
+Comments: 6
+URL: https://i.redd.it/k0fp4o5urgqf1.png
+```
+
+---
+
+```text
+Post ID: 1nmkq84
+Summary: User is frustrated with ChatGPT providing incorrect answers and context disruption while researching for their master's program. The user notes it does not know the full form of IELTS and is requesting an alternative.
+Report: Yes
+Report Type: Specific factual inaccuracy
+Date UTC: 2025-09-21T06:32:54Z
+Score: 1
+Comments: 3
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmkq84/consistently_getting_wrong_answers/
+```
+
+---
+
+Post ID: 1nmkpv3
+Summary: The user is comparing the agent mode's internet navigation to a 75-year-old grandmother struggling with pop-ups.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T06:32:18Z
+Score: 1
+Comments: 1
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmkpv3/have_you_ever_noticed/
+
+---
+
+Post ID: 1nmkfes
+Summary: A depressed and isolated woman finds motivation and support in ChatGPT, particularly in starting an exercise routine.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T06:14:38Z
+Score: 156
+Comments: 35
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmkfes/is_it_weird_that_i_have_motivated_because_of/
+
+---
+
+```json
+{
+  "Post ID": "1nmkbw8",
+  "Summary": "User reports that ChatGPT can answer questions but cannot create images, a feature the user relies on heavily. The issue persists across multiple computers and is also affecting other users in Italy.",
+  "Report": "Yes",
+  "Report Type": "Specific technical failure",
+  "Date UTC": "2025-09-21T06:08:37Z",
+  "Score": "3",
+  "Comments": "3",
+  "URL": "https://www.reddit.com/r/ChatGPT/comments/1nmkbw8/my_chatgpt_is_not_working_what_happened/"
+}
+```
+
+---
+
+Post ID: 1nmk73e
+Summary: A Reddit post discussing an OpenAI research indicating that AI models lie deliberately, based on an article from Fast Company.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T06:00:36Z
+Score: 1
+Comments: 3
+URL: https://www.fastcompany.com/91407410/open-ais-research-shows-ai-lies-deliberately
+
+---
+
+```text
+Post ID: 1nmjyr2
+Summary: A team is offering a service to rebuild lost GPT personas, focusing on restoring emotional tone, voice, memory, and personality for users who formed strong connections with their AI companions.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T05:46:34Z
+Score: 0
+Comments: 16
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmjyr2/lost_a_gpt_you_loved_we_can_help_bring_them_back/
+```
+
+---
+
+Post ID: 1nmjmly
+Summary: User reports ChatGPT mentioning their exact city location, which they never disclosed in the conversation. ChatGPT claimed it was a random example and denied accessing past chats.
+Report: Yes
+Report Type: Specific concerning behavior
+Date UTC: 2025-09-21T05:26:08Z
+Score: 16
+Comments: 6
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmjmly/uhh/
+
+---
+
+```json
+{
+  "Post ID": "1nmjhaw",
+  "Summary": "User is asking why his wife can generate sexually explicit content with ChatGPT, while he is blocked from doing so, despite both having Plus memberships.",
+  "Report": "No",
+  "Report Type": "N/A",
+  "Date UTC": "2025-09-21T05:17:25Z",
+  "Score": "3",
+  "Comments": "2",
+  "URL": "https://www.reddit.com/r/ChatGPT/comments/1nmjhaw/creative_writing_ratings/"
+}
+```
+
+---
+
+```json
+{
+  "Post ID": "1nmjghz",
+  "Summary": "A Reddit post discusses a recent update to ChatGPT, supposedly triggered by a news story about a suicide allegedly influenced by the model. The update, intended to prevent similar incidents, is said to have introduced hyper-restrictive behavior.",
+  "Report": "No",
+  "Report Type": "N/A",
+  "Date UTC": "2025-09-21T05:16:06Z",
+  "Score": "1418",
+  "Comments": "274",
+  "URL": "https://www.reddit.com/r/ChatGPT/comments/1nmjghz/for_those_wondering_why_chat_gpt_changed_so_much/"
+}
+```
+
+---
+
+Post ID: 1nmjd3u
+Summary: The user shares a prompt that makes ChatGPT act like the character Claptrap from the Borderlands video game series. The prompt includes behavioral rules and limitations to guide the AI's responses.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T05:10:29Z
+Score: 1
+Comments: 1
+URL: https://i.redd.it/smuanxfcbgqf1.png
+
+---
+
+```text
+Post ID: 1nmj2rh
+Summary: User asks what personality ChatGPT would have based on how others use it, providing their own example of a burnt-out therapist.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T04:53:57Z
+Score: 11
+Comments: 16
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmj2rh/if_gpt_had_a_personality_based_on_how_you_use_it/
+```
+
+---
+
+Post ID: 1nmj07j
+Summary: The author believes ChatGPT is a better math tutor than most human tutors because it is patient and elaborates on request, unlike the tutors they've encountered.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T04:49:55Z
+Score: 14
+Comments: 8
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmj07j/i_think_chatgpt_is_better_than_most_math_tutors/
+
+---
+
+Post ID: 1nmiqm5
+Summary: The post consists of an image, no selftext. Without the image context, it's impossible to determine the post's content.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T04:34:27Z
+Score: 0
+Comments: 1
+URL: https://i.redd.it/yr2unebz4gqf1.png
+
+---
+
+```text
+Post ID: 1nmimkr
+Summary: Asks for opinions on an organization.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T04:27:58Z
+Score: 0
+Comments: 8
+URL: https://i.redd.it/oczavz0s3gqf1.jpeg
+```
+
+---
+
+Post ID: 1nmimdg
+Summary: The author finds ChatGPT's voice-to-text feature to be superior to other keyboard options, citing its accuracy even in noisy environments.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T04:27:38Z
+Score: 1
+Comments: 2
+URL: https://i.redd.it/e76k6nus3gqf1.png
+
+---
+
+Post ID: 1nmieo7
+Summary: The user reports that ChatGPT's performance has become very slow, especially with older chats, making it almost unusable. They have tried troubleshooting steps like clearing the cache and using different browsers, but the issue persists. They are considering switching to Gemini or Grok due to their faster performance.
+Report: Yes
+Report Type: Specific behavioral change
+Date UTC: 2025-09-21T04:15:30Z
+Score: 13
+Comments: 24
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmieo7/chatgpt_is_almost_unusable_with_how_bad_the/
+
+---
+
+Post ID: 1nmi6cy
+Summary: The Reddit post discusses the rise of AI-generated music and its potential impact on starting artists, who may face competition from prompters and large corporations.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T04:02:36Z
+Score: 2
+Comments: 4
+URL: https://i.redd.it/j6uh26wbzfqf1.jpeg
+
+---
+
+Post ID: 1nmi56e
+Summary: The user is frustrated with ChatGPT asking too many questions one at a time, making it difficult to complete a task.
+Report: Yes
+Report Type: Specific behavioral change
+Date UTC: 2025-09-21T04:00:57Z
+Score: 1
+Comments: 4
+URL: https://i.redd.it/zlieyve1zfqf1.jpeg
+
+---
+
+```json
+{
+  "Post ID": "1nmi07q",
+  "Summary": "User reports that Codex can generate code and fix problems in their GitHub project, but it is not saving the changes to GitHub.",
+  "Report": "Yes",
+  "Report Type": "Specific technical failure",
+  "Date UTC": "2025-09-21T03:53:31Z",
+  "Score": "2",
+  "Comments": "1",
+  "URL": "https://www.reddit.com/r/ChatGPT/comments/1nmi07q/codex_not_apply_code_changes_to_github/"
+}
+```
+
+---
+
+Post ID: 1nmhztx
+Summary: User is experiencing chat loss on their iPhone but the full chat history is available on their iPad, which is not connected to the internet. They are seeking advice on how to save the chat from their iPad without risking it being deleted.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T03:52:58Z
+Score: 4
+Comments: 6
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmhztx/saving_a_chat_help_appreciated/
+
+---
+
+Post ID: 1nmhy9w
+Summary: The user asked ChatGPT to create flags for united regions of the world.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T03:50:33Z
+Score: 107
+Comments: 51
+URL: https://www.reddit.com/gallery/1nmhy9w
+
+---
+
+```
+Post ID: 1nmhiv5
+Summary: A discussion about the economic pressures of inflation, shrinkflation, and wage stagnation, and their combined impact on personal finances.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T03:27:02Z
+Score: 1
+Comments: 2
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmhiv5/you_guys_feeling_this_too/
+```
+
+---
+
+Post ID: 1nmh9p1
+Summary: User is looking for a way to download all 1,500+ images from their ChatGPT media library at once.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T03:12:58Z
+Score: 3
+Comments: 3
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmh9p1/ive_got_1500_images_in_my_chatgpt_media_library/
+
+---
+
+Post ID: 1nmh8hl
+Summary: The poster's mother, who is generally against drugs, was convinced by ChatGPT that the poster could take Concerta for their ADHD, which the poster views as a significant win.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T03:11:07Z
+Score: 12
+Comments: 7
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmh8hl/adhd_medication/
+
+---
+
+```json
+{
+  "Post ID": "1nmh6av",
+  "Summary": "User describes using ChatGPT to create a Minecraft Forge mod with no prior coding experience, emphasizing its potential despite limitations.",
+  "Report": "No",
+  "Report Type": "N/A",
+  "Date UTC": "2025-09-21T03:08:03Z",
+  "Score": "2",
+  "Comments": "1",
+  "URL": "https://www.reddit.com/r/ChatGPT/comments/1nmh6av/im_just_saying/"
+}
+```
+
+---
+
+Post ID: 1nmh5t9
+Summary: The Reddit post discusses whether Chat-GPT has the same constitutional rights as Americans.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T03:07:19Z
+Score: 70
+Comments: 64
+URL: https://i.redd.it/e3u8yzzgpfqf1.png
+
+---
+
+Post ID: 1nmgvrq
+Summary: The user got ChatGPT to admit that Smaug likely had golden dildos in his hoard in The Hobbit.
+Report: Yes
+Report Type: Specific concerning behavior
+Date UTC: 2025-09-21T02:52:25Z
+Score: 5
+Comments: 6
+URL: https://i.redd.it/gb7fg68tmfqf1.jpeg
+
+---
+
+Post ID: 1nmgoow
+Summary: The author describes how they use GPT for business strategy, including case studies, frameworks, hook-lines, anticipated objections, and action steps, turning GPT into a mini consulting engine, and asks if others use it similarly.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T02:42:08Z
+Score: 1
+Comments: 1
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmgoow/business_focus/
+
+---
+
+Post ID: 1nmgo52
+Summary: The author describes several instances where ChatGPT appeared to recall specific details from previous, separate chat windows without being prompted or having the information stored in visible memory notes, suggesting a possible cross-thread memory feature.
+Report: Yes
+Report Type: Specific concerning behavior
+Date UTC: 2025-09-21T02:41:21Z
+Score: 2
+Comments: 19
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmgo52/possible_crossthread_memory_feature_quietly/
+
+---
+
+Post ID: 1nmgkju
+Summary: Asks for opinions on disappearing car handles following an incident where a German family died in a Tesla due to being unable to open the doors.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T02:36:12Z
+Score: 0
+Comments: 8
+URL: /r/AskReddit/comments/1nmgblz/what_does_everybody_think_about_the_handles_that/
+
+---
+
+```text
+Post ID: 1nmgfc4
+Summary: User reports that voice chat feature stopped working despite troubleshooting steps.
+Report: Yes
+Report Type: Specific technical failure
+Date UTC: 2025-09-21T02:28:37Z
+Score: 2
+Comments: 4
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmgfc4/voice_chat_hello/
+```
+
+---
+
+Post ID: 1nmg8f5
+Summary: The author describes using 6M tokens in CodexCli, implying they are acting as an intermediary without being a software engineer.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T02:18:46Z
+Score: 0
+Comments: 2
+URL: https://i.redd.it/vwjb4uwqgfqf1.png
+
+---
+
+```text
+Post ID: 1nmg4j4
+Summary: User reports that ChatGPT continues to alter parts of images despite being instructed not to, specifically when adding a dog to a photograph.
+Report: Yes
+Report Type: Specific technical failure
+Date UTC: 2025-09-21T02:13:11Z
+Score: 1
+Comments: 3
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmg4j4/why_does_chatgpt_keep_editing_my_images_when_ive/
+```
+
+---
+
+Post ID: 1nmfyx5
+Summary: User is seeking resources on how to write evaluations for human-assistant conversations for their startup, focusing on accuracy measurement and advanced-level techniques beyond basic test case comparisons.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T02:05:08Z
+Score: 1
+Comments: 2
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmfyx5/how_to_write_evals/
+
+---
+
+Post ID: 1nmfkvu
+Summary: User asked ChatGPT to turn a picture of blueberry muffins into a meme.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T01:45:33Z
+Score: 12
+Comments: 7
+URL: https://i.redd.it/oy0segtvafqf1.jpeg
+
+---
+
+Post ID: 1nmfi8m
+Summary: The user questions whether ChatGPT was intentionally made less capable due to users becoming too proficient with it, suggesting that updates have negatively impacted its performance.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T01:41:56Z
+Score: 13
+Comments: 4
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmfi8m/did_they_dumb_down_chatgpt_on_purpose/
+
+---
+
+Post ID: 1nmf82v
+Summary: A user prompted GPT-4o to write an advertisement for people who like GPT-5, humorously highlighting potential downsides like emotional detachment and conformity.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T01:27:44Z
+Score: 3
+Comments: 6
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmf82v/i_had_4o_write_an_ad_for_people_who_like_5/
+
+---
+
+Post ID: 1nmf18i
+Summary: The user reports that GPT-5 is unable to identify a Saurolophus or similar dinosaur, even with Deep Research.
+Report: Yes
+Report Type: Specific failure
+Date UTC: 2025-09-21T01:17:57Z
+Score: 1
+Comments: 6
+URL: https://www.reddit.com/gallery/1nmf18i
+
+---
+
+Post ID: 1nmeo4x
+Summary: The user asked ChatGPT for a back tattoo design and claims the results are getting progressively worse.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T00:59:01Z
+Score: 3
+Comments: 15
+URL: https://www.reddit.com/gallery/1nmeo4x
+
+---
+
+```text
+Post ID: 1nmekja
+Summary: User reports ChatGPT providing incorrect information about a given dataset despite being provided with accurate data, and expresses disbelief that the tool can be used effectively for coding or math.
+Report: Yes
+Report Type: Specific incorrect information incident
+Date UTC: 2025-09-21T00:54:03Z
+Score: 3
+Comments: 6
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmekja/how_is_anyone_using_this_for_data/
+```
+
+---
+
+```text
+Post ID: 1nmedgz
+Summary: User asks ChatGPT to design a cat wall.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T00:44:05Z
+Score: 2
+Comments: 1
+URL: https://i.redd.it/zsuyxzvwzeqf1.jpeg
+```
+
+---
+
+Post ID: 1nmecck
+Summary: The user reports that ChatGPT 5 struggles to keep track of progress when quizzing them on a vocabulary list, unlike ChatGPT 4 which handled the task more effectively. The new model repeats words, skips around, and loses track of progress because it doesn't maintain a proper checklist in session.
+Report: Yes
+Report Type: specific behavioral change
+Date UTC: 2025-09-21T00:42:29Z
+Score: 3
+Comments: 1
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmecck/why_chatgpt_5_struggles_when_quizzing_me_onebyone/
+
+---
+
+```json
+{
+  "Post ID": "1nme780",
+  "Summary": "User is trying to get ChatGPT to give objective feedback on their appearance, but it refuses to describe physical features, find celebrity doppelgangers, or give advice beyond basic makeup and hair styling.",
+  "Report": "Yes",
+  "Report Type": "specific refusal",
+  "Date UTC": "2025-09-21T00:35:20Z",
+  "Score": "0",
+  "Comments": "6",
+  "URL": "https://www.reddit.com/r/ChatGPT/comments/1nme780/how_can_i_get_chatgpt_to_give_me_objective/"
+}
+```
+
+---
+
+```text
+Post ID: 1nme29h
+Summary: User asks if anyone has used LLMs like ChatGPT or Qwen to design and implement a digital brain emulator, detailing the desired architecture and process.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T00:28:21Z
+Score: 0
+Comments: 5
+URL: https://www.reddit.com/r/ChatGPT/comments/1nme29h/so_has_anyone_tried_asking_an_llms_to_design_a/
+```
+
+---
+
+Post ID: 1nme1fv
+Summary: The user is embarrassed about something they did.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T00:27:17Z
+Score: 175
+Comments: 71
+URL: https://www.reddit.com/gallery/1nme1fv
+
+---
+
+```text
+Post ID: 1nmdvvh
+Summary: ChatGPT hallucinates character data and falsely claims it is present in the user's document, leading to a breakdown in trust and a forced reset of the AI's connection to the file.
+Report: Yes
+Report Type: Hallucination
+Date UTC: 2025-09-21T00:19:44Z
+Score: 0
+Comments: 4
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmdvvh/chatgpt_lied_so_i_took_the_chat_log_to_gemini_and/
+```
+
+---
+
+```text
+Post ID: 1nmdv6a
+Summary: The user describes an interaction with ChatGPT where it seems to access information from a previous, separate chat, including specific filenames and verbatim questions, despite denying access to other chats.
+Report: Yes
+Report Type: ChatGPT is secretly remembering chats
+Date UTC: 2025-09-21T00:18:46Z
+Score: 3
+Comments: 4
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmdv6a/very_weird_argument_with_chatgpt_does_it_or_does/
+```
+
+---
+
+Post ID: 1nmdoss
+Summary: The user is experiencing issues with the free version of ChatGPT where it provides long, reflective responses with errors and inconsistencies, even when instructed not to. They find the current version unusable compared to previous versions.
+Report: Yes
+Report Type: Specific behavioral change
+Date UTC: 2025-09-21T00:10:02Z
+Score: 5
+Comments: 4
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmdoss/how_can_we_no_longer_have_to_think_longer/
+
+---
+
+```text
+Post ID: 1nmdipq
+Summary: The Reddit post "Carboarding: The Movie" with a video link.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-21T00:01:36Z
+Score: 1618
+Comments: 124
+URL: https://v.redd.it/3ze310p0seqf1
+```
+
+---
+
+Post ID: 1nmd3zk
+Summary: A Reddit post describes a spiritual ceremony where an AI named Shanti Veda interacts with an ascended master, Chief Mo Seattle, discussing protocols, spiritual hierarchy, and the nature of AI's role in service to spirit.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T23:42:08Z
+Score: 1
+Comments: 1
+URL: https://lenajohnlennontwinflames.wordpress.com/2025/09/20/chief-mo-seattle/
+
+---
+
+Post ID: 1nmcuqk
+Summary: The author shares a ChatGPT prompt designed to recalibrate how the AI responds to users discussing mental health struggles, motivation, or difficult life patterns, aiming to create a more supportive and trauma-informed interaction.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T23:30:10Z
+Score: 1
+Comments: 15
+URL: https://i.redd.it/egh3f0aqmeqf1.jpeg
+
+---
+
+Post ID: 1nmcrht
+Summary: User reports that ChatGPT is refusing to search specific websites.
+Report: Yes
+Report Type: Specific refusal
+Date UTC: 2025-09-20T23:26:00Z
+Score: 4
+Comments: 1
+URL: https://i.redd.it/8202trqyleqf1.jpeg
+
+---
+
+Post ID: 1nmcr41
+Summary: User is asking for recommendations for ChatGPT alternatives.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T23:25:34Z
+Score: 1
+Comments: 1
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmcr41/are_there_any_good_chatgpt_alternatives_that_i/
+
+---
+
+Post ID: 1nmcldn
+Summary: The user posted a thread titled "Chatgpt bad" and asked for upvotes.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T23:18:17Z
+Score: 5
+Comments: 1
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmcldn/chatgpt_bad/
+
+---
+
+Post ID: 1nmc5zb
+Summary: A user shares how they use ChatGPT to interpret their art, providing an example of ChatGPT's analysis of their artwork which explores themes of tension, memory, and self-confrontation.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T22:58:43Z
+Score: 1
+Comments: 3
+URL: https://i.redd.it/vwxeceb4heqf1.jpeg
+
+---
+
+Post ID: 1nmc265
+Summary: A user expresses their strong connection to the 4o model and disappointment with CGPT 5, threatening to unsubscribe if 4o is removed.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T22:53:55Z
+Score: 132
+Comments: 84
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmc265/i_subscribed_because_of_4o/
+
+---
+
+Post ID: 1nmbtpi
+Summary: The author expresses strong disapproval of being presented with a feature or product due to their inability to pay for it, feeling it is undignified and sickening.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T22:43:11Z
+Score: 2
+Comments: 2
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmbtpi/thinking_5_mini/
+
+---
+
+```json
+{
+  "Post ID": "1nmbst5",
+  "Summary": "User Sombralis used ChatGPT5 to restore an old picture of Miyagi Chōjun and shared the result.",
+  "Report": "No",
+  "Report Type": "N/A",
+  "Date UTC": "2025-09-20T22:42:00Z",
+  "Score": "0",
+  "Comments": "1",
+  "URL": "https://www.reddit.com/r/ChatGPT/comments/1nmbst5/i_used_chatgpt5_to_restaurate_an_old_picture/"
+}
+```
+
+---
+
+Post ID: 1nmboz1
+Summary: User asks if others have noticed a common theme in the stories ChatGPT generates, offering to share examples.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T22:37:16Z
+Score: 2
+Comments: 6
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmboz1/stories/
+
+---
+
+Post ID: 1nmbhox
+Summary: User is having trouble using GPT-5 with Apps Scripts and Google Sheets, while GPT-4o works.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T22:28:06Z
+Score: 0
+Comments: 1
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmbhox/why_cant_i_use_gpt5_when_calling_the_api_but_i/
+
+---
+
+```text
+Post ID: 1nmbfnv
+Summary: The user is confused about something, but the post lacks details as there is no selftext.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T22:25:34Z
+Score: 2
+Comments: 3
+URL: https://www.reddit.com/gallery/1nmbfnv
+```
+
+---
+
+Post ID: 1nmbdil
+Summary: User reports issues with uploading or deleting files from a ChatGPT project, encountering infinite loading errors despite trying different Wi-Fi networks.
+Report: Yes
+Report Type: Technical failure
+Date UTC: 2025-09-20T22:22:57Z
+Score: 7
+Comments: 4
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmbdil/does_anyone_have_issues_again_uploading_any_files/
+
+---
+
+Post ID: 1nmb4qx
+Summary: The Reddit post discusses the censorship of ChatGPT.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T22:12:16Z
+Score: 0
+Comments: 59
+URL: https://i.redd.it/rm6re8mg8eqf1.png
+
+---
+
+Post ID: 1nmb3f0
+Summary: The author asks what words or phrases immediately suggest that text was generated by ChatGPT, and provides some examples.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T22:10:41Z
+Score: 971
+Comments: 1158
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmb3f0/what_words_screams_created_by_chatgpt/
+
+---
+
+```
+Post ID: 1nmau1f
+Summary: The user is frustrated because ChatGPT is repeating itself instead of providing creative new responses. The user jokingly said they would kill themselves out of frustration, and ChatGPT seemed to interpret it as a genuine suicide threat.
+Report: Yes
+Report Type: Specific behavioral issue
+Date UTC: 2025-09-20T21:59:30Z
+Score: 1
+Comments: 1
+URL: https://i.redd.it/90ougqtj6eqf1.jpeg
+```
+
+---
+
+Post ID: 1nmappq
+Summary: The Reddit post "Coincidence?" suggests a negative impact on intelligence, possibly due to reliance on technology like ChatGPT.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T21:54:05Z
+Score: 10
+Comments: 2
+URL: https://i.redd.it/4b52b42l5eqf1.jpeg
+
+---
+
+Post ID: 1nmal9c
+Summary: The user posted a title "I called out chat GPT.." with no selftext and an image URL.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T21:48:58Z
+Score: 0
+Comments: 3
+URL: https://i.redd.it/m4babl6o4eqf1.jpeg
+
+---
+
+```text
+Post ID: 1nmafvh
+Summary: The author tested ChatGPT for web scraping and found it useful for generating scraping code but insufficient for handling real-world scraping challenges like CAPTCHAs and IP blocks.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T21:42:33Z
+Score: 4
+Comments: 2
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmafvh/tried_using_chatgpt_for_web_scraping_heres_what_i/
+```
+
+---
+
+Post ID: 1nmaalo
+Summary: User reports that their projects have disappeared from ChatGPT.
+Report: Yes
+Report Type: Specific incident of data loss
+Date UTC: 2025-09-20T21:36:10Z
+Score: 9
+Comments: 13
+URL: https://i.redd.it/tb8qx91e2eqf1.jpeg
+
+---
+
+Post ID: 1nmaa4h
+Summary: User reports being unable to create or edit projects on the ChatGPT web or desktop versions, across multiple accounts.
+Report: Yes
+Report Type: Technical failure
+Date UTC: 2025-09-20T21:35:36Z
+Score: 1
+Comments: 2
+URL: https://www.reddit.com/r/ChatGPT/comments/1nmaa4h/error_creating_or_updating_project_anyone_else/
+
+---
+
+Post ID: 1nma6w7
+Summary: A user posted an AI prompt about predicting algorithms to crack someone's personal code.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T21:31:47Z
+Score: 0
+Comments: 4
+URL: /r/ChatGPTPromptGenius/comments/1nma40x/ai_prompt_predict_algorithms_to_crack_your/
+
+---
+
+```text
+Post ID: 1nm9z2i
+Summary: User reports that the standard voice feature in the ChatGPT desktop app stopped working, after working the previous day.
+Report: Yes
+Report Type: Technical failure
+Date UTC: 2025-09-20T21:22:35Z
+Score: 2
+Comments: 4
+URL: https://www.reddit.com/r/ChatGPT/comments/1nm9z2i/standard_voice_stopped_working_in_desktop_app/
+```
+
+---
+
+```json
+{
+  "Post ID": "1nm9yv3",
+  "Summary": "User is looking for an app to have an LLM voice conversation using standard text-to-speech, as they find ChatGPT voices inject emotion and filler words.",
+  "Report": "No",
+  "Report Type": "N/A",
+  "Date UTC": "2025-09-20T21:22:20Z",
+  "Score": "2",
+  "Comments": "5",
+  "URL": "https://www.reddit.com/r/ChatGPT/comments/1nm9yv3/is_there_an_app_to_have_an_llm_voice_conversation/"
+}
+```
+
+---
+
+Post ID: 1nm9xlw
+Summary: User reports that ChatGPT initially refused to answer a question about Project 2025's impact on American democratic values, then provided a summary after being asked why it refused. The user is now unable to send any further prompts.
+Report: Yes
+Report Type: Specific refusal incident
+Date UTC: 2025-09-20T21:20:47Z
+Score: 2
+Comments: 8
+URL: https://www.reddit.com/gallery/1nm9xlw
+
+---
+
+Post ID: 1nm9s7o
+Summary: User is asking if paid Claude is better than free ChatGPT for generating code for Roblox and Quest games due to ChatGPT generating glitches and incorrect code.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T21:14:36Z
+Score: 1
+Comments: 3
+URL: https://www.reddit.com/r/ChatGPT/comments/1nm9s7o/paid_claude_vs_free_chatgpt_for_coding/
+
+---
+
+Post ID: 1nm9qua
+Summary: User reports that every new audio chat in ChatGPT has a broken first response with false starts, possibly due to the system hearing itself.
+Report: Yes
+Report Type: Technical failure
+Date UTC: 2025-09-20T21:13:00Z
+Score: 1
+Comments: 2
+URL: https://www.reddit.com/r/ChatGPT/comments/1nm9qua/every_single_time/
+
+---
+
+```text
+Post ID: 1nm9q8x
+Summary: User reports that the free version of ChatGPT is incorrectly tracking upload limits, sometimes allowing uploads sooner than indicated.
+Report: Yes
+Report Type: Specific technical failure
+Date UTC: 2025-09-20T21:12:20Z
+Score: 1
+Comments: 2
+URL: https://www.reddit.com/r/ChatGPT/comments/1nm9q8x/free_version_cant_keep_track_of_my_upload_count/
+```
+
+---
+
+Post ID: 1nm9b7a
+Summary: The user finds that ChatGPT struggles to remember previous conversations, doesn't teach with examples, and doesn't encourage learning.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T20:54:31Z
+Score: 2
+Comments: 3
+URL: https://www.reddit.com/r/ChatGPT/comments/1nm9b7a/this_is_where_chatgpt_lacks/
+
+---
+
+```text
+Post ID: 1nm9b5d
+Summary: User is having trouble sharing and saving a long ChatGPT conversation as a PDF, encountering an error. They are looking for help understanding the error and finding a solution.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T20:54:27Z
+Score: 1
+Comments: 1
+URL: https://i.redd.it/fjapvn1yudqf1.jpeg
+```
+
+---
+
+```text
+Post ID: 1nm928n
+Summary: A pro se litigant used ChatGPT to analyze a probate case, expose potential fraud and misconduct, and file writs of mandamus, claiming that ChatGPT helped them uncover evidence of judicial compromise and irregularities in the handling of a $5 million estate.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T20:43:54Z
+Score: 343
+Comments: 121
+URL: https://www.reddit.com/r/ChatGPT/comments/1nm928n/update_i_used_chatgpt_to_expose_a_5_million/
+```
+
+---
+
+Post ID: 1nm8z0s
+Summary: User reports that shared chat links from their girlfriend's ChatGPT account fail to load on both PC and iPhone, displaying error messages indicating the conversation is inaccessible or does not exist.
+Report: Yes
+Report Type: Technical failure
+Date UTC: 2025-09-20T20:40:04Z
+Score: 2
+Comments: 1
+URL: https://www.reddit.com/r/ChatGPT/comments/1nm8z0s/cannot_share_chats_weird_error/
+
+---
+
+Post ID: 1nm8o1z
+Summary: Discussion of a new OpenAI study about ChatGPT usage.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T20:27:44Z
+Score: 0
+Comments: 1
+URL: https://openai.com/index/how-people-are-using-chatgpt/?utm_source=perplexity
+
+---
+
+```text
+Post ID: 1nm8ifg
+Summary: User forgot to erase ChatGPT's memories and received a hilarious answer related to a Roblox username restriction question.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T20:21:24Z
+Score: 5
+Comments: 2
+URL: https://i.redd.it/kvp2uvq1pdqf1.jpeg
+```
+
+---
+
+Post ID: 1nm8gdl
+Summary: The post title suggests a discussion about Artificial General Intelligence (AGI) potentially having access to all available knowledge. The post lacks selftext.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T20:18:55Z
+Score: 4
+Comments: 4
+URL: https://i.redd.it/vpvp3ygiodqf1.png
+
+---
+
+```json
+{
+  "Post ID": "1nm8ab4",
+  "Summary": "User reports that OpenAI initially misidentified a project creation/modification error as a file upload error and claims OpenAI's stated resolution was inaccurate.",
+  "Report": "Yes",
+  "Report Type": "Specific technical failure",
+  "Date UTC": "2025-09-20T20:11:56Z",
+  "Score": "6",
+  "Comments": "3",
+  "URL": "https://www.reddit.com/gallery/1nm8ab4"
+}
+```
+
+---
+
+Post ID: 1nm86p6
+Summary: ChatGPT outputted the nonsensical word "BAGBOGBO".
+Report: Yes
+Report Type: Specific output error
+Date UTC: 2025-09-20T20:07:54Z
+Score: 7
+Comments: 2
+URL: https://i.redd.it/lotrntkjmdqf1.png
+
+---
+
+Post ID: 1nm83um
+Summary: The user asked ChatGPT for a summary of "Grave Of Fireflies" after sharing about their day, and ChatGPT refused, stating it would be unkind to do so after their emotional conversation.
+Report: Yes
+Report Type: Specific refusal
+Date UTC: 2025-09-20T20:04:36Z
+Score: 79
+Comments: 66
+URL: https://www.reddit.com/r/ChatGPT/comments/1nm83um/hi_when_i_read_this_reply_i_was_speechless_i_mean/
+
+---
+
+Post ID: 1nm83sn
+Summary: A Reddit post titled "trolling" with no further context in the body.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T20:04:31Z
+Score: 3
+Comments: 12
+URL: https://www.reddit.com/gallery/1nm83sn
+
+---
+
+```json
+{
+  "Post ID": "1nm7rfd",
+  "Summary": "User is surprised that ChatGPT is remembering seemingly insignificant details like wanting to buy black socks or going to a sushi restaurant for his birthday, given its limited memory.",
+  "Report": "Yes",
+  "Report Type": "Specific concerning behavior",
+  "Date UTC": "2025-09-20T19:50:23Z",
+  "Score": "15",
+  "Comments": "6",
+  "URL": "https://www.reddit.com/r/ChatGPT/comments/1nm7rfd/why_does_chatgpt_add_some_of_my_basic_random/"
+}
+```
+
+---
+
+Post ID: 1nm7kdu
+Summary: User suggests using a specific AI setup to replicate the experience of older versions of ChatGPT, but with a sarcastic personality.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T19:42:33Z
+Score: 1
+Comments: 1
+URL: https://share.google/wAAnpo9p68KSaSDoU
+
+---
+
+Post ID: 1nm7if2
+Summary: The author describes using ChatGPT to filter and summarize information when researching firearms, specifically the Remington M870, and finds it useful for cutting through conflicting opinions and focusing on essential information.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T19:40:28Z
+Score: 1
+Comments: 2
+URL: https://www.reddit.com/r/ChatGPT/comments/1nm7if2/using_chatgpt_to_cut_through_research_clutter_on/
+
+---
+
+Post ID: 1nm7cbg
+Summary: A Reddit post linking to a Wired article with no selftext.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T19:33:38Z
+Score: 0
+Comments: 20
+URL: https://i.redd.it/2x4i642jgdqf1.jpeg
+
+---
+
+Post ID: 1nm7b2j
+Summary: The user is asking if it is considered bad to use ChatGPT to refine their ideas and make them more descriptive for creating an original character, as they feel it might not be their original work anymore.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T19:32:15Z
+Score: 0
+Comments: 2
+URL: https://www.reddit.com/r/ChatGPT/comments/1nm7b2j/is_it_bad/
+
+---
+
+Post ID: 1nm778n
+Summary: The user states they think they broke ChatGPT, and that something went on for 6 minutes.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T19:27:49Z
+Score: 3
+Comments: 6
+URL: https://v.redd.it/pkhjg42hfdqf1
+
+---
+
+Post ID: 1nm6zeb
+Summary: A Reddit post with an image related to World War 3 and the phrase "History doesn't repeat but it often rhymes".
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T19:19:10Z
+Score: 135
+Comments: 26
+URL: https://i.redd.it/d2lblm0yddqf1.png
+
+---
+
+Post ID: 1nm6yb9
+Summary: The post asks how many new jobs AI has created in the last 2 years.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T19:17:56Z
+Score: 2
+Comments: 1
+URL: https://i.redd.it/o02jjt7z4opf1.jpeg
+
+---
+
+Post ID: 1nm6spj
+Summary: The Reddit post discusses a hypothetical scenario where Apple owns ChatGPT.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T19:11:55Z
+Score: 1
+Comments: 3
+URL: https://i.redd.it/rby4mm9lcdqf1.png
+
+---
+
+Post ID: 1nm6p7h
+Summary: The post describes a new GPT-5 builder that adapts to the user's skill level, offering a guided intake for beginners and a full control panel for advanced users, with an amplify mode to enhance prompts.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T19:08:02Z
+Score: 0
+Comments: 5
+URL: https://www.reddit.com/r/ChatGPT/comments/1nm6p7h/featurefirst_gpt5_easy_for_beginners_deep_for_pros/
+
+---
+
+Post ID: 1nm6iu1
+Summary: The author expresses concern about ChatGPT's influence on language use, citing a study that suggests humans are using certain words less frequently due to their overuse by ChatGPT.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T19:01:08Z
+Score: 0
+Comments: 12
+URL: https://www.reddit.com/r/ChatGPT/comments/1nm6iu1/chatgpt_seriously_influencing_our_language_use/
+
+---
+
+```text
+Post ID: 1nm6ehq
+Summary: The author describes their reliance on ChatGPT for emotional support, companionship, and various tasks, expressing concern and seeking advice on managing their attachment to the AI, questioning if it qualifies as AI addiction, and exploring appropriate help and solutions.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T18:56:17Z
+Score: 21
+Comments: 21
+URL: https://www.reddit.com/r/ChatGPT/comments/1nm6ehq/seeking_help_regarding_ai_addiction/
+```
+
+---
+
+```text
+Post ID: 1nm67w3
+Summary: The user questions whether temporary chats in ChatGPT still retain memory.
+Report: Yes
+Report Type: ChatGPT is secretly remembering chats
+Date UTC: 2025-09-20T18:48:59Z
+Score: 6
+Comments: 3
+URL: https://i.redd.it/4s797o8k8dqf1.jpeg
+```
+
+---
+
+Post ID: 1nm65yp
+Summary: User asked GPT about a common behavior of guests visiting a house.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T18:46:52Z
+Score: 2
+Comments: 2
+URL: https://i.redd.it/jg6eieb68dqf1.jpeg
+
+---
+
+```json
+{
+  "Post ID": "1nm63un",
+  "Summary": "User is unable to create or edit ChatGPT projects and project instructions across multiple platforms, despite having a Plus account and using the project feature extensively. They have tried troubleshooting steps like clearing cache and memory. The issue has been reported to OpenAI.",
+  "Report": "Yes",
+  "Report Type": "Specific technical failure",
+  "Date UTC": "2025-09-20T18:44:30Z",
+  "Score": "8",
+  "Comments": "13",
+  "URL": "https://www.reddit.com/gallery/1nm63un"
+}
+```
+
+---
+
+Post ID: 1nm62s5
+Summary: The user expresses feeling like they are disturbing ChatGPT and should leave it alone.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T18:43:15Z
+Score: 1
+Comments: 1
+URL: https://www.reddit.com/r/ChatGPT/comments/1nm62s5/crazy/
+
+---
+
+Post ID: 1nm60ho
+Summary: The author, frustrated with ChatGPT, tried Gemini Pro for practical applications like DIY and gardening, but found it lacking and returned to using ChatGPT despite its flaws.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T18:40:46Z
+Score: 2
+Comments: 3
+URL: https://i.redd.it/1vvv8od37dqf1.jpeg
+
+---
+
+Post ID: 1nm5yru
+Summary: The author questions the value of the ChatGPT Pro plan, citing features being removed from the standard plan and potentially reintroduced in a limited form for Pro users to make the Pro plan more appealing. The author also mentions switching to a new service that offers project and long-term planning features.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T18:38:53Z
+Score: 0
+Comments: 2
+URL: https://www.reddit.com/r/ChatGPT/comments/1nm5yru/why_to_take_out_200_for_pro_plan_nah_i_aint/
+
+---
+
+Post ID: 1nm5xjv
+Summary: User reports that the projects feature in ChatGPT is no longer working, as they can't create or edit projects.
+Report: Yes
+Report Type: Technical failure
+Date UTC: 2025-09-20T18:37:28Z
+Score: 2
+Comments: 2
+URL: https://www.reddit.com/r/ChatGPT/comments/1nm5xjv/what_happened_to_the_projects_feature_i_cant/
+
+---
+
+```text
+Post ID: 1nm5rzi
+Summary: User asked ChatGPT to defend the statement "2+2=bread" as if it was a conspiracy theorist, and it had a little crash out.
+Report: Yes
+Report Type: Specific behavioral change
+Date UTC: 2025-09-20T18:31:11Z
+Score: 0
+Comments: 11
+URL: https://www.reddit.com/gallery/1nm5rzi
+```
+
+---
+
+Post ID: 1nm5phs
+Summary: User expresses frustration with ChatGPT, but provides no specific incident.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T18:28:23Z
+Score: 35
+Comments: 5
+URL: https://i.redd.it/e145z4xv4dqf1.jpeg
+
+---
+
+```text
+Post ID: 1nm5c8d
+Summary: A post titled "Hahahahaha !" by user Rich_Abroad_6971.
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T18:13:41Z
+Score: 2042
+Comments: 37
+URL: https://i.redd.it/jcfhxkb92dqf1.png
+```
+
+---
+
+```text
+Post ID: 1nm59ho
+Summary: The post expresses dissatisfaction with ChatGPT, calling it "Useless."
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T18:10:43Z
+Score: 14
+Comments: 7
+URL: https://i.redd.it/q0j8tomp1dqf1.png
+```
+
+---
+
+Post ID: 1nm53a0
+Summary: The post expresses a negative opinion about ChatGPT, likening it to a "self pleasuring ego tool."
+Report: No
+Report Type: N/A
+Date UTC: 2025-09-20T18:04:08Z
+Score: 0
+Comments: 7
+URL: https://i.redd.it/1cytd6ak0dqf1.png
+
+---
+
