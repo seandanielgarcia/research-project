@@ -109,6 +109,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--subreddit", default="ChatGPT")
     parser.add_argument("--output", default="reddit_posts_complete.csv")
+    parser.add_argument("--raw-output", default="reddit_posts_full.csv")
     parser.add_argument("--limit", type=int, default=1000)
     parser.add_argument("--skip-classification", action="store_true")
     parser.add_argument("--stall-timeout", type=int, default=10)
@@ -119,17 +120,38 @@ def main():
         print("No posts found")
         return
 
-    with open(args.output, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(
-            f,
+    with open(args.output, "w", newline="", encoding="utf-8") as f_summary, \
+         open(args.raw_output, "w", newline="", encoding="utf-8") as f_raw:
+
+        summary_writer = csv.DictWriter(
+            f_summary,
             fieldnames=["Title & Content", "Timestamp", "Score", "Comments", "URL", "Is Report"],
             quoting=csv.QUOTE_ALL
         )
-        writer.writeheader()
+        raw_writer = csv.DictWriter(
+            f_raw,
+            fieldnames=["Title", "Content", "Timestamp", "Score", "Comments", "URL", "Author"],
+            quoting=csv.QUOTE_ALL
+        )
+
+        summary_writer.writeheader()
+        raw_writer.writeheader()
 
         report_count = 0
         try:
             for idx, post in enumerate(posts, 1):
+                # Always save full raw post
+                raw_writer.writerow({
+                    "Title": post["title"],
+                    "Content": post["content"],
+                    "Timestamp": post["timestamp"],
+                    "Score": post["score"],
+                    "Comments": post["comments"],
+                    "URL": post["url"],
+                    "Author": post["author"]
+                })
+
+                # Summarize + classify
                 summary = summarize_post(post['title'], post['content'])
                 is_report_flag = "N/A"
                 if not args.skip_classification:
@@ -139,7 +161,7 @@ def main():
                     else:
                         is_report_flag = "No"
 
-                writer.writerow({
+                summary_writer.writerow({
                     "Title & Content": summary,
                     "Timestamp": post["timestamp"],
                     "Score": post["score"],
@@ -147,7 +169,8 @@ def main():
                     "URL": post["url"],
                     "Is Report": is_report_flag
                 })
-                f.flush()
+                f_summary.flush()
+                f_raw.flush()
 
                 if idx % 50 == 0:
                     print(f"Written {idx}/{len(posts)} rows")
@@ -157,7 +180,7 @@ def main():
             sys.exit(0)
 
     oldest = min(posts, key=lambda x: x["timestamp"])
-    print(f"\nWrote {len(posts)} posts to {args.output}")
+    print(f"\nWrote {len(posts)} posts to {args.output} (summaries) and {args.raw_output} (full posts)")
     if not args.skip_classification:
         pct = (report_count / len(posts)) * 100
         print(f"Reports: {report_count} ({pct:.1f}%)")
