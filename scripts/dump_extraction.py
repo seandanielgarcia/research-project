@@ -22,7 +22,6 @@ def extract_chatgpt_posts():
 
     fieldnames = ["id", "created_utc", "title", "selftext", "num_comments", "score", "url"]
 
-    # If output exists, append instead of overwrite
     write_header = not os.path.exists(OUTPUT_FILE)
     out_csv = open(OUTPUT_FILE, "a", encoding="utf-8", newline="")
     writer = csv.DictWriter(out_csv, fieldnames=fieldnames)

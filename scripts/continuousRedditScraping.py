@@ -7,7 +7,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# Reddit API setup
 reddit = praw.Reddit(
     client_id=os.getenv("client_id"),
     client_secret=os.getenv("client_secret"),
@@ -55,7 +54,7 @@ def collect_posts(seen_ids):
         })
 
         if not newest_id:
-            newest_id = submission.fullname  # first item = newest
+            newest_id = submission.fullname  
 
     if newest_id:
         save_checkpoint(newest_id)

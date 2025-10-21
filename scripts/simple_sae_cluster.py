@@ -25,7 +25,6 @@ class SimpleSAE(nn.Module):
         # Encode
         encoded = self.encoder(x)
         
-        # Top-K sparsity
         top_k_values, top_k_indices = torch.topk(encoded, self.k_active, dim=1)
         sparse_encoded = torch.zeros_like(encoded)
         sparse_encoded.scatter_(1, top_k_indices, top_k_values)
