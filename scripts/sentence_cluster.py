@@ -10,10 +10,11 @@ def load_sentences(csv_path, reports_only=False):
     cols = {c.lower().strip(): c for c in df.columns}
     text_col = cols.get("full content", cols.get("title & content", None))
     report_col = cols.get("is report", "Is Report")
+    post_id_col = cols.get("post id", None)
 
     if text_col is None or text_col not in df.columns:
         print("No 'Full Content' or 'Title & Content' column found. Nothing to cluster.")
-        return []
+        return [], {}
 
     data = df
     if reports_only and report_col in df.columns:
@@ -22,13 +23,19 @@ def load_sentences(csv_path, reports_only=False):
         )]
 
     sentences = []
+    post_ids = {}
+    idx = 0
+    
     for _, row in data.iterrows():
         content = str(row[text_col]) if pd.notna(row[text_col]) else ""
         content_clean = content.strip().lower()
         if content_clean and content_clean != "nan" and content_clean != "no content":
+            post_id = str(row[post_id_col]) if post_id_col and pd.notna(row[post_id_col]) else f"post_{idx}"
             sentences.append(content.strip())
+            post_ids[idx] = post_id
+            idx += 1
 
-    return sentences
+    return sentences, post_ids
 
 def get_embeddings(sentences, model, embed_type="sentence"):
     if embed_type == "word":
@@ -45,21 +52,23 @@ def get_embeddings(sentences, model, embed_type="sentence"):
     else:
         return model.encode(sentences)
 
-def run_kmeans(sentences, k, model, embed_type):
+def run_kmeans(sentences, post_ids, k, model, embed_type):
     emb = get_embeddings(sentences, model, embed_type)
     labels = KMeans(n_clusters=k, random_state=42).fit_predict(emb)
     clusters = {}
-    for s, lab in zip(sentences, labels):
-        clusters.setdefault(f"Cluster {lab+1}", []).append(s)
+    for idx, (s, lab) in enumerate(zip(sentences, labels)):
+        post_id = post_ids.get(idx, f"post_{idx}")
+        clusters.setdefault(f"Cluster {lab+1}", []).append(post_id)
     return clusters
 
-def run_bertopic(sentences, model, embed_type):
+def run_bertopic(sentences, post_ids, model, embed_type):
     emb = get_embeddings(sentences, model, embed_type)
     topic_model = BERTopic()
     topics, _ = topic_model.fit_transform(sentences, emb)
     clusters = {}
-    for s, t in zip(sentences, topics):
-        clusters.setdefault(f"Topic {t}", []).append(s)
+    for idx, (s, t) in enumerate(zip(sentences, topics)):
+        post_id = post_ids.get(idx, f"post_{idx}")
+        clusters.setdefault(f"Topic {t}", []).append(post_id)
     return clusters
 
 def save_json(obj, path):
@@ -79,15 +88,15 @@ def main():
     os.makedirs(args.out, exist_ok=True)
     model = SentenceTransformer("all-MiniLM-L6-v2")
 
-    posts = load_sentences(args.input, reports_only=args.reports_only)
-    if not posts:
+    sentences, post_ids = load_sentences(args.input, reports_only=args.reports_only)
+    if not sentences:
         print("No valid content found to cluster.")
         return
 
-    k_clusters = run_kmeans(posts, args.k, model, args.embed_type)
+    k_clusters = run_kmeans(sentences, post_ids, args.k, model, args.embed_type)
     save_json(k_clusters, os.path.join(args.out, f"kmeans_{args.embed_type}.json"))
 
-    b_clusters = run_bertopic(posts, model, args.embed_type)
+    b_clusters = run_bertopic(sentences, post_ids, model, args.embed_type)
     save_json(b_clusters, os.path.join(args.out, f"bertopic_{args.embed_type}.json"))
 
     print(f"Done: {args.out} using {args.embed_type}-level embeddings")
