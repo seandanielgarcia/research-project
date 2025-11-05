@@ -65,16 +65,15 @@ def summarize_post(title, content, max_chars=250):
     text = f"Reddit Post Title: {title}\nContent: {content}"
     prompt = f"""Summarize this Reddit post in a single plain-English sentence.
 Do not include labels, formatting, CSV, or extra commentary.
-Keep it under {max_chars} characters.
 
 {text}"""
     try:
         response = model.generate_content(prompt)
         summary = response.text.strip().replace("\n", " ")
-        return summary[:max_chars]
+        return summary
     except Exception:
         combined = f"{title} — {content}"
-        return combined[:max_chars]
+        return combined
 
 def collect_posts(subreddit_name, target_posts=None, stall_timeout=10):
     subreddit = reddit.subreddit(subreddit_name)

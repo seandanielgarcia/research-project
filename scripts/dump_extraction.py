@@ -30,7 +30,7 @@ with open(input_file, "r", encoding="utf-8") as f:
         data = [json.loads(line) for line in f if line.strip()]
 
 with open(output_file, "w", newline="", encoding="utf-8") as csvfile:
-    fieldnames = ["post_id", "title", "created_date", "content", "score", "num_comments", "url"]
+    fieldnames = ["post_id", "title", "created_date", "content", "upvotes", "upvote_ratio", "num_comments", "url"]
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     writer.writeheader()
 
@@ -40,10 +40,10 @@ with open(output_file, "w", newline="", encoding="utf-8") as csvfile:
             "title": safe_str(post.get("title")),
             "created_date": safe_timestamp(post.get("created_utc")),
             "content": safe_str(post.get("selftext")),
-            "score": post.get("score") if post.get("score") is not None else 0,
+            "upvotes": post.get("ups") if post.get("ups") is not None else 0,
+            "upvote_ratio": post.get("upvote_ratio") if post.get("upvote_ratio") is not None else "",
             "num_comments": post.get("num_comments") if post.get("num_comments") is not None else 0,
             "url": safe_str(post.get("url"))
         })
 
 print(f"✅ Extracted {len(data)} posts to {output_file}")
-

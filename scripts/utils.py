@@ -2,6 +2,7 @@
 import json
 import pandas as pd
 from typing import Dict, List, Any, Optional
+import numpy as np
 
 
 def load_cluster_file(json_path: str) -> Dict[str, List[str]]:
@@ -138,6 +139,71 @@ def search_cluster_content(cluster_id: str, json_path: str, csv_path: Optional[s
             matching.append(item)
     
     return matching
+
+
+def list_clusters_with_sizes(json_path: str) -> List[Dict[str, Any]]:
+    sizes = get_cluster_sizes(json_path)
+    return [{"cluster": k, "size": v} for k, v in sizes.items()]
+
+
+def clusters_to_dataframe(
+    json_path: str,
+    csv_path: Optional[str] = None,
+    fields: Optional[List[str]] = None,
+) -> pd.DataFrame:
+    clusters = load_cluster_file(json_path)
+    use_fields = fields or ["Summary"]
+    rows: List[Dict[str, Any]] = []
+
+    ids_format = is_id_format(clusters)
+    id_to_data: Dict[str, Dict[str, Any]] = {}
+
+    if ids_format and csv_path:
+        df = load_post_data(csv_path)
+        cols = {c.lower().strip(): c for c in df.columns}
+        post_id_col = cols.get("post id", None)
+        if post_id_col is None:
+            raise ValueError("CSV file must have a 'Post ID' column")
+        field_cols: Dict[str, str] = {}
+        for f in use_fields:
+            f_lower = f.lower()
+            col = cols.get(f_lower, f)
+            if col not in df.columns:
+                raise ValueError(f"Field '{f}' not found in CSV file")
+            field_cols[f] = col
+        for _, r in df.iterrows():
+            pid = str(r[post_id_col])
+            id_to_data[pid] = {f: (r[field_cols[f]] if pd.notna(r[field_cols[f]]) else "") for f in use_fields}
+
+    for cluster, items in clusters.items():
+        for itm in items:
+            rec: Dict[str, Any] = {"cluster": cluster}
+            if ids_format:
+                rec["post_id"] = itm
+                if csv_path and itm in id_to_data:
+                    rec.update(id_to_data[itm])
+            else:
+                target = use_fields[0] if use_fields else "Summary"
+                rec[target] = itm
+            rows.append(rec)
+
+    return pd.DataFrame(rows)
+
+
+def sample_cluster_items(
+    cluster_id: str,
+    json_path: str,
+    csv_path: Optional[str] = None,
+    field: str = "Summary",
+    n: int = 20,
+    random_state: int = 42,
+) -> List[Dict[str, Any]]:
+    all_items = get_cluster_content(cluster_id, json_path, csv_path, field=field)
+    if n <= 0 or len(all_items) <= n:
+        return all_items
+    rng = np.random.RandomState(random_state)
+    idxs = rng.choice(len(all_items), size=n, replace=False)
+    return [all_items[int(i)] for i in idxs]
 
 
 if __name__ == "__main__":

@@ -36,7 +36,7 @@ def append_csv_files():
             if "Title & Content" in df.columns:
                 df_standardized = pd.DataFrame()
                 df_standardized["Post ID"] = [f"legacy_{i}" for i in range(len(df))]
-                df_standardized["Summary"] = df["Title & Content"].str[:100] + "..."  # Truncate for summary
+                df_standardized["Summary"] = df["Title & Content"]
                 df_standardized["Full Title"] = df["Title & Content"]
                 df_standardized["Full Content"] = df["Title & Content"]
                 df_standardized["Timestamp"] = df["Timestamp"]
