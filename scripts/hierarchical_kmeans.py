@@ -1,110 +1,126 @@
 #!/usr/bin/env python3
 import os, json, argparse
+import numpy as np
 from sentence_transformers import SentenceTransformer
 from sklearn.cluster import KMeans
-import numpy as np
+import pandas as pd
 
 def load_clusters(json_path):
     with open(json_path, "r", encoding="utf-8") as f:
-        clusters = json.load(f)
-    return clusters
-
-def encode_texts(texts, model):
-    if not texts:
-        return np.array([])
-    return model.encode(texts)
-
-def hierarchical_kmeans(data, model, depth=2, k=3, min_size=3, csv_path=None, post_id_map=None):
-    """
-    data: dict of {cluster_name: [post_ids]}
-    depth: levels of recursion (>=1)
-    k: number of clusters per level
-    min_size: skip clustering if fewer than this many texts
-    csv_path: path to CSV with post content (optional)
-    post_id_map: mapping from post_id to text content (optional)
-    """
-    hierarchy = {}
-
-    for cluster_name, post_ids in data.items():
-        if not post_ids or len(post_ids) < min_size:
-            hierarchy[cluster_name] = post_ids
-            continue
-
-        # If we have post content mapping, encode texts; otherwise just recluster IDs
-        if post_id_map:
-            texts = [post_id_map.get(pid, "") for pid in post_ids]
-            emb = encode_texts(texts, model)
-            labels = KMeans(n_clusters=k, random_state=42).fit_predict(emb)
-        else:
-            # No content available, just split by index
-            labels = np.array([i % k for i in range(len(post_ids))])
-        
-        subclusters = {}
-        for pid, lab in zip(post_ids, labels):
-            subclusters.setdefault(f"{cluster_name}-Sub{lab+1}", []).append(pid)
-
-        if depth > 1:
-            subclusters = hierarchical_kmeans(subclusters, model, depth-1, k, min_size, csv_path, post_id_map)
-        hierarchy[cluster_name] = subclusters
-
-    return hierarchy
+        return json.load(f)
 
 def save_json(obj, path):
+    os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(obj, f, indent=2, ensure_ascii=False)
 
-def flatten_structure(structure, level=0):
+def flatten_structure(structure):
     if isinstance(structure, dict):
-        total = 0
-        for v in structure.values():
-            total += flatten_structure(v, level+1)
-        return total
+        return sum(flatten_structure(v) for v in structure.values())
     elif isinstance(structure, list):
         return len(structure)
     return 0
 
 def load_post_content_mapping(csv_path):
-    """Load post content from CSV for re-embedding during hierarchical clustering."""
-    import pandas as pd
-    if csv_path and os.path.exists(csv_path):
-        df = pd.read_csv(csv_path)
-        cols = {c.lower().strip(): c for c in df.columns}
-        post_id_col = cols.get("post id", None)
-        text_col = cols.get("full content", cols.get("title & content", None))
-        
-        if post_id_col and text_col:
-            post_id_map = {}
-            for _, row in df.iterrows():
-                post_id = str(row[post_id_col]) if pd.notna(row[post_id_col]) else None
-                content = str(row[text_col]) if pd.notna(row[text_col]) else ""
-                if post_id:
-                    post_id_map[post_id] = content.strip()
-            return post_id_map
-    return None
+    if not csv_path or not os.path.exists(csv_path):
+        return {}
+    df = pd.read_csv(csv_path)
+    cols = {c.lower().strip(): c for c in df.columns}
+    id_col = cols.get("post id")
+    text_col = cols.get("full content") or cols.get("title & content")
+    if not id_col or not text_col:
+        return {}
+    mapping = {}
+    for _, row in df.iterrows():
+        pid = str(row[id_col]).strip() if pd.notna(row[id_col]) else None
+        content = str(row[text_col]).strip() if pd.notna(row[text_col]) else ""
+        if pid:
+            mapping[pid] = content
+    return mapping
+
+def encode_texts(texts, model):
+    if not texts:
+        return np.empty((0, model.get_sentence_embedding_dimension()))
+    return model.encode(texts, show_progress_bar=False, normalize_embeddings=True)
+
+def hierarchical_kmeans(data, model, depth=1, k=2, min_size=3, post_id_map=None, embeddings_cache=None, seed=42):
+    np.random.seed(seed)
+    hierarchy = {}
+    for cluster_name, post_ids in data.items():
+        if not post_ids or len(post_ids) < min_size:
+            hierarchy[cluster_name] = {"_leaf": post_ids}
+            continue
+
+        if post_id_map:
+            texts = [post_id_map.get(pid, "") for pid in post_ids]
+            valid_mask = [bool(t.strip()) for t in texts]
+            valid_ids = [pid for pid, ok in zip(post_ids, valid_mask) if ok]
+            if not valid_ids:
+                hierarchy[cluster_name] = {"_leaf": post_ids}
+                continue
+            emb = np.array([
+                embeddings_cache[pid] if pid in embeddings_cache
+                else model.encode(post_id_map[pid], show_progress_bar=False, normalize_embeddings=True)
+                for pid in valid_ids
+            ])
+            for pid, vec in zip(valid_ids, emb):
+                embeddings_cache[pid] = vec
+        else:
+            hierarchy[cluster_name] = {"_leaf": post_ids}
+            continue
+
+        k_eff = min(k, len(emb))
+        if k_eff < 2:
+            hierarchy[cluster_name] = {"_leaf": post_ids}
+            continue
+
+        km = KMeans(n_clusters=k_eff, random_state=seed, n_init="auto")
+        labels = km.fit_predict(emb)
+
+        unique_labels = np.unique(labels)
+        if len(unique_labels) == 1:
+            hierarchy[cluster_name] = {"_leaf": post_ids}
+            continue
+
+        subclusters = {}
+        for pid, lab in zip(valid_ids, labels):
+            subclusters.setdefault(f"{cluster_name}-Sub{lab+1}", {"_leaf": []})["_leaf"].append(pid)
+
+        if depth > 1:
+            subclusters = hierarchical_kmeans(
+                {k_: v["_leaf"] for k_, v in subclusters.items()},
+                model, depth-1, k, min_size, post_id_map, embeddings_cache, seed
+            )
+        hierarchy[cluster_name] = subclusters
+    return hierarchy
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--input", required=True, help="Path to existing kmeans_*.json")
-    ap.add_argument("--out", default="hierarchical_results.json", help="Output JSON file")
-    ap.add_argument("--depth", type=int, default=2, help="Recursion depth (levels)")
-    ap.add_argument("--k", type=int, default=3, help="Subclusters per level")
-    ap.add_argument("--min-size", type=int, default=3, help="Min docs per cluster to recluster")
-    ap.add_argument("--model", default="all-MiniLM-L6-v2", help="SentenceTransformer model")
-    ap.add_argument("--csv", help="Path to CSV file with post content for better clustering")
+    ap.add_argument("--input", required=True)
+    ap.add_argument("--out", default="hierarchical_results.json")
+    ap.add_argument("--depth", type=int, default=1)
+    ap.add_argument("--k", type=int, default=2)
+    ap.add_argument("--min-size", type=int, default=3)
+    ap.add_argument("--model", default="all-MiniLM-L6-v2")
+    ap.add_argument("--csv")
     args = ap.parse_args()
 
+    print(f"Loading model '{args.model}' ...")
     model = SentenceTransformer(args.model)
     clusters = load_clusters(args.input)
-    
     post_id_map = load_post_content_mapping(args.csv)
+    embeddings_cache = {}
 
-    print(f"Running hierarchical KMeans on {len(clusters)} top-level clusters ...")
-    hierarchy = hierarchical_kmeans(clusters, model, depth=args.depth, k=args.k, min_size=args.min_size, csv_path=args.csv, post_id_map=post_id_map)
+    print(f"Running hierarchical K-Means on {len(clusters)} top-level clusters...")
+    hierarchy = hierarchical_kmeans(
+        clusters, model, depth=args.depth, k=args.k,
+        min_size=args.min_size, post_id_map=post_id_map,
+        embeddings_cache=embeddings_cache
+    )
+
     save_json(hierarchy, args.out)
-
-    total_docs = flatten_structure(hierarchy)
-    print(f"Saved hierarchical clusters → {args.out}")
-    print(f"Total documents processed: {total_docs}")
+    print(f"\nSaved results → {args.out}")
+    print(f"Total documents processed: {flatten_structure(hierarchy)}")
 
 if __name__ == "__main__":
     main()

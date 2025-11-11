@@ -84,56 +84,47 @@ def save_json(obj, path):
         json.dump(obj, f, indent=2, ensure_ascii=False)
 
 def main():
-    ap = argparse.ArgumentParser(description="Train KMeans on training data and predict on test data")
-    ap.add_argument("--train", required=True, help="Training CSV file")
-    ap.add_argument("--test", required=True, help="Test CSV file")
-    ap.add_argument("--k", type=int, default=30, help="K for KMeans")
+    ap = argparse.ArgumentParser(description="Train KMeans on half the data and predict on the other half")
+    ap.add_argument("--input", required=True, help="Input CSV file to split 50/50")
+    ap.add_argument("--k", type=int, default=15, help="K for KMeans")
     ap.add_argument("--out", default="results/clustering/train_test", help="Output directory")
     ap.add_argument("--reports-only", action="store_true", help="Use only report posts")
     ap.add_argument("--embed-type", choices=["sentence", "word"], default="sentence",
                     help="Choose 'sentence' or 'word' embeddings")
     ap.add_argument("--model", default="all-MiniLM-L6-v2", help="SentenceTransformer model")
+    ap.add_argument("--random-state", type=int, default=42, help="Random seed for splitting")
     args = ap.parse_args()
 
     os.makedirs(args.out, exist_ok=True)
     model = SentenceTransformer(args.model)
 
-    print(f"Loading training data from {args.train}...")
-    train_sentences, train_post_ids = load_sentences(args.train, reports_only=args.reports_only)
-    if not train_sentences:
-        print("No valid training content found.")
+    print(f"Loading data from {args.input}...")
+    all_sentences, all_post_ids = load_sentences(args.input, reports_only=args.reports_only)
+    if not all_sentences:
+        print("No valid content found.")
         return
 
-    print(f"Loading test data from {args.test}...")
-    test_sentences, test_post_ids = load_sentences(args.test, reports_only=args.reports_only)
-    if not test_sentences:
-        print("No valid test content found.")
-        return
-
-    train_post_id_set = set(train_post_ids.values())
-    original_test_size = len(test_sentences)
+    print(f"Loaded {len(all_sentences)} posts")
     
-    filtered_test_sentences = []
-    filtered_test_post_ids = {}
-    new_idx = 0
-    for idx, post_id in test_post_ids.items():
-        if post_id not in train_post_id_set:
-            filtered_test_sentences.append(test_sentences[idx])
-            filtered_test_post_ids[new_idx] = post_id
-            new_idx += 1
+    indices = np.arange(len(all_sentences))
+    rng = np.random.RandomState(args.random_state)
+    rng.shuffle(indices)
     
-    removed_count = original_test_size - len(filtered_test_sentences)
-    if removed_count > 0:
-        print(f"Removed {removed_count} test posts that appear in training set")
-        print(f"Testing on {len(filtered_test_sentences)} posts (was {original_test_size})")
+    split_idx = len(indices) // 2
+    train_indices = indices[:split_idx]
+    test_indices = indices[split_idx:]
     
-    if not filtered_test_sentences:
-        print("No test posts remaining after excluding training posts.")
-        return
+    train_sentences = [all_sentences[i] for i in train_indices]
+    train_post_ids = {new_idx: all_post_ids[old_idx] for new_idx, old_idx in enumerate(train_indices)}
+    
+    test_sentences = [all_sentences[i] for i in test_indices]
+    test_post_ids = {new_idx: all_post_ids[old_idx] for new_idx, old_idx in enumerate(test_indices)}
+    
+    print(f"Split into {len(train_sentences)} training posts and {len(test_sentences)} test posts")
 
     train_clusters, test_clusters, km_model = train_and_predict(
         train_sentences, train_post_ids,
-        filtered_test_sentences, filtered_test_post_ids,
+        test_sentences, test_post_ids,
         args.k, model, args.embed_type
     )
 

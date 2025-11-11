@@ -3,6 +3,7 @@ import json
 import pandas as pd
 from typing import Dict, List, Any, Optional
 import numpy as np
+import matplotlib.pyplot as plt
 
 
 def load_cluster_file(json_path: str) -> Dict[str, List[str]]:
@@ -204,6 +205,26 @@ def sample_cluster_items(
     rng = np.random.RandomState(random_state)
     idxs = rng.choice(len(all_items), size=n, replace=False)
     return [all_items[int(i)] for i in idxs]
+
+
+def plot_clusters(json_path: str, output_path: str):
+    clusters = load_cluster_file(json_path)
+    names, sizes = zip(*sorted(((k, len(v)) for k, v in clusters.items()), key=lambda x: x[1], reverse=True))
+    x = np.arange(len(names))
+    plt.figure(figsize=(11, 6))
+    bars = plt.bar(x, sizes, color="#3b82f6", edgecolor="#1e3a8a", linewidth=0.8, alpha=0.9)
+    plt.gca().set_facecolor("#f9fafb")
+    plt.title("Cluster Distribution", fontsize=18, weight="bold", color="#111827", pad=20)
+    plt.ylabel("Number of Posts", fontsize=12, color="#111827", labelpad=10)
+    plt.xticks(x, names, rotation=30, ha="right", fontsize=10, color="#111827")
+    plt.yticks(color="#111827")
+    for bar, size in zip(bars, sizes):
+        plt.text(bar.get_x() + bar.get_width() / 2, size + 0.5, str(size),
+                 ha="center", va="bottom", fontsize=10, color="#111827", weight="bold")
+    plt.grid(axis="y", linestyle="--", linewidth=0.5, alpha=0.6)
+    plt.tight_layout()
+    plt.savefig(output_path, dpi=300, bbox_inches='tight')
+    plt.close()
 
 
 if __name__ == "__main__":

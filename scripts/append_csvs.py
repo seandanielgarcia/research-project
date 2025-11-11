@@ -8,7 +8,7 @@ def append_csv_files():
     Handles different column structures by standardizing them.
     """
     
-    data_dir = Path("/Users/seangarcia/Downloads/reddit_scraper/data")
+    data_dir = Path("/Users/seangarcia/Downloads/reddit_scraper/old")
     files = [
         "993octoberposts.csv",
         "new_posts_9_30.csv", 
