@@ -26,7 +26,6 @@ def load_sentences(csv_path, reports_only=False):
     sentences = []
     post_ids = {}
     idx = 0
-    
     for _, row in data.iterrows():
         content = str(row[text_col]) if pd.notna(row[text_col]) else ""
         content_clean = content.strip().lower()
@@ -35,7 +34,6 @@ def load_sentences(csv_path, reports_only=False):
             sentences.append(content.strip())
             post_ids[idx] = post_id
             idx += 1
-
     return sentences, post_ids
 
 def get_embeddings(sentences, model, embed_type="sentence"):
@@ -56,28 +54,34 @@ def get_embeddings(sentences, model, embed_type="sentence"):
 def train_and_predict(train_sentences, train_post_ids, test_sentences, test_post_ids, k, model, embed_type):
     print(f"Embedding {len(train_sentences)} training posts...")
     train_emb = get_embeddings(train_sentences, model, embed_type)
-    
     print(f"Training KMeans with k={k}...")
     km = KMeans(n_clusters=k, random_state=42, n_init=10)
     train_labels = km.fit_predict(train_emb)
-    
+    train_loss = km.inertia_
+
     train_clusters = {}
-    for idx, (post_id, label) in enumerate(zip(train_post_ids.values(), train_labels)):
+    for _, (post_id, label) in enumerate(zip(train_post_ids.values(), train_labels)):
         cluster_name = f"Cluster {label+1}"
         train_clusters.setdefault(cluster_name, []).append(post_id)
-    
+
     print(f"Embedding {len(test_sentences)} test posts...")
     test_emb = get_embeddings(test_sentences, model, embed_type)
-    
     print(f"Predicting clusters for test data...")
     test_labels = km.predict(test_emb)
-    
+
+    dists = np.linalg.norm(test_emb[:, None] - km.cluster_centers_, axis=2)
+    test_loss = float(np.mean(np.min(np.square(dists), axis=1)))
+
     test_clusters = {}
-    for idx, (post_id, label) in enumerate(zip(test_post_ids.values(), test_labels)):
+    for _, (post_id, label) in enumerate(zip(test_post_ids.values(), test_labels)):
         cluster_name = f"Cluster {label+1}"
         test_clusters.setdefault(cluster_name, []).append(post_id)
-    
-    return train_clusters, test_clusters, km
+
+    metrics = {
+        "train_loss": float(train_loss),
+        "test_loss": float(test_loss)
+    }
+    return train_clusters, test_clusters, metrics
 
 def save_json(obj, path):
     with open(path, "w", encoding="utf-8") as f:
@@ -105,24 +109,20 @@ def main():
         return
 
     print(f"Loaded {len(all_sentences)} posts")
-    
     indices = np.arange(len(all_sentences))
     rng = np.random.RandomState(args.random_state)
     rng.shuffle(indices)
-    
     split_idx = len(indices) // 2
     train_indices = indices[:split_idx]
     test_indices = indices[split_idx:]
-    
+
     train_sentences = [all_sentences[i] for i in train_indices]
     train_post_ids = {new_idx: all_post_ids[old_idx] for new_idx, old_idx in enumerate(train_indices)}
-    
     test_sentences = [all_sentences[i] for i in test_indices]
     test_post_ids = {new_idx: all_post_ids[old_idx] for new_idx, old_idx in enumerate(test_indices)}
-    
-    print(f"Split into {len(train_sentences)} training posts and {len(test_sentences)} test posts")
 
-    train_clusters, test_clusters, km_model = train_and_predict(
+    print(f"Split into {len(train_sentences)} training posts and {len(test_sentences)} test posts")
+    train_clusters, test_clusters, metrics = train_and_predict(
         train_sentences, train_post_ids,
         test_sentences, test_post_ids,
         args.k, model, args.embed_type
@@ -130,16 +130,20 @@ def main():
 
     train_out = os.path.join(args.out, f"train_kmeans_k{args.k}_{args.embed_type}.json")
     test_out = os.path.join(args.out, f"test_kmeans_k{args.k}_{args.embed_type}.json")
-    
+    metrics_out = os.path.join(args.out, f"metrics_k{args.k}_{args.embed_type}.json")
+
     save_json(train_clusters, train_out)
     save_json(test_clusters, test_out)
+    save_json(metrics, metrics_out)
 
     print(f"\nTraining clusters: {len(train_clusters)} clusters, {sum(len(v) for v in train_clusters.values())} posts")
     print(f"Test clusters: {len(test_clusters)} clusters, {sum(len(v) for v in test_clusters.values())} posts")
+    print(f"Train loss: {metrics['train_loss']:.4f}")
+    print(f"Test loss: {metrics['test_loss']:.4f}")
     print(f"Saved to:")
     print(f"  Training: {train_out}")
     print(f"  Test: {test_out}")
+    print(f"  Metrics: {metrics_out}")
 
 if __name__ == "__main__":
     main()
-

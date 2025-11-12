@@ -1,0 +1,7 @@
+{
+  "adjusted_rand_index": 0.6474753367294076,
+  "normalized_mutual_info": 0.653367419784006,
+  "test_only_clusters": 16,
+  "predicted_clusters": 16,
+  "overlapping_posts": 1202
+}
