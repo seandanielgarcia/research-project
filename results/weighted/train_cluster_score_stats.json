@@ -1,0 +1,82 @@
+{
+  "Cluster 2": {
+    "total_score": 326.0,
+    "count": 25,
+    "avg_score": 13.04
+  },
+  "Cluster 3": {
+    "total_score": 1117.0,
+    "count": 8,
+    "avg_score": 139.625
+  },
+  "Cluster 14": {
+    "total_score": 441.0,
+    "count": 51,
+    "avg_score": 8.647058823529411
+  },
+  "Cluster 9": {
+    "total_score": 282.0,
+    "count": 11,
+    "avg_score": 25.636363636363637
+  },
+  "Cluster 7": {
+    "total_score": 519.0,
+    "count": 28,
+    "avg_score": 18.535714285714285
+  },
+  "Cluster 4": {
+    "total_score": 139.0,
+    "count": 25,
+    "avg_score": 5.56
+  },
+  "Cluster 5": {
+    "total_score": 75.0,
+    "count": 19,
+    "avg_score": 3.9473684210526314
+  },
+  "Cluster 11": {
+    "total_score": 130.0,
+    "count": 8,
+    "avg_score": 16.25
+  },
+  "Cluster 12": {
+    "total_score": 1938.0,
+    "count": 11,
+    "avg_score": 176.1818181818182
+  },
+  "Cluster 16": {
+    "total_score": 147.0,
+    "count": 20,
+    "avg_score": 7.35
+  },
+  "Cluster 8": {
+    "total_score": 409.0,
+    "count": 18,
+    "avg_score": 22.72222222222222
+  },
+  "Cluster 15": {
+    "total_score": 515.0,
+    "count": 27,
+    "avg_score": 19.074074074074073
+  },
+  "Cluster 13": {
+    "total_score": 275.0,
+    "count": 37,
+    "avg_score": 7.4324324324324325
+  },
+  "Cluster 6": {
+    "total_score": 196.0,
+    "count": 10,
+    "avg_score": 19.6
+  },
+  "Cluster 1": {
+    "total_score": 49.0,
+    "count": 8,
+    "avg_score": 6.125
+  },
+  "Cluster 10": {
+    "total_score": 477.0,
+    "count": 9,
+    "avg_score": 53.0
+  }
+}

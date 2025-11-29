@@ -1,0 +1,6 @@
+{
+  "train_loss": 0.5035384297370911,
+  "val_loss_using_train_centroids": 711.0158081054688,
+  "val_loss_independent": 664.3311767578125,
+  "val_loss_independent_avg": 0.5526881670198107
+}

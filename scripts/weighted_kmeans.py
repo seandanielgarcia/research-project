@@ -1,105 +1,160 @@
 #!/usr/bin/env python3
-import os, json, argparse, pandas as pd
+import os
+import json
+import argparse
+import pandas as pd
+import numpy as np
 from sentence_transformers import SentenceTransformer
 from sklearn.cluster import KMeans
-import numpy as np
 
-def load_sentences_and_weights(csv_path, reports_only=False):
+def load_sentences(csv_path, reports_only=False):
     df = pd.read_csv(csv_path)
     cols = {c.lower().strip(): c for c in df.columns}
-    text_col = cols.get("full content", cols.get("title & content", None))
-    report_col = cols.get("is report", "Is Report")
+
+    text_col = cols.get(
+        "content",
+        cols.get("full content", cols.get("title & content", None))
+    )
+    report_col = cols.get("is report", None)
     post_id_col = cols.get("post id", None)
-    weight_col = cols.get("score", None)
+    score_col = cols.get("score", None)
 
     if text_col is None or text_col not in df.columns:
-        print("No 'Full Content' or 'Title & Content' column found. Nothing to cluster.")
-        return [], {}, np.array([])
+        return [], {}, []
 
     data = df
     if reports_only and report_col in df.columns:
-        data = df[df[report_col].astype(str).str.strip().str.lower().isin(
-            ["yes", "y", "true", "1"]
-        )]
+        data = df[df[report_col].astype(str).str.lower().isin(["true","yes","y","1"])]
 
-    sentences, post_ids, weights = [], {}, []
+    sentences, post_ids, scores = [], {}, []
     idx = 0
 
     for _, row in data.iterrows():
-        content = str(row[text_col]) if pd.notna(row[text_col]) else ""
-        content_clean = content.strip().lower()
-        if content_clean and content_clean != "nan" and content_clean != "no content":
-            post_id = str(row[post_id_col]) if post_id_col and pd.notna(row[post_id_col]) else f"post_{idx}"
-            sentences.append(content.strip())
-            post_ids[idx] = post_id
-
-            # Use Score as weight (default  as 1 if missing)
-            w = float(row[weight_col]) if weight_col and pd.notna(row[weight_col]) else 1.0
-            weights.append(w)
+        content = str(row[text_col]).strip()
+        if content and content.lower() not in ["nan","no content"]:
+            pid = str(row[post_id_col]) if post_id_col else f"post_{idx}"
+            sc = float(row[score_col]) if score_col else 1.0
+            sentences.append(content)
+            post_ids[idx] = pid
+            scores.append(sc)
             idx += 1
-
-    weights = np.array(weights)
-    if weights.sum() > 0:
-        weights = weights / weights.sum()  # normalize for stability
-
-    return sentences, post_ids, weights
+    return sentences, post_ids, scores
 
 
-def get_embeddings(sentences, model, embed_type="sentence"):
-    if embed_type == "word":
-        embs = []
-        for s in sentences:
-            tokens = s.split()
-            if not tokens:
-                embs.append(np.zeros(model.get_sentence_embedding_dimension()))
-                continue
-            token_embs = model.encode(tokens)
-            avg_emb = np.mean(token_embs, axis=0)
-            embs.append(avg_emb)
-        return np.array(embs)
-    else:
-        return model.encode(sentences)
+def get_embeddings(sentences, model):
+    return model.encode(sentences)
 
 
-def run_weighted_kmeans(sentences, post_ids, weights, k, model, embed_type):
-    emb = get_embeddings(sentences, model, embed_type)
-    kmeans = KMeans(n_clusters=k, random_state=42, n_init="auto")
-    kmeans.fit(emb, sample_weight=weights)
+def run_train_weighted(train_emb, train_post_ids, train_scores, k):
+    w = np.log1p(np.array(train_scores))
+    w = w / w.sum()
+
+    km = KMeans(n_clusters=k, random_state=42, n_init=10)
+    labels = km.fit_predict(train_emb, sample_weight=w)
+
+    loss = float(km.inertia_)
 
     clusters = {}
-    for idx, label in enumerate(kmeans.labels_):
-        post_id = post_ids.get(idx, f"post_{idx}")
-        clusters.setdefault(f"Cluster {label + 1}", []).append(post_id)
-    return clusters
+    cluster_score_stats = {}
+    for pid, label, score in zip(train_post_ids.values(), labels, train_scores):
+        cluster_name = f"Cluster {label+1}"
+        clusters.setdefault(cluster_name, []).append(pid)
+        stats = cluster_score_stats.setdefault(
+            cluster_name, {"total_score": 0.0, "count": 0, "avg_score": 0.0}
+        )
+        stats["total_score"] += float(score)
+        stats["count"] += 1
+
+    for stats in cluster_score_stats.values():
+        if stats["count"] > 0:
+            stats["avg_score"] = stats["total_score"] / stats["count"]
+        else:
+            stats["avg_score"] = 0.0
+
+    return km, clusters, loss, cluster_score_stats
+
+
+def run_val_independent(val_emb, val_post_ids, k):
+    km = KMeans(n_clusters=k, random_state=42, n_init=10)
+    labels = km.fit_predict(val_emb)
+
+    loss = abs(km.score(val_emb))
+    avg = loss / len(val_emb)
+
+    clusters = {}
+    for pid, label in zip(val_post_ids.values(), labels):
+        clusters.setdefault(f"Cluster {label+1}", []).append(pid)
+
+    return clusters, loss, avg
 
 
 def save_json(obj, path):
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(obj, f, indent=2, ensure_ascii=False)
+    with open(path, "w") as f:
+        json.dump(obj, f, indent=2)
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--input", required=True, help="posts.csv")
-    ap.add_argument("--k", type=int, default=6, help="K for KMeans")
-    ap.add_argument("--out", default="results", help="output dir")
-    ap.add_argument("--reports-only", action="store_true", help="Use only report posts")
-    ap.add_argument("--embed-type", choices=["sentence", "word"], default="sentence",
-                    help="Choose 'sentence' or 'word' embeddings")
+    ap.add_argument("--input", required=True)
+    ap.add_argument("--k", type=int, default=16)
+    ap.add_argument("--out", default="results/weighted")
+    ap.add_argument("--model", default="all-MiniLM-L6-v2")
+    ap.add_argument("--random-state", type=int, default=42)
+    ap.add_argument("--reports-only", action="store_true",
+                    help="If set, run clustering only on rows marked as reports.")
     args = ap.parse_args()
 
     os.makedirs(args.out, exist_ok=True)
-    model = SentenceTransformer("all-MiniLM-L6-v2")
+    model = SentenceTransformer(args.model)
 
-    sentences, post_ids, weights = load_sentences_and_weights(args.input, reports_only=args.reports_only)
+    sentences, post_ids, scores = load_sentences(args.input, reports_only=args.reports_only)
     if not sentences:
-        print("No valid content found to cluster.")
         return
 
-    clusters = run_weighted_kmeans(sentences, post_ids, weights, args.k, model, args.embed_type)
-    save_json(clusters, os.path.join(args.out, f"weighted_kmeans_{args.embed_type}.json"))
+    idx = np.arange(len(sentences))
+    np.random.RandomState(args.random_state).shuffle(idx)
+    split = len(idx) // 2
 
-    print(f"Done: {args.out}/weighted_kmeans_{args.embed_type}.json")
+    train_idx = idx[:split]
+    val_idx   = idx[split:]
+
+    train_sentences = [sentences[i] for i in train_idx]
+    val_sentences   = [sentences[i] for i in val_idx]
+
+    train_ids = {i: post_ids[j] for i,j in enumerate(train_idx)}
+    val_ids   = {i: post_ids[j] for i,j in enumerate(val_idx)}
+
+    train_scores = [scores[i] for i in train_idx]
+
+    train_emb = get_embeddings(train_sentences, model)
+    val_emb   = get_embeddings(val_sentences, model)
+
+    km, train_clusters, train_loss, train_score_stats = run_train_weighted(
+        train_emb, train_ids, train_scores, args.k
+    )
+
+    val_loss_with_train = abs(km.score(val_emb))
+
+    val_clusters, val_loss_indep, val_loss_avg = run_val_independent(val_emb, val_ids, args.k)
+
+    save_json(train_clusters, os.path.join(args.out, "train_clusters.json"))
+    save_json(val_clusters, os.path.join(args.out, "val_clusters.json"))
+    save_json({
+        "train_loss": train_loss,
+        "val_loss_using_train_centroids": val_loss_with_train,
+        "val_loss_independent": val_loss_indep,
+        "val_loss_independent_avg": val_loss_avg
+    }, os.path.join(args.out, "metrics.json"))
+
+    save_json(train_score_stats, os.path.join(args.out, "train_cluster_score_stats.json"))
+
+    print("Average Score per Cluster:")
+    for cluster in sorted(train_score_stats.keys(), key=lambda c: int(c.split()[1])):
+        avg = train_score_stats[cluster]["avg_score"]
+        count = train_score_stats[cluster]["count"]
+        print(f"  {cluster}: avg_score={avg:.2f} (n={count})")
+
+    print("Done weighted KMeans.")
 
 if __name__ == "__main__":
     main()

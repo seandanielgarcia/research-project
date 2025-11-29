@@ -1,5 +1,5 @@
 {
-  "Cluster 3 - ChatGPT General Usage": [
+  "Cluster 3": [
     "1o4dfms",
     "legacy_237",
     "1o1wvsz",
@@ -152,7 +152,7 @@
     "1o5mssy",
     "legacy_438"
   ],
-  "Cluster 8 - ChatGPT Usage & Applications": [
+  "Cluster 8": [
     "legacy_427",
     "legacy_266",
     "1o320m1",
@@ -229,7 +229,7 @@
     "1o5ouxe",
     "1ntcxw4"
   ],
-  "Cluster 5 - General AI Discussion": [
+  "Cluster 5": [
     "1o2ey3l",
     "1o5mecj",
     "1o2l0y9",
@@ -487,7 +487,7 @@
     "1nsyv2p",
     "1o5rv41"
   ],
-  "Cluster 13 - AI Tools & Subscriptions": [
+  "Cluster 13": [
     "1o4t8mf",
     "1o2ia52",
     "legacy_23",
@@ -542,7 +542,7 @@
     "legacy_317",
     "1o4846u"
   ],
-  "Cluster 7 - AI Development & Future Impact": [
+  "Cluster 7": [
     "1o3cwu9",
     "legacy_180",
     "1o3ojpn",
@@ -655,7 +655,7 @@
     "1o3ogwc",
     "legacy_182"
   ],
-  "Cluster 6 - General Frustration & Quality Concerns": [
+  "Cluster 6": [
     "legacy_228",
     "legacy_44",
     "legacy_221",
@@ -720,7 +720,7 @@
     "legacy_68",
     "legacy_535"
   ],
-  "Cluster 2 - Model Comparison & Subscription Issues": [
+  "Cluster 2": [
     "1ntrvy2",
     "1o4vlcc",
     "1o2f067",
@@ -765,7 +765,7 @@
     "legacy_101",
     "1o5i9e1"
   ],
-  "Cluster 15 - Memory & Data Management Issues": [
+  "Cluster 15": [
     "legacy_213",
     "1o3dvs9",
     "1ntff83",
@@ -831,7 +831,7 @@
     "1o29p7u",
     "1o2g9fq"
   ],
-  "Cluster 12 - GPT-5 Model Evaluation & Comparison": [
+  "Cluster 12": [
     "1ntfehn",
     "1o44evl",
     "1nu6lus",
@@ -893,7 +893,7 @@
     "1nup4xq",
     "1nuq838"
   ],
-  "Cluster 9 - Miscellaneous & Low Content": [
+  "Cluster 9": [
     "1o3tb7z",
     "1o3qu34",
     "1nuiyvk",
@@ -907,7 +907,7 @@
     "1ntgbpb",
     "1o2kr04"
   ],
-  "Cluster 1 - OpenAI Company Policies & Platform Changes": [
+  "Cluster 1": [
     "1ntfkoc",
     "1nt7zxb",
     "1nt2y8h",
@@ -968,7 +968,7 @@
     "1nte76l",
     "1ntc3fw"
   ],
-  "Cluster 10 - GPT Functionality Issues & User Complaints": [
+  "Cluster 10": [
     "1o5091i",
     "legacy_578",
     "1ntcpwj",
@@ -1019,7 +1019,7 @@
     "1nu6cu7",
     "1o5c5pz"
   ],
-  "Cluster 14 - AI Emotional Support & Relationships": [
+  "Cluster 14": [
     "1nub3m9",
     "1o3ne9d",
     "1o21poi",
@@ -1066,7 +1066,7 @@
     "1nsxnv9",
     "1o36h2j"
   ],
-  "Cluster 16 - AI Personality & Creative Interactions": [
+  "Cluster 16": [
     "1ntofmx",
     "1nsz0g9",
     "1nucnce",
@@ -1136,7 +1136,7 @@
     "1o51nei",
     "1nt03zv"
   ],
-  "Cluster 4 - Image & Video Generation": [
+  "Cluster 4": [
     "1nuh8om",
     "legacy_525",
     "legacy_406",
@@ -1204,7 +1204,7 @@
     "legacy_212",
     "legacy_400"
   ],
-  "Cluster 11 - Technical Bugs & App Issues": [
+  "Cluster 11": [
     "1nstrwf",
     "1o4pp13",
     "1o4linq",

@@ -1,0 +1,18 @@
+{
+  "num_posts": 2403,
+  "num_topics": 30,
+  "initial_num_topics": 30,
+  "strategy": "distributions",
+  "threshold": 0,
+  "initial_outliers": 1124,
+  "remaining_outliers": 0,
+  "outliers_reduced": 1124,
+  "initial_outlier_percentage": 46.774864752392844,
+  "remaining_outlier_percentage": 0.0,
+  "reduction_percentage": 46.774864752392844,
+  "text_field": "summary",
+  "n_neighbors": 15,
+  "n_components": 5,
+  "min_cluster_size": 10,
+  "reduce_nr_topics": null
+}

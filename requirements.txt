@@ -9,3 +9,7 @@ bertopic>=0.15.0
 numpy>=1.21.0
 zstandard>=0.25.0
 tqdm>=4.66.0
+topicgpt>=0.1.0
+openai>=1.0.0
+umap-learn>=0.5.0
+hdbscan>=0.8.0

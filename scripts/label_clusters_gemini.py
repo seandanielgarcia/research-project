@@ -4,6 +4,7 @@ import json
 import time
 import argparse
 from typing import Dict, List
+from dotenv import load_dotenv
 
 from tqdm import tqdm
 import google.generativeai as genai
@@ -11,6 +12,8 @@ from utils import (
     load_cluster_file,
     get_cluster_summaries,
 )
+
+load_dotenv()
 
 def make_prompt(cluster_name: str, examples: List[str], max_examples: int) -> str:
     trimmed = [s for s in examples if s]
@@ -29,6 +32,7 @@ def make_prompt(cluster_name: str, examples: List[str], max_examples: int) -> st
         "- Emphasize what specifically unites these posts — e.g. topic, attitude, focus, or controversy.\n"
         "- Avoid punctuation except basic hyphens.\n"
         "- Do not label any cluster until you have seen all posts in all clusters"
+        "4 to 6 words is best"
         "- Return only the label.\n\n"
         
         f"Cluster name (internal): {cluster_name}\n\n"
