@@ -6,12 +6,21 @@ Implements multiple outlier reduction strategies to reassign outlier documents t
 import os
 import json
 import argparse
+import time
 import pandas as pd
 import numpy as np
+from typing import Dict, List, Optional
 from sentence_transformers import SentenceTransformer
 from bertopic import BERTopic
 from umap import UMAP
 from hdbscan import HDBSCAN
+try:
+    import google.generativeai as genai
+    from dotenv import load_dotenv
+    GEMINI_AVAILABLE = True
+    load_dotenv()
+except ImportError:
+    GEMINI_AVAILABLE = False
 
 def load_data(csv_path, text_field="summary", reports_only=False):
     """Load data from CSV, supporting both summaries and full content."""
@@ -161,6 +170,127 @@ def save_json(obj, path):
         json.dump(obj, f, indent=2)
 
 
+def load_existing_labels(labels_path: str) -> Dict[str, str]:
+    """Load existing labels if file exists."""
+    if os.path.exists(labels_path):
+        try:
+            with open(labels_path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except:
+            return {}
+    return {}
+
+
+def make_label_prompt(cluster_name: str, examples: List[str], max_examples: int) -> str:
+    """Create prompt for label generation."""
+    trimmed = [s for s in examples if s and str(s).strip()]
+    if max_examples > 0:
+        trimmed = trimmed[:max_examples]
+    
+    joined_examples = "\n\n".join(f"Example {i+1}: {ex}" for i, ex in enumerate(trimmed))
+    return (
+        "You are labeling clusters of Reddit posts about AI behavior. "
+        "Your task is to produce a **distinct, descriptive label (4–8 words)** that captures what makes this cluster "
+        "unique compared to other possible clusters.\n\n"
+        "Guidelines:\n"
+        "- The label should be general enough to unite all posts in the cluster not just one of the examples\n"
+        "- Avoid generic phrases like 'AI discussion' or 'general opinions about AI'.\n"
+        "- Emphasize what specifically unites these posts — e.g. topic, attitude, focus, or controversy.\n"
+        "- Avoid punctuation except basic hyphens.\n"
+        "4 to 6 words is best\n"
+        "- Return only the label.\n\n"
+        f"Cluster name (internal): {cluster_name}\n\n"
+        f"Examples:\n{joined_examples}"
+    )
+
+
+def call_gemini_for_label(prompt: str, model, max_retries: int = 3, retry_delay: float = 2.0) -> str:
+    """Call Gemini API with retry logic."""
+    for attempt in range(max_retries):
+        try:
+            resp = model.generate_content(prompt)
+            if not hasattr(resp, "text") or not resp.text:
+                if attempt < max_retries - 1:
+                    time.sleep(retry_delay * (attempt + 1))
+                    continue
+                return "(empty response)"
+            return resp.text.strip().splitlines()[0].strip("\" ")
+        except Exception as e:
+            error_msg = f"(error: {e.__class__.__name__})"
+            if attempt < max_retries - 1:
+                wait_time = retry_delay * (attempt + 1)
+                print(f"  Retry {attempt + 1}/{max_retries} after {wait_time}s...")
+                time.sleep(wait_time)
+                continue
+            return error_msg
+    return "(error: max retries exceeded)"
+
+
+def generate_cluster_labels(
+    clusters: Dict[str, List[str]],
+    csv_path: str,
+    model,
+    sample_per_cluster: int = -1,
+    sleep_s: float = 0.5,
+    existing_labels: Optional[Dict[str, str]] = None
+) -> Dict[str, str]:
+    """Generate labels for clusters using Gemini API."""
+    labels = existing_labels.copy() if existing_labels else {}
+    
+    # Load CSV data
+    df = pd.read_csv(csv_path)
+    cols = {c.lower().strip(): c for c in df.columns}
+    summary_col = cols.get("summary", None)
+    post_id_col = cols.get("post id", None)
+    
+    if summary_col is None:
+        print("Warning: 'Summary' column not found, cannot generate labels")
+        return labels
+    
+    # Create post_id to summary mapping
+    post_to_summary = {}
+    for _, row in df.iterrows():
+        pid = str(row[post_id_col]) if post_id_col else None
+        if pid:
+            summary = str(row[summary_col]).strip()
+            if summary and summary.lower() not in ["nan", "no content"]:
+                post_to_summary[pid] = summary
+    
+    # Generate labels for clusters
+    clusters_to_label = []
+    for cluster_name in clusters.keys():
+        # Skip if already has a valid label (not an error)
+        if cluster_name in labels:
+            existing_label = labels[cluster_name]
+            if not existing_label.startswith("(error:") and not existing_label.startswith("(empty"):
+                continue
+        clusters_to_label.append(cluster_name)
+    
+    if not clusters_to_label:
+        print("All clusters already have labels")
+        return labels
+    
+    print(f"\nGenerating labels for {len(clusters_to_label)} clusters...")
+    for cluster_name in clusters_to_label:
+        post_ids = clusters[cluster_name]
+        examples = [post_to_summary.get(pid, "") for pid in post_ids if pid in post_to_summary]
+        examples = [ex for ex in examples if ex]
+        
+        if not examples:
+            labels[cluster_name] = "(no content)"
+            continue
+        
+        prompt = make_label_prompt(cluster_name, examples, sample_per_cluster)
+        label = call_gemini_for_label(prompt, model)
+        labels[cluster_name] = label
+        print(f"  {cluster_name}: {label}")
+        
+        if sleep_s > 0:
+            time.sleep(sleep_s)
+    
+    return labels
+
+
 # ------------------------------
 # Main
 # ------------------------------
@@ -186,6 +316,14 @@ def main():
                     help="HDBSCAN min_cluster_size parameter")
     ap.add_argument("--reports-only", action="store_true",
                     help="If set, cluster only posts marked as reports.")
+    ap.add_argument("--generate-labels", action="store_true",
+                    help="Generate cluster labels using Gemini API")
+    ap.add_argument("--label-model", default="gemini-1.5-pro", help="Gemini model for label generation")
+    ap.add_argument("--label-sample", type=int, default=-1, help="Examples per cluster for labeling (-1 for all)")
+    ap.add_argument("--label-sleep", type=float, default=0.5, help="Sleep seconds between label API calls")
+    ap.add_argument("--api-key", help="Google API key (fallback: GOOGLE_API_KEY env)")
+    ap.add_argument("--finish-labels", action="store_true",
+                    help="Finish incomplete labels (retry failed ones)")
     args = ap.parse_args()
 
     os.makedirs(args.out, exist_ok=True)
@@ -254,6 +392,36 @@ def main():
     print(f"\nResults saved to {args.out}/")
     print(f"Number of topics: {num_topics}")
     print(f"Outlier reduction: {initial_outliers} -> {remaining_outliers}")
+    
+    # Generate labels if requested
+    if args.generate_labels or args.finish_labels:
+        if not GEMINI_AVAILABLE:
+            print("\nWarning: Gemini API not available. Install google-generativeai and python-dotenv to generate labels.")
+        else:
+            api_key = args.api_key or os.getenv("GOOGLE_API_KEY") or os.getenv("gemini_key")
+            if not api_key:
+                print("\nWarning: No API key found. Set --api-key or export GOOGLE_API_KEY")
+            else:
+                genai.configure(api_key=api_key)
+                gemini_model = genai.GenerativeModel(args.label_model)
+                
+                labels_path = os.path.join(args.out, "cluster_labels.json")
+                existing_labels = {}
+                if args.finish_labels:
+                    existing_labels = load_existing_labels(labels_path)
+                    print(f"\nLoaded {len(existing_labels)} existing labels")
+                
+                labels = generate_cluster_labels(
+                    clusters,
+                    args.input,
+                    gemini_model,
+                    sample_per_cluster=args.label_sample,
+                    sleep_s=args.label_sleep,
+                    existing_labels=existing_labels
+                )
+                
+                save_json(labels, labels_path)
+                print(f"\n✅ Saved {len(labels)} cluster labels → {labels_path}")
 
 if __name__ == "__main__":
     main()

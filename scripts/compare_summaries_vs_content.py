@@ -10,7 +10,7 @@ import pandas as pd
 import numpy as np
 from sentence_transformers import SentenceTransformer
 from sklearn.cluster import KMeans
-from sklearn.metrics import rand_score
+from sklearn.metrics import rand_score, adjusted_rand_score
 
 
 def load_data(csv_path, reports_only=False):
@@ -119,20 +119,46 @@ def main():
     print("\nComputing Rand Index...")
     rand_index = rand_score(summary_labels, content_labels)
     print(f"Rand Index (not adjusted): {rand_index:.4f}")
+    
+    print("Computing Adjusted Rand Index...")
+    ari = adjusted_rand_score(summary_labels, content_labels)
+    print(f"Adjusted Rand Index: {ari:.4f}")
+    
+    print("Tracking differently labelled pairs...")
+    differently_labelled_pairs = []
+    post_id_list = [post_ids[i] for i in range(len(summary_labels))]
+    
+    for i in range(len(summary_labels)):
+        for j in range(i + 1, len(summary_labels)):
+            summary_same = (summary_labels[i] == summary_labels[j])
+            content_same = (content_labels[i] == content_labels[j])
+            
+            if summary_same != content_same:
+                differently_labelled_pairs.append({
+                    "post_1": post_id_list[i],
+                    "post_2": post_id_list[j],
+                    "summary_same_cluster": bool(summary_same),
+                    "content_same_cluster": bool(content_same)
+                })
 
     save_json(summary_clusters, os.path.join(args.out, "summary_clusters.json"))
     save_json(content_clusters, os.path.join(args.out, "content_clusters.json"))
     
     metrics = {
         "rand_index": float(rand_index),
+        "adjusted_rand_index": float(ari),
         "k": args.k,
         "num_posts": len(summaries),
-        "random_state": args.random_state
+        "random_state": args.random_state,
+        "num_differently_labelled_pairs": len(differently_labelled_pairs)
     }
     save_json(metrics, os.path.join(args.out, "comparison_metrics.json"))
+    save_json(differently_labelled_pairs, os.path.join(args.out, "differently_labelled_pairs.json"))
 
     print(f"\nResults saved to {args.out}/")
     print(f"Rand Index: {rand_index:.4f}")
+    print(f"Adjusted Rand Index: {ari:.4f}")
+    print(f"Number of differently labelled pairs: {len(differently_labelled_pairs)}")
 
 if __name__ == "__main__":
     main()

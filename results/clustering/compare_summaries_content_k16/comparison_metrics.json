@@ -1,6 +1,8 @@
 {
   "rand_index": 0.8755798244145969,
+  "adjusted_rand_index": 0.16341446050794423,
   "k": 16,
   "num_posts": 2403,
-  "random_state": 42
+  "random_state": 42,
+  "num_differently_labelled_pairs": 359077
 }
