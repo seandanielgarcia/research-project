@@ -6,6 +6,9 @@ import pandas as pd
 import numpy as np
 from sentence_transformers import SentenceTransformer
 from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
+from datetime import datetime
 
 def load_sentences(csv_path, reports_only=False):
     df = pd.read_csv(csv_path)
@@ -45,52 +48,116 @@ def get_embeddings(sentences, model):
     return model.encode(sentences)
 
 
-def run_train_weighted(train_emb, train_post_ids, train_scores, k):
-    w = np.log1p(np.array(train_scores))
+def run_weighted_kmeans(emb, post_ids, scores, k, random_state=42):
+    w = np.log1p(np.array(scores))
     w = w / w.sum()
 
-    km = KMeans(n_clusters=k, random_state=42, n_init=10)
-    labels = km.fit_predict(train_emb, sample_weight=w)
-
-    loss = float(km.inertia_)
+    km = KMeans(n_clusters=k, random_state=random_state, n_init=10)
+    labels = km.fit_predict(emb, sample_weight=w)
 
     clusters = {}
-    cluster_score_stats = {}
-    for pid, label, score in zip(train_post_ids.values(), labels, train_scores):
+    for idx, label in enumerate(labels):
+        pid = post_ids[idx]
         cluster_name = f"Cluster {label+1}"
         clusters.setdefault(cluster_name, []).append(pid)
-        stats = cluster_score_stats.setdefault(
-            cluster_name, {"total_score": 0.0, "count": 0, "avg_score": 0.0}
-        )
-        stats["total_score"] += float(score)
-        stats["count"] += 1
 
-    for stats in cluster_score_stats.values():
-        if stats["count"] > 0:
-            stats["avg_score"] = stats["total_score"] / stats["count"]
-        else:
-            stats["avg_score"] = 0.0
-
-    return km, clusters, loss, cluster_score_stats
-
-
-def run_val_independent(val_emb, val_post_ids, k):
-    km = KMeans(n_clusters=k, random_state=42, n_init=10)
-    labels = km.fit_predict(val_emb)
-
-    loss = abs(km.score(val_emb))
-    avg = loss / len(val_emb)
-
-    clusters = {}
-    for pid, label in zip(val_post_ids.values(), labels):
-        clusters.setdefault(f"Cluster {label+1}", []).append(pid)
-
-    return clusters, loss, avg
+    return km, clusters
 
 
 def save_json(obj, path):
     with open(path, "w") as f:
         json.dump(obj, f, indent=2)
+
+
+def load_post_dates(csv_path):
+    df = pd.read_csv(csv_path)
+    cols = {c.lower().strip(): c for c in df.columns}
+    
+    post_id_col = cols.get("post id", None)
+    timestamp_col = cols.get("timestamp", None)
+    
+    if post_id_col is None or timestamp_col is None:
+        return {}
+    
+    post_dates = {}
+    for _, row in df.iterrows():
+        pid = str(row[post_id_col])
+        ts_str = str(row[timestamp_col])
+        
+        if pd.notna(ts_str) and ts_str.lower() not in ["nan", "no content", ""]:
+            try:
+                dt = datetime.fromisoformat(ts_str.replace('Z', '+00:00'))
+                post_dates[pid] = dt
+            except Exception:
+                continue
+    
+    return post_dates
+
+
+def get_cluster_dates(clusters, post_dates):
+    cluster_dates = {}
+    
+    for cluster_name, post_ids in clusters.items():
+        dates = []
+        for pid in post_ids:
+            if pid in post_dates:
+                dates.append(post_dates[pid])
+        
+        if dates:
+            cluster_dates[cluster_name] = dates
+    
+    return cluster_dates
+
+
+def create_box_plot(cluster_dates, output_path, title="Cluster Date Distributions"):
+    if not cluster_dates:
+        return
+    
+    cluster_names = []
+    date_arrays = []
+    all_dates = []
+    
+    sorted_clusters = sorted(cluster_dates.items(), key=lambda x: x[0])
+    
+    for cluster_name, dates in sorted_clusters:
+        if len(dates) > 0:
+            cluster_names.append(cluster_name)
+            date_arrays.append(dates)
+            all_dates.extend(dates)
+    
+    if not date_arrays:
+        return
+    
+    first_date = min(all_dates)
+    last_date = max(all_dates)
+    
+    fig, ax = plt.subplots(figsize=(14, max(6, len(cluster_names) * 0.4)))
+    
+    date_numeric = []
+    for dates in date_arrays:
+        date_numeric.append([mdates.date2num(d) for d in dates])
+    
+    bp = ax.boxplot(date_numeric, labels=cluster_names, vert=True, patch_artist=True)
+    
+    ax.yaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
+    ax.set_ylim(mdates.date2num(first_date), mdates.date2num(last_date))
+    ax.set_yticks([mdates.date2num(first_date), mdates.date2num(last_date)])
+    ax.set_yticklabels([first_date.strftime('%Y-%m-%d'), last_date.strftime('%Y-%m-%d')])
+    
+    plt.setp(ax.get_xticklabels(), rotation=45, ha='right')
+    
+    for patch in bp['boxes']:
+        patch.set_facecolor('lightblue')
+        patch.set_alpha(0.7)
+    
+    ax.set_ylabel('Date', fontsize=12)
+    ax.set_xlabel('Cluster', fontsize=12)
+    ax.set_title(title, fontsize=14, fontweight='bold')
+    ax.grid(True, alpha=0.3, axis='y')
+    
+    plt.tight_layout()
+    plt.savefig(output_path, dpi=300, bbox_inches='tight')
+    plt.close()
 
 
 def main():
@@ -111,48 +178,24 @@ def main():
     if not sentences:
         return
 
-    idx = np.arange(len(sentences))
-    np.random.RandomState(args.random_state).shuffle(idx)
-    split = len(idx) // 2
+    emb = get_embeddings(sentences, model)
 
-    train_idx = idx[:split]
-    val_idx   = idx[split:]
+    km, clusters = run_weighted_kmeans(emb, post_ids, scores, args.k, args.random_state)
 
-    train_sentences = [sentences[i] for i in train_idx]
-    val_sentences   = [sentences[i] for i in val_idx]
+    save_json(clusters, os.path.join(args.out, "clusters.json"))
 
-    train_ids = {i: post_ids[j] for i,j in enumerate(train_idx)}
-    val_ids   = {i: post_ids[j] for i,j in enumerate(val_idx)}
-
-    train_scores = [scores[i] for i in train_idx]
-
-    train_emb = get_embeddings(train_sentences, model)
-    val_emb   = get_embeddings(val_sentences, model)
-
-    km, train_clusters, train_loss, train_score_stats = run_train_weighted(
-        train_emb, train_ids, train_scores, args.k
-    )
-
-    val_loss_with_train = abs(km.score(val_emb))
-
-    val_clusters, val_loss_indep, val_loss_avg = run_val_independent(val_emb, val_ids, args.k)
-
-    save_json(train_clusters, os.path.join(args.out, "train_clusters.json"))
-    save_json(val_clusters, os.path.join(args.out, "val_clusters.json"))
-    save_json({
-        "train_loss": train_loss,
-        "val_loss_using_train_centroids": val_loss_with_train,
-        "val_loss_independent": val_loss_indep,
-        "val_loss_independent_avg": val_loss_avg
-    }, os.path.join(args.out, "metrics.json"))
-
-    save_json(train_score_stats, os.path.join(args.out, "train_cluster_score_stats.json"))
-
-    print("Average Score per Cluster:")
-    for cluster in sorted(train_score_stats.keys(), key=lambda c: int(c.split()[1])):
-        avg = train_score_stats[cluster]["avg_score"]
-        count = train_score_stats[cluster]["count"]
-        print(f"  {cluster}: avg_score={avg:.2f} (n={count})")
+    print("\nCreating date distribution plots...")
+    post_dates = load_post_dates(args.input)
+    
+    if post_dates:
+        cluster_dates = get_cluster_dates(clusters, post_dates)
+        
+        if cluster_dates:
+            plot_path = os.path.join(args.out, "clusters_date_boxplot.png")
+            create_box_plot(cluster_dates, plot_path, title="Cluster Date Distributions")
+            print(f"Saved clusters date plot to {plot_path}")
+    else:
+        print("No timestamp data found, skipping date plots")
 
     print("Done weighted KMeans.")
 

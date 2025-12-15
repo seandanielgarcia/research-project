@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
 import json
-import pandas as pd
+import os
+from pathlib import Path
+from datetime import datetime
 from typing import Dict, List, Any, Optional
-import numpy as np
+
+import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
 
 
 def load_cluster_file(json_path: str) -> Dict[str, List[str]]:
@@ -225,6 +230,297 @@ def plot_clusters(json_path: str, output_path: str):
     plt.tight_layout()
     plt.savefig(output_path, dpi=300, bbox_inches='tight')
     plt.close()
+
+
+def append_csv_files() -> Optional[Path]:
+    """
+    Append the legacy CSV files in the old data directory while preserving structure.
+    Handles different column structures by standardizing them.
+
+    Returns the path to the combined CSV, or None if no data was combined.
+    """
+
+    data_dir = Path("/Users/seangarcia/Downloads/reddit_scraper/old")
+    files = [
+        "993octoberposts.csv",
+        "new_posts_9_30.csv",
+        "past3months.csv",
+    ]
+
+    standard_columns = [
+        "Post ID",
+        "Summary",
+        "Full Title",
+        "Full Content",
+        "Timestamp",
+        "Score",
+        "Comments",
+        "URL",
+        "Is Report",
+    ]
+
+    combined_data: List[pd.DataFrame] = []
+
+    for file in files:
+        file_path = data_dir / file
+        print(f"Processing {file}...")
+
+        try:
+            df = pd.read_csv(file_path)
+            print(f"  - Shape: {df.shape}")
+            print(f"  - Columns: {list(df.columns)}")
+
+            if "Title & Content" in df.columns:
+                df_standardized = pd.DataFrame()
+                df_standardized["Post ID"] = [f"legacy_{i}" for i in range(len(df))]
+                df_standardized["Summary"] = df["Title & Content"]
+                df_standardized["Full Title"] = df["Title & Content"]
+                df_standardized["Full Content"] = df["Title & Content"]
+                df_standardized["Timestamp"] = df["Timestamp"]
+                df_standardized["Score"] = df["Score"]
+                df_standardized["Comments"] = df["Comments"]
+                df_standardized["URL"] = df["URL"]
+                df_standardized["Is Report"] = df["Is Report"]
+            else:
+                df_standardized = df.copy()
+
+            for col in standard_columns:
+                if col not in df_standardized.columns:
+                    df_standardized[col] = ""
+
+            df_standardized = df_standardized[standard_columns]
+            df_standardized["Source File"] = file
+
+            combined_data.append(df_standardized)
+            print(f"  - Processed {len(df_standardized)} rows")
+
+        except Exception as e:
+            print(f"  - Error processing {file}: {e}")
+            continue
+
+    if not combined_data:
+        print("No data to combine!")
+        return None
+
+    final_df = pd.concat(combined_data, ignore_index=True)
+    output_path = data_dir / "combined_posts.csv"
+    final_df.to_csv(output_path, index=False)
+
+    print(f"\nCombined file saved to: {output_path}")
+    print(f"Total rows: {len(final_df)}")
+    print(f"Columns: {list(final_df.columns)}")
+
+    print("\nSummary by source file:")
+    print(final_df["Source File"].value_counts())
+
+    return output_path
+
+
+def load_clusters(json_path: str) -> Dict[str, List[str]]:
+    with open(json_path, "r") as f:
+        return json.load(f)
+
+
+def load_label_map(label_file: Optional[str]) -> Optional[Dict[str, Any]]:
+    if not label_file:
+        return None
+    with open(label_file, "r") as f:
+        return json.load(f)
+
+
+def map_cluster_labels(
+    clusters: Dict[str, List[str]],
+    label_map: Optional[Dict[str, Any]],
+) -> Dict[str, List[str]]:
+    if not label_map:
+        return clusters
+
+    remapped: Dict[str, List[str]] = {}
+    for key, items in clusters.items():
+        label = label_map.get(key, key)
+        if isinstance(label, str):
+            remapped[label] = items
+        else:
+            remapped[key] = items
+    return remapped
+
+
+def load_post_dates(csv_path: str):
+    df = pd.read_csv(csv_path)
+    cols = {c.lower().strip(): c for c in df.columns}
+
+    post_id_col = cols.get("post id")
+    timestamp_col = cols.get("timestamp")
+    summary_col = cols.get("summary")
+
+    if post_id_col is None or timestamp_col is None:
+        raise ValueError("CSV must contain 'Post ID' and 'Timestamp' columns")
+
+    post_dates: Dict[str, datetime] = {}
+    summary_to_post: Dict[str, str] = {}
+
+    for _, row in df.iterrows():
+        pid = str(row[post_id_col])
+        ts_str = str(row[timestamp_col])
+
+        if pd.notna(ts_str) and ts_str.lower() not in ["nan", "no content", ""]:
+            ts = ts_str.replace("Z", "+00:00")
+            try:
+                dt = datetime.fromisoformat(ts)
+            except ValueError:
+                continue
+            post_dates[pid] = dt
+
+            if summary_col is not None:
+                summary = str(row[summary_col]).strip()
+                if summary and summary.lower() not in ["nan", "no content"]:
+                    summary_to_post[summary] = pid
+
+    return post_dates, summary_to_post
+
+
+def get_cluster_dates(
+    clusters: Dict[str, List[str]],
+    post_dates: Dict[str, datetime],
+    summary_to_post: Optional[Dict[str, str]] = None,
+):
+    cluster_dates: Dict[str, List[datetime]] = {}
+
+    for cluster_name, items in clusters.items():
+        dates: List[datetime] = []
+        for item in items:
+            if item in post_dates:
+                dates.append(post_dates[item])
+            elif summary_to_post and item in summary_to_post:
+                pid = summary_to_post[item]
+                if pid in post_dates:
+                    dates.append(post_dates[pid])
+        if dates:
+            cluster_dates[cluster_name] = dates
+
+    return cluster_dates
+
+
+def create_box_plot(cluster_dates, output_path, title):
+    if not cluster_dates:
+        return
+
+    cluster_names = []
+    date_arrays = []
+
+    for cluster_name, dates in sorted(cluster_dates.items()):
+        cluster_names.append(cluster_name)
+        date_arrays.append(dates)
+
+    date_numeric = [[mdates.date2num(d) for d in dates] for dates in date_arrays]
+
+    plt.style.use("seaborn-v0_8-whitegrid")
+    fig_height = max(6, len(cluster_names) * 0.45)
+    fig, ax = plt.subplots(figsize=(16, fig_height))
+
+    flierprops = dict(marker="o", markersize=4, markerfacecolor="gray", alpha=0.7)
+    meanprops = dict(
+        marker="D",
+        markeredgecolor="black",
+        markerfacecolor="#ff7f0e",
+        markersize=6,
+    )
+    medianprops = dict(color="red", linewidth=2)
+    boxprops = dict(linewidth=1.5, color="#1f77b4")
+    whiskerprops = dict(linewidth=1.5, color="#555555")
+    capprops = dict(linewidth=1.5, color="#555555")
+
+    bp = ax.boxplot(
+        date_numeric,
+        labels=cluster_names,
+        vert=True,
+        patch_artist=True,
+        showmeans=True,
+        meanprops=meanprops,
+        medianprops=medianprops,
+        boxprops=boxprops,
+        whiskerprops=whiskerprops,
+        capprops=capprops,
+        flierprops=flierprops,
+        whis=1.5,
+    )
+
+    for patch in bp["boxes"]:
+        patch.set_facecolor("#a6cee3")
+        patch.set_alpha(0.85)
+
+    ax.yaxis.set_major_formatter(mdates.DateFormatter("%Y-%m-%d"))
+    ax.yaxis.set_major_locator(mdates.AutoDateLocator())
+    plt.setp(ax.get_xticklabels(), rotation=45, ha="right")
+    ax.set_ylabel("Date")
+    ax.set_xlabel("Cluster")
+    ax.set_title(title)
+    ax.grid(True, alpha=0.25, axis="y")
+
+    plt.tight_layout()
+    plt.savefig(output_path, dpi=300, bbox_inches="tight")
+    plt.close()
+
+
+def create_summary_stats(cluster_dates, output_path):
+    rows = []
+
+    for cluster_name, dates in sorted(cluster_dates.items()):
+        if not dates:
+            continue
+        ds = sorted(dates)
+        earliest = min(ds)
+        latest = max(ds)
+        if len(ds) % 2 == 0:
+            mid1 = ds[len(ds) // 2 - 1]
+            mid2 = ds[len(ds) // 2]
+            median_ts = (mdates.date2num(mid1) + mdates.date2num(mid2)) / 2
+            median_dt = mdates.num2date(median_ts)
+        else:
+            median_dt = ds[len(ds) // 2]
+        delta = (latest - earliest).days if len(ds) > 1 else 0
+        rows.append(
+            {
+                "Cluster": cluster_name,
+                "Count": len(ds),
+                "Earliest": earliest.isoformat(),
+                "Latest": latest.isoformat(),
+                "Median": median_dt.isoformat(),
+                "Date Range (days)": delta,
+            }
+        )
+
+    df = pd.DataFrame(rows)
+    df.to_csv(output_path, index=False)
+
+
+def plot_cluster_date_distributions(
+    clusters_path: str,
+    csv_path: str,
+    out_dir: str,
+    title: str = "Cluster Date Distributions",
+    prefix: str = "cluster_dates",
+    label_file: Optional[str] = None,
+):
+    """
+    High-level helper to generate both the boxplot and summary stats
+    for cluster date distributions.
+    """
+    os.makedirs(out_dir, exist_ok=True)
+
+    clusters = load_clusters(clusters_path)
+    label_map = load_label_map(label_file)
+    clusters = map_cluster_labels(clusters, label_map)
+    post_dates, summary_to_post = load_post_dates(csv_path)
+    cluster_dates = get_cluster_dates(clusters, post_dates, summary_to_post)
+
+    plot_path = os.path.join(out_dir, f"{prefix}_boxplot.png")
+    stats_path = os.path.join(out_dir, f"{prefix}_stats.csv")
+
+    create_box_plot(cluster_dates, plot_path, title=title)
+    create_summary_stats(cluster_dates, stats_path)
+
+    return plot_path, stats_path
 
 
 if __name__ == "__main__":

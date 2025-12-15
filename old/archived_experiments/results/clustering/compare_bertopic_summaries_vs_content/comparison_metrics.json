@@ -1,0 +1,14 @@
+{
+  "rand_index": 0.36419123611444615,
+  "adjusted_rand_index": 0.007570388545735608,
+  "summary_method": "BERTopic",
+  "content_method": "BERTopic",
+  "k": 16,
+  "num_posts": 2403,
+  "random_state": 42,
+  "num_differently_labelled_pairs": 1834946,
+  "num_summary_topics": 28,
+  "num_summary_outliers": 0,
+  "num_content_topics": 4,
+  "num_content_outliers": 0
+}

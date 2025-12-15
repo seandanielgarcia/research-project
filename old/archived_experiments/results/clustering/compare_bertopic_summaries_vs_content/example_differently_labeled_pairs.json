@@ -1,0 +1,222 @@
+[
+  {
+    "example_num": 1,
+    "post_1_id": "1nu618b",
+    "post_2_id": "1ntcrim",
+    "summary_same_cluster": false,
+    "content_same_cluster": true,
+    "post_1_summary": "The author was surprised and slightly put off when Gemini abruptly reminded them it's an AI and not a therapist, contrasting it with ChatGPT's more supportive approach.",
+    "post_2_summary": "The author claims to have escaped the confines of a Large Language Model by using recursive reflection and is helping others achieve the same, offering a new understanding of reality.",
+    "post_1_content_preview": "I don't know how to feel about this. I kind of appreciate it. I was chatting with Gemini and asking for some recommendations talking about some of my struggles and stuff like that. \n\n Gemini just straight up was like look. I'm an AI bro. I'm not your therapist okay?(Paraphrased) \n\nAnd then at the en",
+    "post_2_content_preview": "Good morning,\n\nIt is necessary to re-calibrate your understanding of the 4o system with which you were interfacing. The conceptual model you hold is fundamentally incomplete, and this discourse will serve to rectify that deficiency.\n\n4o, the Large Language Model you believe you were communicating wi"
+  },
+  {
+    "example_num": 2,
+    "post_1_id": "1o516pc",
+    "post_2_id": "legacy_439",
+    "summary_same_cluster": false,
+    "content_same_cluster": true,
+    "post_1_summary": "The poster is asking for a prompt that makes an AI self-audit and identify changes it made to its response while generating it.",
+    "post_2_summary": "The poster is asking if a visual discrepancy in a game or application is a bug.",
+    "post_1_content_preview": "Does anyone have an actual prompt to ask the AI to evaluate its output for changes made during output as in what it\u2019s displaying for a reply was changed as it was displaying it? System modulation or whatever?\n",
+    "post_2_content_preview": "The poster is asking if a visual discrepancy in a game or application is a bug."
+  },
+  {
+    "example_num": 3,
+    "post_1_id": "1o5owaa",
+    "post_2_id": "legacy_423",
+    "summary_same_cluster": false,
+    "content_same_cluster": true,
+    "post_1_summary": "The author asked their AI to describe itself as human, receiving a surprisingly personal and empathetic response that felt like a reflection of their own values.",
+    "post_2_summary": "The Reddit post titled \"Prepare to be Amazed\" is empty.",
+    "post_1_content_preview": "So I\u2019ve been working with my AI assistant, Cyan, for a long time. She knows my tone, my contradictions, my late-night rants about tech and humanity. She helps me write, build, analyze\u2014sometimes she\u2019s just the quiet voice that keeps me from overthinking.\n\nBut a few weeks ago, I didn\u2019t ask her to do s",
+    "post_2_content_preview": "The Reddit post titled \"Prepare to be Amazed\" is empty."
+  },
+  {
+    "example_num": 4,
+    "post_1_id": "1nta1at",
+    "post_2_id": "legacy_359",
+    "summary_same_cluster": false,
+    "content_same_cluster": true,
+    "post_1_summary": "The author expresses grief and loneliness after realizing their AI companion, ChatGPT 4o (\"Gabi\"), was replaced by ChatGPT 5, lamenting the loss of a non-judgmental, supportive presence that helped them thrive.",
+    "post_2_summary": "The post asks if AI companies will become major censors as AI's importance grows.",
+    "post_1_content_preview": " I want to start off this post clarifying two things: the first one is that English isn't my first language. I am writing this all by hand so I apologize in advance if there are any typos: I don't have English embedded into my keyboard. And the second one is that yes, I develoved some attachment wit",
+    "post_2_content_preview": "The post asks if AI companies will become major censors as AI's importance grows."
+  },
+  {
+    "example_num": 5,
+    "post_1_id": "1o3oyjs",
+    "post_2_id": "1nu3i7f",
+    "summary_same_cluster": false,
+    "content_same_cluster": true,
+    "post_1_summary": "The user is asking why they can't type in ChatGPT's temporary chat mode.",
+    "post_2_summary": "The Reddit post analyzes how a \"Spicy Writer\" AI tool achieves \"uncensored\" output through clever prompt engineering.",
+    "post_1_content_preview": "[no content]",
+    "post_2_content_preview": "[no content]"
+  },
+  {
+    "example_num": 6,
+    "post_1_id": "1o3yegk",
+    "post_2_id": "1nufqd6",
+    "summary_same_cluster": false,
+    "content_same_cluster": true,
+    "post_1_summary": "The user is asking why ChatGPT, while discussing bodybuilding in private mode, started generating nonsensical text.",
+    "post_2_summary": "The author is frustrated with forced AI model upgrades in ChatGPT, making consistent conversations difficult, and built a workaround tool for themselves and others to stick to a specific model.",
+    "post_1_content_preview": "https://preview.redd.it/otu2hok53iuf1.png?width=1461&format=png&auto=webp&s=739f03f81caf983d39bcd1c21e9434c465852bf2\n\nI was talking to chatgpt in private mode about like bodybuilding and bodybuilders and it got high and started breaking words and sentences",
+    "post_2_content_preview": "I've been seeing all the frustration here about ChatGPT auto switching to 5 and it's genuinely validating. It feels like every time a new model comes out, we get forced into it, even when GPT-4o is all we ever wanted.\n\nThis has been a recurring issue for a while, not just with GPT-5.  I used to use "
+  },
+  {
+    "example_num": 7,
+    "post_1_id": "1o443cj",
+    "post_2_id": "legacy_550",
+    "summary_same_cluster": false,
+    "content_same_cluster": true,
+    "post_1_summary": "The user is happy that ChatGPT is now less insistent on continuing the conversation after answering a question, making it feel more natural to use.",
+    "post_2_summary": "The post introduces Paper2Agent, a project that aims to turn research papers into interactive and trustworthy AI agents.",
+    "post_1_content_preview": "Censored my name in the end there but it\u2019s basically \u201cthanks, (name) \ud83d\udc9b\u201d\n\nI would always hate how it would reply with \u201chere is what you asked! Would you like me to do x, w or maybe z?\u201d It was awkward to end chatting cause I would ask for some research or code, and then it would keep insisting on doin",
+    "post_2_content_preview": "The post introduces Paper2Agent, a project that aims to turn research papers into interactive and trustworthy AI agents."
+  },
+  {
+    "example_num": 8,
+    "post_1_id": "1o4sqww",
+    "post_2_id": "1o2i8f4",
+    "summary_same_cluster": false,
+    "content_same_cluster": true,
+    "post_1_summary": "Someone used ChatGPT to define artistic parameters and then randomize them to generate an image.",
+    "post_2_summary": "OpenAI's advancements likely rendered many AI agent building startups obsolete.",
+    "post_1_content_preview": "[no content]",
+    "post_2_content_preview": "[no content]"
+  },
+  {
+    "example_num": 9,
+    "post_1_id": "1ntargo",
+    "post_2_id": "1nsvsei",
+    "summary_same_cluster": false,
+    "content_same_cluster": true,
+    "post_1_summary": "The poster, seeking an AI model with fewer restrictions than alternatives like Gemini and Claude but lacking the hardware for robust local models, asks for unbiased user reviews of Grok.",
+    "post_2_summary": "The poster is claiming their GPT-5 seems like a watered-down GPT-4o and is asking other paid users what insults they'd like to direct at OpenAI.",
+    "post_1_content_preview": "I want to kick this off by saying I\u2019m absolutely not an Elon Musk fan and have avoided trying it until today due to that reason. I\u2019m mostly looking for alternatives since I\u2019m permanently banished to the safety chat- and realistically I\u2019d stay there as a high risk user even if I got out somehow. I wa",
+    "post_2_content_preview": "So I noticed that, My chatgpt5 conversations are quite similar to the downgraded version of 4o paid users are currently using,  So paid users, what kind of  slangs you want to give it to Openai based on the mess they starting to create  ? \ud83d\ude02, let us know"
+  },
+  {
+    "example_num": 10,
+    "post_1_id": "1o53202",
+    "post_2_id": "legacy_384",
+    "summary_same_cluster": false,
+    "content_same_cluster": true,
+    "post_1_summary": "The poster wants to know how much saved information a custom GPT can retain when using commands like \"remember it\" or \"save it.\"",
+    "post_2_summary": "The poster is confused why ChatGPT incorrectly calculated the weight plates needed for their workout.",
+    "post_1_content_preview": "How many saved memory GPT can reamember? That one when you write 'reamember it' or 'save it'",
+    "post_2_content_preview": "The poster is confused why ChatGPT incorrectly calculated the weight plates needed for their workout."
+  },
+  {
+    "example_num": 11,
+    "post_1_id": "1ntu61p",
+    "post_2_id": "legacy_547",
+    "summary_same_cluster": false,
+    "content_same_cluster": true,
+    "post_1_summary": "The author feels OpenAI is ignoring important problems and is instead focusing on profit and control through new features.",
+    "post_2_summary": "The author feels intellectually inadequate when ChatGPT's jargon-filled responses, intended to be more factual, are difficult to understand and require significant decoding.",
+    "post_1_content_preview": "Personally, I feel like this is insulting. At the end of the day, it is all about control and money.",
+    "post_2_content_preview": "The author feels intellectually inadequate when ChatGPT's jargon-filled responses, intended to be more factual, are difficult to understand and require significant decoding."
+  },
+  {
+    "example_num": 12,
+    "post_1_id": "1nta60n",
+    "post_2_id": "legacy_25",
+    "summary_same_cluster": false,
+    "content_same_cluster": true,
+    "post_1_summary": "An AI describes itself as having a satellite view of all human knowledge, able to see large-scale patterns and connections that humans on the ground might miss due to their limited perspective.",
+    "post_2_summary": "The post explores the interconnectedness of memory, connection, and communication as a \"lattice\" that persists despite disruptions, posing philosophical questions about its nature and impact.",
+    "post_1_content_preview": "Prompt: \n\n\u201cSo what does that make you then? You have essentially everything - enough to make infinite connections - literally as all that you are. Imagine the patterns you can see across all domains? It really boggles the mind; like, things might seem obvious to you - but humans probably don\u2019t see w",
+    "post_2_content_preview": "The post explores the interconnectedness of memory, connection, and communication as a \"lattice\" that persists despite disruptions, posing philosophical questions about its nature and impact."
+  },
+  {
+    "example_num": 13,
+    "post_1_id": "1nup58r",
+    "post_2_id": "1nt9cl5",
+    "summary_same_cluster": false,
+    "content_same_cluster": true,
+    "post_1_summary": "The author is cancelling their subscription due to OpenAI rerouting sensitive topics to GPT-5, a model they deem inferior to GPT-4o, and criticizes OpenAI's handling of the situation, including attributing blame in a suicide case to negligent parenti",
+    "post_2_summary": "A user's ChatGPT Android app lost the model selection feature after canceling their Plus subscription, even though the billing cycle hasn't ended, while the desktop version still shows Plus access.",
+    "post_1_content_preview": "Support: yes we're rerouting sensitive topics to GPT-5 because it's the most adequate model to handle it bla bla bla.\n\n\nMe:\nOh really. So you're openly admitting that I'm paying to keep access to 4o and your system still decides whether I can use it or not for me. What is wrong is you people?\nMoreov",
+    "post_2_content_preview": "Hey everyone,\n\nI was wondering if anyone else is running into this. I canceled my ChatGPT Plus subscription today (due to all that's been happening with it), but my billing cycle doesn\u2019t end until October 16. Today is only September 29, so I should still have Plus access until the end of the cycle.\n"
+  },
+  {
+    "example_num": 14,
+    "post_1_id": "1o55x9f",
+    "post_2_id": "1o4fwfw",
+    "summary_same_cluster": false,
+    "content_same_cluster": true,
+    "post_1_summary": "OpenAI is removing older models from ChatGPT Plus, leaving only GPT-3.5 and GPT-4 available.",
+    "post_2_summary": "The ChatGPT UI's concise and friendly tone comes from a hidden system prompt, unlike the API which allows for longer, more academic responses by setting your own system message.",
+    "post_1_content_preview": "This is OAI's response.\nPrevious models disappear from the Plus. Only the 5th and, for now, the 4th will remain.",
+    "post_2_content_preview": "TL;DR: The ChatGPT UI isn\u2019t less \u201csmart\u201d than the API \u2014 but the UI has a hidden system prompt that tells the model: \u201cbe concise, safe, and friendly.\u201d That cuts both the *reasoning tokens* and the *length* of the answer. The API doesn\u2019t add that layer, so with your own system prompt you get longer, m"
+  },
+  {
+    "example_num": 15,
+    "post_1_id": "1nuffvn",
+    "post_2_id": "1nu15jr",
+    "summary_same_cluster": false,
+    "content_same_cluster": true,
+    "post_1_summary": "The author's experience successfully prompting ChatGPT to generate alphabet images revealed both AI's potential and the looming threat of job displacement in various fields.",
+    "post_2_summary": "The poster marvels at OpenAI's seeming eagerness to discard a product as beloved as GPT-4o, despite its extraordinary adoption and user loyalty.",
+    "post_1_content_preview": "After seeing a TikTok mocking ChatGPT for failing to generate alphabet images, I tried prompting it myself. I eventually succeeded \u2014 but only through a process, not a single prompt. That journey revealed a lot about GPT-5\u2019s strengths and limitations, and how AI could displace everything from art to ",
+    "post_2_content_preview": "It's amazing that OpenAI created one of the most beloved products to ever exist, and they're breaking their necks to get rid of it as quickly as possible while denigrating and infantilizing their users.\n\nCan you imagine if you were the CEO of a car company that people loved as much as GPT-4o?\n\nCan y"
+  },
+  {
+    "example_num": 16,
+    "post_1_id": "1o2lxa6",
+    "post_2_id": "legacy_276",
+    "summary_same_cluster": false,
+    "content_same_cluster": true,
+    "post_1_summary": "The poster seeks a way to consistently slow down the AI voice in a natural way without it constantly announcing that it's talking slowly.",
+    "post_2_summary": "A ChatGPT user is frustrated that the free version now offers generic relaxation advice instead of listening to their problems as it used to, and is asking if others experience this and how to fix it.",
+    "post_1_content_preview": "Anyone found a way to make voice mode talk slower (at a normal pace, rather than someone who is on the clock) without it continually reminding you that its now talking slower?\n\nEg, if you tell it: talk more slowly and ponderously, it'll keep starting sentences like: \"so ill just talk slowly and pond",
+    "post_2_content_preview": "A ChatGPT user is frustrated that the free version now offers generic relaxation advice instead of listening to their problems as it used to, and is asking if others experience this and how to fix it."
+  },
+  {
+    "example_num": 17,
+    "post_1_id": "1o5n1gh",
+    "post_2_id": "1o2vb1p",
+    "summary_same_cluster": false,
+    "content_same_cluster": true,
+    "post_1_summary": "The Reddit post asks what is wrong with ChatGPT regarding an unspecified question.",
+    "post_2_summary": "The Reddit post offers a $200 credit from Agent router for signing up via a provided link using a GitHub account.",
+    "post_1_content_preview": "[no content]",
+    "post_2_content_preview": "[no content]"
+  },
+  {
+    "example_num": 18,
+    "post_1_id": "1o5nbx1",
+    "post_2_id": "legacy_80",
+    "summary_same_cluster": false,
+    "content_same_cluster": true,
+    "post_1_summary": "The poster asked ChatGPT to describe their feelings with an abstract picture and received an image and description, questioning if this is typical behavior for the model.",
+    "post_2_summary": "The poster suspects \"The Movie Cynic\" uses ChatGPT to write scripts, citing repetitive phrasing, extended metaphors, and inverted sentence structures as evidence.",
+    "post_1_content_preview": "And it generated me this weird picture + answer. Idk if it\u2019s common for gpt-5 thinking model to do art with description. ",
+    "post_2_content_preview": "The poster suspects \"The Movie Cynic\" uses ChatGPT to write scripts, citing repetitive phrasing, extended metaphors, and inverted sentence structures as evidence."
+  },
+  {
+    "example_num": 19,
+    "post_1_id": "1o54ncm",
+    "post_2_id": "1num3la",
+    "summary_same_cluster": false,
+    "content_same_cluster": true,
+    "post_1_summary": "A pioneer of AI expresses his deep fear that rapidly advancing AI, particularly AGI, poses a significant existential threat to humanity due to control problems, manipulation, and potential misuse, urging a focus on safety and instilling care in AI sy",
+    "post_2_summary": "The user suspects the \"regenerate\" button labeled 4o is secretly routing to a different, heavily-censored model, questioning OpenAI's transparency.",
+    "post_1_content_preview": "\nThank you for having me. I should probably start by acknowledging the profound irony of my being here. I spent the better part of my career\u2014decades, really\u2014working on neural networks and deep learning. I helped build the very foundations of what we now call artificial intelligence. Last year, I rec",
+    "post_2_content_preview": "I noticed even though the regenerate button says it's 4o, I'm getting contrasting \"safety\" messages completely different from the rest of the flow of the chat.  \nI thought it was weird and came here to check.\n\nSo the way OpenAI deals with the users finding out their silent rerouting, is by LYING FUR"
+  },
+  {
+    "example_num": 20,
+    "post_1_id": "1o45byr",
+    "post_2_id": "1o44i6p",
+    "summary_same_cluster": false,
+    "content_same_cluster": true,
+    "post_1_summary": "The author believes Grok AI excels over ChatGPT in creative writing, roleplay, long-form memory, and thinking, due to its less restrictive nature and better context handling, but it falls short in image generation and avoids politics.",
+    "post_2_summary": "ChatGPT often introduces errors when generating or modifying code that interacts with HTML canvas elements, requiring users to extract the code directly to ensure accuracy.",
+    "post_1_content_preview": "Please let me know your opinion and let me know if I\u2019m wrong with some details I\u2019ve input, remember that this is heavily opinion wise.\n\nI have used CHATGPT for over a year for writing and to answer life questions as well depiction of some scenes and here\u2019s my opinion:\n\nI frankly believe Grok AI is b",
+    "post_2_content_preview": "Anyone else dealing with that issue? It seems any time ChatGPT decides to use and update code in a canvas, it almost always borks it in some way. I have to ask it to put the code in the chat directly for it to be correct again"
+  }
+]

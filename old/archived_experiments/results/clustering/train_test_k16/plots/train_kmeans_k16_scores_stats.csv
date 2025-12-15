@@ -1,0 +1,17 @@
+Cluster,Count,Min,Max,Mean,Median
+Cluster 1 - OpenAI Company Policies & Platform Changes,59,0.0,22437.0,433.47457627118644,8.0
+Cluster 10 - GPT Functionality Issues & User Complaints,49,0.0,311.0,26.428571428571427,5.0
+Cluster 11 - Technical Bugs & App Issues,26,0.0,24.0,6.576923076923077,3.0
+Cluster 12 - GPT-5 Model Evaluation & Comparison,60,0.0,159.0,18.966666666666665,6.0
+Cluster 13 - AI Tools & Subscriptions,53,0.0,152.0,7.6415094339622645,2.0
+Cluster 14 - AI Emotional Support & Relationships,45,0.0,1027.0,87.26666666666667,10.0
+Cluster 15 - Memory & Data Management Issues,64,0.0,63.0,7.921875,3.0
+Cluster 16 - AI Personality & Creative Interactions,68,0.0,271.0,15.176470588235293,4.0
+Cluster 2 - Model Comparison & Subscription Issues,43,0.0,236.0,17.697674418604652,2.0
+Cluster 3 - ChatGPT General Usage,151,0.0,8608.0,75.11920529801324,3.0
+Cluster 4 - Image & Video Generation,66,0.0,250.0,15.681818181818182,2.0
+Cluster 5 - General AI Discussion,256,0.0,6127.0,108.95703125,3.0
+Cluster 6 - General Frustration & Quality Concerns,63,0.0,1038.0,57.317460317460316,4.0
+Cluster 7 - AI Development & Future Impact,111,0.0,1589.0,25.61261261261261,2.0
+Cluster 8 - ChatGPT Usage & Applications,75,0.0,2601.0,55.0,2.0
+Cluster 9 - Miscellaneous & Low Content,12,0.0,24.0,4.75,3.0
