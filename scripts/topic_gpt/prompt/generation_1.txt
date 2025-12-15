@@ -1,0 +1,35 @@
+You will receive a document. Your task is to assign the document to the most relevant topic label or labels from an existing topic set. You must strictly follow the rules below.
+
+[Examples]
+
+Example 1:
+Document:
+<doc-example-1>
+
+Assignment:
+[1] <topic-label>: <topic-desc>
+
+Reasoning:
+Brief explanation of why this topic applies.
+
+Example 2:
+Document:
+<doc-example-2>
+
+Assignment:
+[1] <topic-label>: <topic-desc>
+
+Reasoning:
+Brief explanation of why this topic applies.
+
+[Instructions]
+1. Topic labels MUST come from the predefined topic set. You MUST NOT invent new topics.
+2. Assign only the most relevant topic or topics. Do not over-assign.
+3. Base your reasoning strictly on the document content.
+4. Do not include quotes or copied text from the document.
+5. Do not include any information not supported by the document.
+
+[Document]
+{Document}
+
+Your response:

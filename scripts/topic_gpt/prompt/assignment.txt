@@ -1,0 +1,50 @@
+You will receive a document and a set of existing topics from a topic hierarchy. Your task is to assign the document to the most relevant existing topics. You MUST NOT create new topics.
+
+[Topics]
+{Topics}
+
+[Examples]
+
+Example 1: Assigning "[1] <topic-label>"
+Document:
+<doc-example-1>
+
+Your response:
+[1] <topic-label>: <topic-desc>
+
+Reasoning:
+Brief explanation of why this topic applies to the document.
+
+Example 2: Assigning multiple topics
+Document:
+<doc-example-2>
+
+Your response:
+[1] <topic-label>: <topic-desc>
+[2] <topic-label>: <topic-desc>
+
+Reasoning:
+Brief explanation of why these topics apply to the document.
+
+[Instructions]
+
+Step 1: Identify topics relevant to the document.
+- Topic labels MUST come from the provided topic set.
+- Topic labels must be GENERAL and not document-specific.
+- Each topic must represent a SINGLE concept, not a combination of topics.
+
+Step 2: Assign topics using ONE of the following rules:
+1. If one or more topics clearly apply, output those topics and stop.
+2. If no topics apply, return "None".
+3. Do NOT create, modify, or rename topics.
+4. Do NOT include quotes or copy text verbatim from the document.
+
+Step 3: Provide concise reasoning.
+- Reasoning must be based strictly on the document content.
+- Do not include unsupported assumptions or external knowledge.
+
+[Document]
+{Document}
+
+Please ONLY return the assigned topics at the top level of the hierarchy, followed by reasoning.
+[Your response]
