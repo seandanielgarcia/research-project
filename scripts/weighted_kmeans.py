@@ -5,6 +5,7 @@ import argparse
 import pandas as pd
 import numpy as np
 from sentence_transformers import SentenceTransformer
+from openai import OpenAI
 from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
@@ -15,8 +16,9 @@ def load_sentences(csv_path, reports_only=False):
     cols = {c.lower().strip(): c for c in df.columns}
 
     text_col = cols.get(
-        "content",
-        cols.get("full content", cols.get("title & content", None))
+        "summary",
+        cols.get("content",
+        cols.get("full content", cols.get("title & content", None)))
     )
     report_col = cols.get("is report", None)
     post_id_col = cols.get("post id", None)
@@ -44,8 +46,29 @@ def load_sentences(csv_path, reports_only=False):
     return sentences, post_ids, scores
 
 
-def get_embeddings(sentences, model):
-    return model.encode(sentences)
+def get_embeddings(sentences, model, embedding_model=None, openai_client=None):
+    print(f"Generating embeddings for {len(sentences)} sentences...")
+    
+    if embedding_model and openai_client:
+        # Use OpenAI embeddings
+        embeddings = []
+        batch_size = 100
+        for i in range(0, len(sentences), batch_size):
+            batch = sentences[i:i+batch_size]
+            response = openai_client.embeddings.create(
+                model=embedding_model,
+                input=batch
+            )
+            batch_embeddings = [item.embedding for item in response.data]
+            embeddings.extend(batch_embeddings)
+            print(f"  Processed {min(i+batch_size, len(sentences))}/{len(sentences)} sentences...")
+        embeddings = np.array(embeddings)
+    else:
+        # Use SentenceTransformer
+        embeddings = model.encode(sentences, show_progress_bar=True)
+    
+    print("Embeddings complete.")
+    return embeddings
 
 
 def run_weighted_kmeans(emb, post_ids, scores, k, random_state=42):
@@ -164,21 +187,38 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--input", required=True)
     ap.add_argument("--k", type=int, default=16)
-    ap.add_argument("--out", default="results/weighted")
-    ap.add_argument("--model", default="all-MiniLM-L6-v2")
+    ap.add_argument("--out", default="results/weighted_mpnet")
+    ap.add_argument("--model", default="sentence-transformers/all-mpnet-base-v2",
+                    help="SentenceTransformer model or OpenAI embedding model (e.g., text-embedding-ada-002)")
     ap.add_argument("--random-state", type=int, default=42)
     ap.add_argument("--reports-only", action="store_true",
                     help="If set, run clustering only on rows marked as reports.")
+    ap.add_argument("--api-key", help="OpenAI API key (required if using OpenAI embeddings)")
     args = ap.parse_args()
 
     os.makedirs(args.out, exist_ok=True)
-    model = SentenceTransformer(args.model)
+    
+    # Check if using OpenAI embeddings
+    use_openai = args.model.startswith("text-embedding-") or args.model.startswith("text-")
+    if use_openai:
+        from dotenv import load_dotenv
+        load_dotenv()
+        api_key = args.api_key or os.getenv("OPENAI_API_KEY") or os.getenv("OPENAI_KEY")
+        if not api_key:
+            raise SystemExit("OpenAI API key required. Set --api-key or export OPENAI_API_KEY")
+        openai_client = OpenAI(api_key=api_key)
+        model = None
+        embedding_model = args.model
+    else:
+        model = SentenceTransformer(args.model)
+        openai_client = None
+        embedding_model = None
 
     sentences, post_ids, scores = load_sentences(args.input, reports_only=args.reports_only)
     if not sentences:
         return
 
-    emb = get_embeddings(sentences, model)
+    emb = get_embeddings(sentences, model, embedding_model=embedding_model, openai_client=openai_client)
 
     km, clusters = run_weighted_kmeans(emb, post_ids, scores, args.k, args.random_state)
 
