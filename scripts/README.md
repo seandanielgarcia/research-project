@@ -35,6 +35,44 @@ Arguments:
 - `--k`: Subclusters per level (default: 3)
 - `--csv`: Optional CSV for content-based clustering
 
+**weighted_kmeans.py**
+- Weighted kmeans clustering using post scores
+- Supports OpenAI embeddings or sentence-transformers
+- Creates date distribution boxplots
+
+Arguments:
+- `--input`: Path to CSV file
+- `--k`: Number of clusters (default: 16)
+- `--out`: Output directory
+- `--model`: SentenceTransformer model or OpenAI embedding model
+- `--reports-only`: Only use report posts
+- `--api-key`: OpenAI API key (if using OpenAI embeddings)
+
+**bertopic_outlier_reduction.py**
+- BERTopic clustering with outlier reduction strategies
+- Can generate cluster labels using Gemini
+- Supports different outlier assignment methods (c-tf-idf, embeddings, distributions, probabilities)
+
+Arguments:
+- `--input`: Path to CSV file
+- `--out`: Output directory
+- `--text-field`: "summary" or "content" (default: summary)
+- `--strategy`: Outlier reduction strategy (default: distributions)
+- `--reports-only`: Only use report posts
+- `--generate-labels`: Generate cluster labels using Gemini
+- `--label-model`: Gemini model name (default: gemini-1.5-pro)
+
+**train_test_cluster.py**
+- Split data into train/test and cluster separately
+- Useful for testing cluster stability
+
+Arguments:
+- `--input`: Path to CSV file
+- `--k`: Number of clusters (default: 16)
+- `--out`: Output directory
+- `--model`: SentenceTransformer model name
+- `--reports-only`: Only use report posts
+
 **sae_with_llm.py**
 - Use Sparse Autoencoders for clustering
 - LLM-based interpretation of learned features
@@ -46,6 +84,30 @@ Arguments:
 - `--k`: Number of clusters
 - `--out`: Output directory
 
+**label_clusters.py**
+- Generate cluster labels using OpenAI
+- Uses contrastive examples to distinguish clusters
+- Outputs labels with two-sentence descriptions
+
+Arguments:
+- `--clusters`: Path to clusters JSON
+- `--csv`: Path to CSV with post data
+- `--out`: Output JSON file (default: cluster_labels.json)
+- `--model`: OpenAI model name (default: gpt-5-mini)
+- `--sample`: Examples per cluster (default: 12)
+- `--api-key`: OpenAI API key
+
+**plot_cluster_timelines.py**
+- Plot cluster activity over time as stacked histograms
+- Shows daily post counts per cluster
+- Can use cluster labels for better legends
+
+Arguments:
+- `--clusters`: Path to clusters.json
+- `--csv`: CSV file with Post ID and Timestamp columns
+- `--labels`: Optional cluster_labels.json for labeled legends
+- `--out`: Output PNG path
+
 ## Utilities
 
 **utils.py**
@@ -56,11 +118,19 @@ Helper functions for exploring clustering results:
 - Get statistics about clusters
 
 **dump_extraction.py**
-Extract and clean data from scraped files.
-
-**append_csvs.py**
-Combine multiple CSV files.
+- Extract and clean data from scraped files
 
 **elbow_curve.py**
-Generate elbow curves to determine optimal number of clusters.
+- Generate elbow curves to determine optimal number of clusters
+- Plots inertia vs k to help choose cluster count
+
+Arguments:
+- `--input`: Path to CSV file
+- `--max-k`: Maximum k to test (default: 20)
+- `--output`: Output directory for plots
+
+**wordfrequency_plot.py**
+- Plot keyword frequency trends over time
+- Tracks mentions of specific terms (e.g., "sam", "altman")
+- Hardcoded paths, modify script to use your data
 

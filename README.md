@@ -43,23 +43,56 @@ python scripts/sentence_cluster.py --input data/combined_posts.csv --k 6 --out r
 - Re-clusters large clusters into sub-clusters
 - Can work with IDs for faster processing
 
-
 example usage
 ```bash
 python scripts/hierarchical_kmeans.py --input results/clustering/kmeans.json --csv data/combined_posts.csv --out results/hierarchical.json
 ```
+
+**weighted_kmeans.py**
+- Weighted kmeans clustering using post scores
+- Supports OpenAI embeddings or sentence-transformers
+- Can create date distribution plots
+
+example usage
+```bash
+python scripts/weighted_kmeans.py --input data/combined_posts.csv --k 16 --out results/weighted_kmeans --model sentence-transformers/all-mpnet-base-v2
+```
+
+**bertopic_outlier_reduction.py**
+- BERTopic clustering with outlier reduction strategies
+- Can generate cluster labels using Gemini
+- Supports different outlier assignment methods
+
+**train_test_cluster.py**
+- Split data into train/test and cluster separately
+- Useful for testing cluster stability
 
 ### Analysis
 
 **sae_with_llm.py**
 - Uses Sparse Autoencoders (SAE) for clustering
 - LLM-based interpretation of clusters
-- Requires Gemini API key
+- Requires LLm API key
 
 example usage
 ```bash
 python scripts/sae_with_llm.py --input data/combined_posts.csv --k 32 --out results/sae_clusters/
 ```
+
+**label_clusters.py**
+- Generate cluster labels using OpenAI
+- Uses contrastive examples to distinguish clusters
+- Outputs labels with descriptions
+
+example usage
+```bash
+python scripts/label_clusters.py --clusters results/clusters.json --csv data/combined_posts.csv --out cluster_labels.json
+```
+
+**plot_cluster_timelines.py**
+- Plot cluster activity over time as stacked histograms
+- Shows daily post counts per cluster
+- Can use cluster labels for better legends
 
 ## Utilities
 

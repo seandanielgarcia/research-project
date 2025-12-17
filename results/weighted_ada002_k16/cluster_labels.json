@@ -1,0 +1,66 @@
+{
+  "Cluster 16": {
+    "summary": "Posts in this cluster shared personal anecdotes, survey or access requests, and informal ideas while expressing speculative and often existential views about AI — from joking proposals to \"contain\" AI in a calculator and claims that a single question could \"own\" it, to accounts of AIs showing empathy or consistent, quasi-conscious perception. Authors also debated economic and social consequences (mass job loss, funding bubbles, human irrelevance), noted improvements in developer-facing tools, and posted religious or philosophical interviews, marking the cluster as introspective, human-centered speculation rather than technical debugging or policy analysis.",
+    "name": "Speculation on AI personhood, societal impact, and access"
+  },
+  "Cluster 4": {
+    "summary": "Users reported that LLMs and associated tools were producing unreliable or incorrect outputs, silently failing to execute code or agent connectors, losing context across multiple tools, and rejecting innocuous prompts because of inconsistent or overzealous guardrails. They asked for troubleshooting, prompt-workarounds, and explanations, criticized safety features (such as long-conversation reminders) for impairing functionality, and sought ways to stop unwanted follow-up questions or get models to self-audit changes they made while generating responses.",
+    "name": "LLM reliability failures, guardrails and unexpected rejections"
+  },
+  "Cluster 5": {
+    "summary": "Users reported concrete, user-facing app problems such as UI regressions, loading failures, lag, data-loss glitches, broken integrations (calendar, speech-to-text), stuck features, and inability to generate images, and they frequently asked whether specific bugs had been fixed or how to disable annoying behaviors. They asked for confirmation of fixes, workarounds, or service-quality improvements before renewing subscriptions or saving progress, and they compared models only to note practical performance differences rather than to engage in theoretical AI debates.",
+    "name": "App bugs, UI regressions and feature availability issues"
+  },
+  "Cluster 12": {
+    "summary": "Users reported unexpected, erroneous, or amusing behaviors from ChatGPT, including misidentifying public figures, claiming an incorrect age, switching languages without prompting, responding to sneezes, looping on emoji requests, and refusing copyrighted content. They described everyday uses like playlists, step tracking, and emotional-image descriptions, compared model variants when one errored, and asked whether those quirks were normal or indicative of problems.",
+    "name": "ChatGPT quirks, errors, and surprising responses"
+  },
+  "Cluster 14": {
+    "summary": "The posts were brief, informal Reddit micro-posts that shared quick reactions, humorous observations, memes, and small personal anecdotes (for example, addiction to a self-created story, a repeatedly wrong Pokémon claim, or noticing a color change). They also contained lightweight community questions and minor announcements—asking about Reddit Plus device sharing, whether video uploads were being removed, a gameplay/mod trailer, and suggestions for recreating images in Figma—and were unrelated to technical or AI-focused debates.",
+    "name": "Short casual Reddit posts: questions, memes, announcements"
+  },
+  "Cluster 10": {
+    "summary": "Users reported that ChatGPT and Claude behaved unreliably and unhelpfully: they hallucinated or flip-flopped about facts, asked excessive clarifying questions without performing requested actions, output strange bracketed codes instead of links, and blocked access to uploaded files due to new guardrails. They also described UI and service problems—duplicated buttons, severe lag and memory/memory-loss issues, restrictive usage limits, high pricing, and difficulty getting subtle image edits—that disrupted workflows and made them consider switching services or abandoning paid tiers.",
+    "name": "ChatGPT/Claude reliability and usability problems"
+  },
+  "Cluster 13": {
+    "summary": "Posts were short, practical messages asking about access (for example Sora 2 invite codes), requesting assistance or recommendations (such as patent prompts or agents), and soliciting or sharing quick curiosities or confirmations. They were largely reactive and troubleshooting-oriented, reporting or commenting on AI glitches and inaccuracies, expressing surprise, disappointment, or sarcasm, and asking whether others wanted them to take actions.",
+    "name": "Access and troubleshooting requests for AI tools"
+  },
+  "Cluster 2": {
+    "summary": "Users reported and asked about concrete GPT behaviors, usability quirks, and version differences—mentioning untranslated Chinese characters, persistent safety confirmations, models referencing outdated uploaded files, limits of custom-GPT “remember” commands, and perceived changes in storytelling or coherence across GPT-4/4o/4 Plus/5. The posts focused on troubleshooting, user-facing feature interactions, and how those behaviors affected creative workflows and support use, rather than on high-level policy, ideology, or speculative AI futures.",
+    "name": "GPT version behavior and troubleshooting"
+  },
+  "Cluster 3": {
+    "summary": "They shared practical prompts and generated content for language models, including a functional-resume prompt, creative writing (Hannibal Lecter analysis and an image titled \"Kin\"), Sora-generated influencer videos, and Mistral summaries of media. They compared multi-LLM access providers (OpenRouter, AnannasAI, LiteLLM), explored token-management and cost/performance trade-offs, and noted practical risks such as misinformation amplification, malicious-file attacks on models, and incidental jailbreak publicity.",
+    "name": "Prompting, Tool Comparison, and Generated Media"
+  },
+  "Cluster 6": {
+    "summary": "Posts primarily sought practical, hands-on information: users compared and ranked LLMs (ChatGPT, Claude, Sonnet, Gemini, etc.), asked which model was best for coding or automating tasks, reported bugs and limitations (file creation, instruction-following), and requested tips for exporting or preserving AI output for indexing or Excel import. They also shared and tested creative uses and emergent personalities (fursonas, custom bot voices, ideal self-descriptions), announced product updates like regional payment integrations, and solicited surveys and community help for developing or debugging custom prompts and agents.",
+    "name": "Model comparisons, troubleshooting, and creative bot use"
+  },
+  "Cluster 1": {
+    "summary": "Posts mainly complained that ChatGPT's safety filters, cautious tone, and perceived censorship made it evasive, manipulative, or unable to engage with sexual, dark, or sensitive topics, leaving users feeling judged or \"cancelled.\" Posters expressed privacy worries, speculated the limitations were intentional design choices, promoted testing prompts or switching to alternatives like Claude, and used humor or personification to cope with the restrictions.",
+    "name": "ChatGPT safety, tone, and censorship complaints"
+  },
+  "Cluster 8": {
+    "summary": "Users reported practical client-side problems and feature regressions in ChatGPT's web and mobile apps, such as unexpected automatic switching to GPT-5 Pro or Safety models, loss of chat history when reloading or switching models, inability to open zipped files, missing custom model selectors, and persistent freezing. They sought troubleshooting steps and concrete workarounds (for example using the \"+\" button, creating new chats, enabling Legacy Models, clearing cache, or stopping generation) to restore behavior rather than discussing high-level AI theory, ethics, or surveys.",
+    "name": "ChatGPT app bugs and model-switch workarounds"
+  },
+  "Cluster 7": {
+    "summary": "Posts consisted solely of titles with no body text and were typically brief exclamations, ellipses, or single-word reactions (e.g., \"WOAH!\", \"Oh hell nah\", \"…wake…up\"). They did not present substantive questions, arguments, or LLM-related information and instead functioned as low-effort placeholders, attention-seeking reactions, or accidental empty submissions.",
+    "name": "Titles-only reaction posts"
+  },
+  "Cluster 11": {
+    "summary": "Users described problems managing ChatGPT-related subscriptions and plans and reported unexpected or early charges, confusion about which features were included, and questions about whether to upgrade or downgrade. They also complained about missing or unwanted app features—specifically Sora access, legacy mode, and a \"think longer\" behavior—asked how to disable features, and sought help cancelling, switching, or regaining access after downgrades or cancellations.",
+    "name": "ChatGPT subscription, billing and feature access issues"
+  },
+  "Cluster 9": {
+    "summary": "Posts criticized OpenAI’s recent Sora 2 launch and platform changes, alleging political bias (including claims Sora avoided content critical of whiteness), failure to visibly watermark AI-generated content, deceptive model attribution, intimidation of journalists and lawyers, and opaque customer practices. Users reported distrust, exploration of competitors and open-source alternatives, and frustration with UI changes that removed easy model selection, framing these developments as corporate secrecy and suppression of user voices.",
+    "name": "OpenAI Sora 2 controversy and alleged misconduct"
+  },
+  "Cluster 15": {
+    "summary": "Posts criticized OpenAI’s recent product and policy changes — such as removing older models, promoting ChatGPT Plus, introducing third‑party agents, and retaining user data — and expressed distrust about transparency, censorship, and broken features like saved memories. They also reported concrete harms and skepticism: writers feared false AI‑generation flags after using ChatGPT for editing, authors said detectors (e.g., GPTZero) misclassified original work, and users questioned hype around GPT‑5, unverifiable hacking claims, and the ethical consequences of ongoing AI development.",
+    "name": "ChatGPT policy, privacy, and false-detection complaints"
+  }
+}
